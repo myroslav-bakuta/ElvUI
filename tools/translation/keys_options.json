@@ -1,0 +1,5270 @@
+[
+{
+"raw": "%s and then %s",
+"q": "\""
+},
+{
+"raw": "2D",
+"q": "\""
+},
+{
+"raw": "3D",
+"q": "\""
+},
+{
+"raw": "AFK Mode",
+"q": "\""
+},
+{
+"raw": "ANCHOR_CURSOR",
+"q": "\""
+},
+{
+"raw": "ANCHOR_CURSOR_LEFT",
+"q": "\""
+},
+{
+"raw": "ANCHOR_CURSOR_RIGHT",
+"q": "\""
+},
+{
+"raw": "Abbreviation",
+"q": "\""
+},
+{
+"raw": "Above Chat",
+"q": "\""
+},
+{
+"raw": "Above",
+"q": "\""
+},
+{
+"raw": "Accept Invites",
+"q": "\""
+},
+{
+"raw": "Action Paging",
+"q": "\""
+},
+{
+"raw": "ActionBars",
+"q": "\""
+},
+{
+"raw": "Actions",
+"q": "\""
+},
+{
+"raw": "Add Item or Search Syntax",
+"q": "\""
+},
+{
+"raw": "Add Name",
+"q": "\""
+},
+{
+"raw": "Add Regular Filter",
+"q": "\""
+},
+{
+"raw": "Add Special Filter",
+"q": "\""
+},
+{
+"raw": "Add Spell ID or Name",
+"q": "\""
+},
+{
+"raw": "Add SpellID",
+"q": "\""
+},
+{
+"raw": "Add a Name to the list.",
+"q": "\""
+},
+{
+"raw": "Add a spell to the filter. Use spell ID if you don't want to match all auras which share the same name.",
+"q": "\""
+},
+{
+"raw": "Add a spell to the filter.",
+"q": "\""
+},
+{
+"raw": "Add an item or search syntax to the ignored list. Items matching the search syntax will be ignored.",
+"q": "\""
+},
+{
+"raw": "Additional Power Text",
+"q": "\""
+},
+{
+"raw": "Additional spacing between each individual group.",
+"q": "\""
+},
+{
+"raw": "Additive Blend",
+"q": "\""
+},
+{
+"raw": "Adjust the height of your right chat panel.",
+"q": "\""
+},
+{
+"raw": "Adjust the position of the threat bar to either the left or right datatext panels.",
+"q": "\""
+},
+{
+"raw": "Adjust the size of the minimap.",
+"q": "\""
+},
+{
+"raw": "Adjust the width of the bag frame.",
+"q": "\""
+},
+{
+"raw": "Adjust the width of the bank frame.",
+"q": "\""
+},
+{
+"raw": "Adjust the width of your right chat panel.",
+"q": "\""
+},
+{
+"raw": "Alert Frames",
+"q": "\""
+},
+{
+"raw": "Alerts",
+"q": "\""
+},
+{
+"raw": "Allow LBF to handle the skinning of this element.",
+"q": "\""
+},
+{
+"raw": "Allowed Combat Repeat",
+"q": "\""
+},
+{
+"raw": "Alpha Fading",
+"q": "\""
+},
+{
+"raw": "Alpha Key",
+"q": "\""
+},
+{
+"raw": "Alpha channel is taken from the color option.",
+"q": "\""
+},
+{
+"raw": "Alpha",
+"q": "\""
+},
+{
+"raw": "Always Display",
+"q": "\""
+},
+{
+"raw": "Always Hide",
+"q": "\""
+},
+{
+"raw": "Always Show Realm",
+"q": "\""
+},
+{
+"raw": "Always Show Target Health",
+"q": "\""
+},
+{
+"raw": "Ammo Pouch",
+"q": "\""
+},
+{
+"raw": "An X offset (in pixels) to be used when anchoring new frames.",
+"q": "\""
+},
+{
+"raw": "An Y offset (in pixels) to be used when anchoring new frames.",
+"q": "\""
+},
+{
+"raw": "Anchor Point",
+"q": "\""
+},
+{
+"raw": "Announce Interrupts",
+"q": "\""
+},
+{
+"raw": "Announce when you interrupt a spell to the specified chat channel.",
+"q": "\""
+},
+{
+"raw": "Applies the font and font size settings throughout the entire user interface. Note: Some font size settings will be skipped due to them having a smaller font size by default.",
+"q": "\""
+},
+{
+"raw": "Applies the primary texture to all statusbars.",
+"q": "\""
+},
+{
+"raw": "Apply Font To All",
+"q": "\""
+},
+{
+"raw": "Apply Texture To All",
+"q": "\""
+},
+{
+"raw": "Apply this filter if a buff has remaining time greater than this. Set to zero to disable.",
+"q": "\""
+},
+{
+"raw": "Apply this filter if a buff has remaining time less than this. Set to zero to disable.",
+"q": "\""
+},
+{
+"raw": "Apply this filter if a debuff has remaining time greater than this. Set to zero to disable.",
+"q": "\""
+},
+{
+"raw": "Apply this filter if a debuff has remaining time less than this. Set to zero to disable.",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset ActionBars settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset Auras settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset Bags settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset Chat settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset Cooldown settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset DataBars settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset DataTexts settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset General settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset NamePlates settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset Tooltip settings?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset UnitFrames settings?",
+"q": "\""
+},
+{
+"raw": "Arena Frame",
+"q": "\""
+},
+{
+"raw": "Arena Registrar",
+"q": "\""
+},
+{
+"raw": "Arena",
+"q": "\""
+},
+{
+"raw": "Arrow Size",
+"q": "\""
+},
+{
+"raw": "Arrow X-Offset",
+"q": "\""
+},
+{
+"raw": "Arrow Y-Offset",
+"q": "\""
+},
+{
+"raw": "Ascending or Descending order.",
+"q": "\""
+},
+{
+"raw": "Ascending",
+"q": "\""
+},
+{
+"raw": "Assist Target",
+"q": "\""
+},
+{
+"raw": "Assist",
+"q": "\""
+},
+{
+"raw": "At what point should the text be displayed. Set to -1 to disable.",
+"q": "\""
+},
+{
+"raw": "Attach Text To",
+"q": "\""
+},
+{
+"raw": "Attach To",
+"q": "\""
+},
+{
+"raw": "Attempt to create URL links inside the chat.",
+"q": "\""
+},
+{
+"raw": "Attempt to lock the left and right chat frame positions. Disabling this option will allow you to move the main chat frame anywhere you wish.",
+"q": "\""
+},
+{
+"raw": "Attempt to support eyefinity/nvidia surround.",
+"q": "\""
+},
+{
+"raw": "Aura Bars",
+"q": "\""
+},
+{
+"raw": "Aura Filters",
+"q": "\""
+},
+{
+"raw": "Auto Greed/DE",
+"q": "\""
+},
+{
+"raw": "Auto Hide",
+"q": "\""
+},
+{
+"raw": "Auto Repair",
+"q": "\""
+},
+{
+"raw": "Auto-Hide",
+"q": "\""
+},
+{
+"raw": "Automatic",
+"q": "\""
+},
+{
+"raw": "Automatically accept invites from guild/friends.",
+"q": "\""
+},
+{
+"raw": "Automatically hide the objetive frame during boss or arena fights.",
+"q": "\""
+},
+{
+"raw": "Automatically repair using the following method when visiting a merchant.",
+"q": "\""
+},
+{
+"raw": "Automatically select greed or disenchant (when available) on green quality items. This will only work if you are the max level.",
+"q": "\""
+},
+{
+"raw": "Automatically vendor gray items when visiting a vendor.",
+"q": "\""
+},
+{
+"raw": "Available Tags",
+"q": "\""
+},
+{
+"raw": "BG Map",
+"q": "\""
+},
+{
+"raw": "BG Score",
+"q": "\""
+},
+{
+"raw": "BINDING_HEADER_RAID_TARGET",
+"q": "\""
+},
+{
+"raw": "Backdrop Color",
+"q": "\""
+},
+{
+"raw": "Backdrop Faded Color",
+"q": "\""
+},
+{
+"raw": "Backdrop Spacing",
+"q": "\""
+},
+{
+"raw": "Backdrop color of transparent frames",
+"q": "\""
+},
+{
+"raw": "Backdrop",
+"q": "\""
+},
+{
+"raw": "Background Glow",
+"q": "\""
+},
+{
+"raw": "Bad Color",
+"q": "\""
+},
+{
+"raw": "Bad Scale",
+"q": "\""
+},
+{
+"raw": "Bad Transition Color",
+"q": "\""
+},
+{
+"raw": "Bad",
+"q": "\""
+},
+{
+"raw": "Bag 1",
+"q": "\""
+},
+{
+"raw": "Bag 2",
+"q": "\""
+},
+{
+"raw": "Bag 3",
+"q": "\""
+},
+{
+"raw": "Bag 4",
+"q": "\""
+},
+{
+"raw": "Bag Sorting",
+"q": "\""
+},
+{
+"raw": "Bag Spacing",
+"q": "\""
+},
+{
+"raw": "Bag",
+"q": "\""
+},
+{
+"raw": "Bag-Bar",
+"q": "\""
+},
+{
+"raw": "Bags Only",
+"q": "\""
+},
+{
+"raw": "Bags/Bank",
+"q": "\""
+},
+{
+"raw": "Bank 1",
+"q": "\""
+},
+{
+"raw": "Bank 2",
+"q": "\""
+},
+{
+"raw": "Bank 3",
+"q": "\""
+},
+{
+"raw": "Bank 4",
+"q": "\""
+},
+{
+"raw": "Bank 5",
+"q": "\""
+},
+{
+"raw": "Bank 6",
+"q": "\""
+},
+{
+"raw": "Bank 7",
+"q": "\""
+},
+{
+"raw": "Bank Only",
+"q": "\""
+},
+{
+"raw": "Bar Direction",
+"q": "\""
+},
+{
+"raw": "Bars will transition smoothly.",
+"q": "\""
+},
+{
+"raw": "Battleground Texts",
+"q": "\""
+},
+{
+"raw": "Begin a new row or column after this many auras.",
+"q": "\""
+},
+{
+"raw": "Below Chat",
+"q": "\""
+},
+{
+"raw": "Below",
+"q": "\""
+},
+{
+"raw": "Blacklist Modifier",
+"q": "\""
+},
+{
+"raw": "Blacklist",
+"q": "\""
+},
+{
+"raw": "Blend Mode",
+"q": "\""
+},
+{
+"raw": "Blend",
+"q": "\""
+},
+{
+"raw": "BlizzUI Improvements",
+"q": "\""
+},
+{
+"raw": "Blizzard Style",
+"q": "\""
+},
+{
+"raw": "Blizzard",
+"q": "\""
+},
+{
+"raw": "Block Combat Click",
+"q": "\""
+},
+{
+"raw": "Block Combat Hover",
+"q": "\""
+},
+{
+"raw": "Block Mouseover Glow",
+"q": "\""
+},
+{
+"raw": "Block Target Glow",
+"q": "\""
+},
+{
+"raw": "Blocks all click events while in combat.",
+"q": "\""
+},
+{
+"raw": "Blocks datatext tooltip from showing in combat.",
+"q": "\""
+},
+{
+"raw": "Border Color",
+"q": "\""
+},
+{
+"raw": "Border Glow",
+"q": "\""
+},
+{
+"raw": "Border",
+"q": "\""
+},
+{
+"raw": "Borders",
+"q": "\""
+},
+{
+"raw": "Both",
+"q": "\""
+},
+{
+"raw": "Bottom Left",
+"q": "\""
+},
+{
+"raw": "Bottom Panel",
+"q": "\""
+},
+{
+"raw": "Bottom Right",
+"q": "\""
+},
+{
+"raw": "Bottom to Top",
+"q": "\""
+},
+{
+"raw": "Bottom",
+"q": "\""
+},
+{
+"raw": "BottomLeftMiniPanel",
+"q": "\""
+},
+{
+"raw": "BottomMiniPanel",
+"q": "\""
+},
+{
+"raw": "BottomRightMiniPanel",
+"q": "\""
+},
+{
+"raw": "Buff Indicator",
+"q": "\""
+},
+{
+"raw": "Button Size (Bag)",
+"q": "\""
+},
+{
+"raw": "Button Size (Bank)",
+"q": "\""
+},
+{
+"raw": "Button Size",
+"q": "\""
+},
+{
+"raw": "Button Spacing",
+"q": "\""
+},
+{
+"raw": "Buttons Per Row",
+"q": "\""
+},
+{
+"raw": "Buttons",
+"q": "\""
+},
+{
+"raw": "By Type",
+"q": "\""
+},
+{
+"raw": "Calendar Frame",
+"q": "\""
+},
+{
+"raw": "Cast Bar",
+"q": "\""
+},
+{
+"raw": "Cast Color",
+"q": "\""
+},
+{
+"raw": "Cast No Interrupt Color",
+"q": "\""
+},
+{
+"raw": "Cast Time Format",
+"q": "\""
+},
+{
+"raw": "Castbar",
+"q": "\""
+},
+{
+"raw": "Casting",
+"q": "\""
+},
+{
+"raw": "Center",
+"q": "\""
+},
+{
+"raw": "Change settings for the display of the location text that is on the minimap.",
+"q": "\""
+},
+{
+"raw": "Change the alpha level of the frame.",
+"q": "\""
+},
+{
+"raw": "Change the width and controls how big of an area on the screen will accept clicks to target unit.",
+"q": "\""
+},
+{
+"raw": "Channel Alerts",
+"q": "\""
+},
+{
+"raw": "Channel Time Format",
+"q": "\""
+},
+{
+"raw": "Character Frame",
+"q": "\""
+},
+{
+"raw": "Chat Bubble Names",
+"q": "\""
+},
+{
+"raw": "Chat Bubbles Style",
+"q": "\""
+},
+{
+"raw": "Chat Bubbles",
+"q": "\""
+},
+{
+"raw": "Chat EditBox Position",
+"q": "\""
+},
+{
+"raw": "Chat Output",
+"q": "\""
+},
+{
+"raw": "Check these to only have the filter active in certain difficulties. If none are checked, it is active in all difficulties.",
+"q": "\""
+},
+{
+"raw": "CheckBox Skin",
+"q": "\""
+},
+{
+"raw": "Choose Export Format",
+"q": "\""
+},
+{
+"raw": "Choose UIPARENT to prevent it from hiding with the unitframe.",
+"q": "\""
+},
+{
+"raw": "Choose What To Export",
+"q": "\""
+},
+{
+"raw": "Choose when you want the tooltip to show in combat. If a modifer is chosen, then you need to hold that down to show the tooltip.",
+"q": "\""
+},
+{
+"raw": "Choose when you want the tooltip to show. If a modifer is chosen, then you need to hold that down to show the tooltip.",
+"q": "\""
+},
+{
+"raw": "Class Backdrop",
+"q": "\""
+},
+{
+"raw": "Class Castbars",
+"q": "\""
+},
+{
+"raw": "Class Color Mentions",
+"q": "\""
+},
+{
+"raw": "Class Color Override",
+"q": "\""
+},
+{
+"raw": "Class Health",
+"q": "\""
+},
+{
+"raw": "Class Power",
+"q": "\""
+},
+{
+"raw": "Class Resources",
+"q": "\""
+},
+{
+"raw": "Class Totems",
+"q": "\""
+},
+{
+"raw": "Clear Filter",
+"q": "\""
+},
+{
+"raw": "Clear Search On Close",
+"q": "\""
+},
+{
+"raw": "Click Through",
+"q": "\""
+},
+{
+"raw": "Clickable Height",
+"q": "\""
+},
+{
+"raw": "Clickable Size",
+"q": "\""
+},
+{
+"raw": "Clickable Width / Width",
+"q": "\""
+},
+{
+"raw": "Coding:",
+"q": "\""
+},
+{
+"raw": "Color Keybind Text when Out of Range, instead of the button.",
+"q": "\""
+},
+{
+"raw": "Color Keybind Text",
+"q": "\""
+},
+{
+"raw": "Color Override",
+"q": "\""
+},
+{
+"raw": "Color Turtle Buffs",
+"q": "\""
+},
+{
+"raw": "Color all buffs that reduce the unit's incoming damage.",
+"q": "\""
+},
+{
+"raw": "Color aurabar debuffs by type.",
+"q": "\""
+},
+{
+"raw": "Color by Value",
+"q": "\""
+},
+{
+"raw": "Color castbars by the class of player units.",
+"q": "\""
+},
+{
+"raw": "Color castbars by the reaction type of non-player units.",
+"q": "\""
+},
+{
+"raw": "Color health by amount remaining.",
+"q": "\""
+},
+{
+"raw": "Color health by classcolor or reaction.",
+"q": "\""
+},
+{
+"raw": "Color health by threat status.",
+"q": "\""
+},
+{
+"raw": "Color of the actionbutton when not usable.",
+"q": "\""
+},
+{
+"raw": "Color of the actionbutton when out of power (Mana, Rage).",
+"q": "\""
+},
+{
+"raw": "Color of the actionbutton when out of range.",
+"q": "\""
+},
+{
+"raw": "Color of the actionbutton when usable.",
+"q": "\""
+},
+{
+"raw": "Color power by classcolor or reaction.",
+"q": "\""
+},
+{
+"raw": "Color power by threat status.",
+"q": "\""
+},
+{
+"raw": "Color some texts use.",
+"q": "\""
+},
+{
+"raw": "Color the health backdrop by class or reaction.",
+"q": "\""
+},
+{
+"raw": "Color the unit healthbar if there is a debuff that can be dispelled by you.",
+"q": "\""
+},
+{
+"raw": "Color when the text is about to expire",
+"q": "\""
+},
+{
+"raw": "Color when the text is in the days format.",
+"q": "\""
+},
+{
+"raw": "Color when the text is in the hours format.",
+"q": "\""
+},
+{
+"raw": "Color when the text is in the minutes format.",
+"q": "\""
+},
+{
+"raw": "Color when the text is in the seconds format.",
+"q": "\""
+},
+{
+"raw": "Colored Icon",
+"q": "\""
+},
+{
+"raw": "Coloring (Specific)",
+"q": "\""
+},
+{
+"raw": "Coloring",
+"q": "\""
+},
+{
+"raw": "Colorize Selected Text",
+"q": "\""
+},
+{
+"raw": "Colors the border according to the Quality of the Item.",
+"q": "\""
+},
+{
+"raw": "Combat Icon",
+"q": "\""
+},
+{
+"raw": "Combat Override Key",
+"q": "\""
+},
+{
+"raw": "CombatText Font",
+"q": "\""
+},
+{
+"raw": "Combo Point",
+"q": "\""
+},
+{
+"raw": "Comparison Font Size",
+"q": "\""
+},
+{
+"raw": "Condensed",
+"q": "\""
+},
+{
+"raw": "Configure Auras",
+"q": "\""
+},
+{
+"raw": "Control enemy nameplates toggling on or off when in combat.",
+"q": "\""
+},
+{
+"raw": "Control friendly nameplates toggling on or off when in combat.",
+"q": "\""
+},
+{
+"raw": "Controls how big of an area on the screen will accept clicks to target unit.",
+"q": "\""
+},
+{
+"raw": "Controls the amount of decimals used in values displayed on elements like NamePlates and UnitFrames.",
+"q": "\""
+},
+{
+"raw": "Controls the speed at which smoothed bars will be updated.",
+"q": "\""
+},
+{
+"raw": "Controls how many seconds of inactivity has to pass before chat is faded.",
+"q": "\""
+},
+{
+"raw": "Cooldown Orientation",
+"q": "\""
+},
+{
+"raw": "Cooldown Text",
+"q": "\""
+},
+{
+"raw": "Cooldowns",
+"q": "\""
+},
+{
+"raw": "Copy From",
+"q": "\""
+},
+{
+"raw": "Copy Settings From",
+"q": "\""
+},
+{
+"raw": "Copy settings from another unit.",
+"q": "\""
+},
+{
+"raw": "Core |cff1784d1E|r|cffe5e3e3lvUI|r options.",
+"q": "\""
+},
+{
+"raw": "Count Font Size",
+"q": "\""
+},
+{
+"raw": "Count xOffset",
+"q": "\""
+},
+{
+"raw": "Count yOffset",
+"q": "\""
+},
+{
+"raw": "Create Custom Text",
+"q": "\""
+},
+{
+"raw": "Create Filter",
+"q": "\""
+},
+{
+"raw": "Create a filter, once created a filter can be set inside the buffs/debuffs section of each unit.",
+"q": "\""
+},
+{
+"raw": "Credits",
+"q": "\""
+},
+{
+"raw": "Crop Icons",
+"q": "\""
+},
+{
+"raw": "Currency Format",
+"q": "\""
+},
+{
+"raw": "Current - Max | Percent",
+"q": "\""
+},
+{
+"raw": "Current - Max",
+"q": "\""
+},
+{
+"raw": "Current - Percent (Remaining)",
+"q": "\""
+},
+{
+"raw": "Current - Percent",
+"q": "\""
+},
+{
+"raw": "Current - Remaining",
+"q": "\""
+},
+{
+"raw": "Current / Max",
+"q": "\""
+},
+{
+"raw": "Current Level",
+"q": "\""
+},
+{
+"raw": "Current",
+"q": "\""
+},
+{
+"raw": "Curse Effect",
+"q": "\""
+},
+{
+"raw": "Cursor Anchor Offset X",
+"q": "\""
+},
+{
+"raw": "Cursor Anchor Offset Y",
+"q": "\""
+},
+{
+"raw": "Cursor Anchor Type",
+"q": "\""
+},
+{
+"raw": "Cursor Anchor",
+"q": "\""
+},
+{
+"raw": "Custom Backdrop",
+"q": "\""
+},
+{
+"raw": "Custom Color",
+"q": "\""
+},
+{
+"raw": "Custom Dead Backdrop",
+"q": "\""
+},
+{
+"raw": "Custom Faction Colors",
+"q": "\""
+},
+{
+"raw": "Custom Texts",
+"q": "\""
+},
+{
+"raw": "Custom Texture",
+"q": "\""
+},
+{
+"raw": "Custom Timestamp Color",
+"q": "\""
+},
+{
+"raw": "Cutaway Bars",
+"q": "\""
+},
+{
+"raw": "Darken Inactive",
+"q": "\""
+},
+{
+"raw": "DataBars",
+"q": "\""
+},
+{
+"raw": "DataTexts",
+"q": "\""
+},
+{
+"raw": "Datatext Panel (Left)",
+"q": "\""
+},
+{
+"raw": "Datatext Panel (Right)",
+"q": "\""
+},
+{
+"raw": "Date Format",
+"q": "\""
+},
+{
+"raw": "Days",
+"q": "\""
+},
+{
+"raw": "Debuff Highlighting",
+"q": "\""
+},
+{
+"raw": "Debug Tools",
+"q": "\""
+},
+{
+"raw": "Decimal Length",
+"q": "\""
+},
+{
+"raw": "Decimal Threshold",
+"q": "\""
+},
+{
+"raw": "Decode Text",
+"q": "\""
+},
+{
+"raw": "Default Color",
+"q": "\""
+},
+{
+"raw": "Default Font",
+"q": "\""
+},
+{
+"raw": "Default Settings",
+"q": "\""
+},
+{
+"raw": "Deficit",
+"q": "\""
+},
+{
+"raw": "Defines how the group is sorted.",
+"q": "\""
+},
+{
+"raw": "Defines the sort order of the selected sort method.",
+"q": "\""
+},
+{
+"raw": "Delete Filter",
+"q": "\""
+},
+{
+"raw": "Delete a created filter, you cannot delete pre-existing filters, only custom ones.",
+"q": "\""
+},
+{
+"raw": "Desaturate Cooldowns",
+"q": "\""
+},
+{
+"raw": "Desaturate Junk Items",
+"q": "\""
+},
+{
+"raw": "Desaturated Icon",
+"q": "\""
+},
+{
+"raw": "Descending",
+"q": "\""
+},
+{
+"raw": "Detach From Frame",
+"q": "\""
+},
+{
+"raw": "Detached Width",
+"q": "\""
+},
+{
+"raw": "Direction the bag sorting will use to allocate the items.",
+"q": "\""
+},
+{
+"raw": "Direction the bar moves on gains/losses",
+"q": "\""
+},
+{
+"raw": "Direction the health bar moves when gaining/losing health.",
+"q": "\""
+},
+{
+"raw": "Disable Bag Sort",
+"q": "\""
+},
+{
+"raw": "Disable Bank Sort",
+"q": "\""
+},
+{
+"raw": "Disable Debuff Highlight",
+"q": "\""
+},
+{
+"raw": "Disabled Blizzard Frames",
+"q": "\""
+},
+{
+"raw": "Disabled Blizzard",
+"q": "\""
+},
+{
+"raw": "Disables the focus and target of focus unitframes.",
+"q": "\""
+},
+{
+"raw": "Disables the player and pet unitframes.",
+"q": "\""
+},
+{
+"raw": "Disables the target and target of target unitframes.",
+"q": "\""
+},
+{
+"raw": "Disconnected",
+"q": "\""
+},
+{
+"raw": "Disease Effect",
+"q": "\""
+},
+{
+"raw": "Display Frames",
+"q": "\""
+},
+{
+"raw": "Display Item Level",
+"q": "\""
+},
+{
+"raw": "Display Player",
+"q": "\""
+},
+{
+"raw": "Display Target",
+"q": "\""
+},
+{
+"raw": "Display Text",
+"q": "\""
+},
+{
+"raw": "Display a healer icon over known healers inside battlegrounds or arenas.",
+"q": "\""
+},
+{
+"raw": "Display a panel across the bottom of the screen. This is for cosmetic only.",
+"q": "\""
+},
+{
+"raw": "Display a panel across the top of the screen. This is for cosmetic only.",
+"q": "\""
+},
+{
+"raw": "Display a spark texture at the end of the castbar statusbar to help show the differance between castbar and backdrop.",
+"q": "\""
+},
+{
+"raw": "Display an exclamation mark on items that starts a quest.",
+"q": "\""
+},
+{
+"raw": "Display battleground messages in the middle of the screen.",
+"q": "\""
+},
+{
+"raw": "Display bind names on action buttons.",
+"q": "\""
+},
+{
+"raw": "Display cooldown text on anything with the cooldown spiral.",
+"q": "\""
+},
+{
+"raw": "Display data panels below the chat, used for datatexts.",
+"q": "\""
+},
+{
+"raw": "Display emotion icons in chat.",
+"q": "\""
+},
+{
+"raw": "Display guild ranks if a unit is guilded.",
+"q": "\""
+},
+{
+"raw": "Display how many of a certain item you have in your possession.",
+"q": "\""
+},
+{
+"raw": "Display macro names on action buttons.",
+"q": "\""
+},
+{
+"raw": "Display minimap panels below the minimap, used for datatexts.",
+"q": "\""
+},
+{
+"raw": "Display player titles.",
+"q": "\""
+},
+{
+"raw": "Display reminder bar on the minimap.",
+"q": "\""
+},
+{
+"raw": "Display the castbar icon inside the castbar.",
+"q": "\""
+},
+{
+"raw": "Display the castbar inside the information panel, the icon will be displayed outside the main unitframe.",
+"q": "\""
+},
+{
+"raw": "Display the hyperlink tooltip while hovering over a hyperlink.",
+"q": "\""
+},
+{
+"raw": "Display the junk icon on all grey items that can be vendored.",
+"q": "\""
+},
+{
+"raw": "Display the name of the unit on the chat bubble.",
+"q": "\""
+},
+{
+"raw": "Display the npc ID when mousing over a npc tooltip.",
+"q": "\""
+},
+{
+"raw": "Display the spell or item ID when mousing over a spell or item tooltip.",
+"q": "\""
+},
+{
+"raw": "Display the target of your current cast. Useful for mouseover casts.",
+"q": "\""
+},
+{
+"raw": "Display tick marks on the castbar for channelled spells. This will adjust automatically for spells like Drain Soul and add additional ticks based on haste.",
+"q": "\""
+},
+{
+"raw": "Display Types",
+"q": "\""
+},
+{
+"raw": "Displayed server time.",
+"q": "\""
+},
+{
+"raw": "Displays a detailed report of every item sold when enabled.",
+"q": "\""
+},
+{
+"raw": "Displays item level on equippable items.",
+"q": "\""
+},
+{
+"raw": "Don't display auras that are longer than this duration (in seconds). Set to zero to disable.",
+"q": "\""
+},
+{
+"raw": "Don't display auras that are shorter than this duration (in seconds). Set to zero to disable.",
+"q": "\""
+},
+{
+"raw": "Donations:",
+"q": "\""
+},
+{
+"raw": "Down",
+"q": "\""
+},
+{
+"raw": "Dropdown CheckBox Skin",
+"q": "\""
+},
+{
+"raw": "Dungeon & Raid Filter",
+"q": "\""
+},
+{
+"raw": "Duration Enable",
+"q": "\""
+},
+{
+"raw": "Duration Font Size",
+"q": "\""
+},
+{
+"raw": "Duration Reverse",
+"q": "\""
+},
+{
+"raw": "Duration Text",
+"q": "\""
+},
+{
+"raw": "Duration",
+"q": "\""
+},
+{
+"raw": "Editbox History Size",
+"q": "\""
+},
+{
+"raw": "ELVUI_CREDITS",
+"q": "\""
+},
+{
+"raw": "ENEMY_NPC",
+"q": "\""
+},
+{
+"raw": "ENEMY_PLAYER",
+"q": "\""
+},
+{
+"raw": "Elite Icon",
+"q": "\""
+},
+{
+"raw": "Emotion Icons",
+"q": "\""
+},
+{
+"raw": "Enable Custom Color",
+"q": "\""
+},
+{
+"raw": "Enable the use of separate size options for the right chat panel.",
+"q": "\""
+},
+{
+"raw": "Enable/Disable the Bag-Bar.",
+"q": "\""
+},
+{
+"raw": "Enable/Disable the all-in-one bag.",
+"q": "\""
+},
+{
+"raw": "Enable/Disable the loot frame.",
+"q": "\""
+},
+{
+"raw": "Enable/Disable the loot roll frame.",
+"q": "\""
+},
+{
+"raw": "Enable/Disable the minimap. |cffFF0000Warning: This will prevent you from seeing the consolidated buffs bar, and prevent you from seeing the minimap datatexts.|r",
+"q": "\""
+},
+{
+"raw": "Enable/Disable the scaling of targetted nameplates.",
+"q": "\""
+},
+{
+"raw": "Enables the ElvUI Raid Control panel.",
+"q": "\""
+},
+{
+"raw": "Enabling this allows raid-wide sorting however you will not be able to distinguish between groups.",
+"q": "\""
+},
+{
+"raw": "Enabling this inverts the grouping order when the raid is not full, this will reverse the direction it starts from.",
+"q": "\""
+},
+{
+"raw": "Enabling this will check your health amount.",
+"q": "\""
+},
+{
+"raw": "Enabling this will check your power amount.",
+"q": "\""
+},
+{
+"raw": "Enchanting",
+"q": "\""
+},
+{
+"raw": "Enemy Aura Type",
+"q": "\""
+},
+{
+"raw": "Enemy Combat Toggle",
+"q": "\""
+},
+{
+"raw": "Enemy NPC Frames",
+"q": "\""
+},
+{
+"raw": "Enemy Player Frames",
+"q": "\""
+},
+{
+"raw": "Enemy",
+"q": "\""
+},
+{
+"raw": "Engineering",
+"q": "\""
+},
+{
+"raw": "Enhanced PVP Messages",
+"q": "\""
+},
+{
+"raw": "Equipped Item Color",
+"q": "\""
+},
+{
+"raw": "Equipped Item",
+"q": "\""
+},
+{
+"raw": "Error decoding data. Import string may be corrupted!",
+"q": "\""
+},
+{
+"raw": "Error exporting profile!",
+"q": "\""
+},
+{
+"raw": "Exclude Name",
+"q": "\""
+},
+{
+"raw": "Excluded Names",
+"q": "\""
+},
+{
+"raw": "Excluded names will not be class colored.",
+"q": "\""
+},
+{
+"raw": "Expiring",
+"q": "\""
+},
+{
+"raw": "Export Profile",
+"q": "\""
+},
+{
+"raw": "Exported",
+"q": "\""
+},
+{
+"raw": "FRIENDLY_NPC",
+"q": "\""
+},
+{
+"raw": "FRIENDLY_PLAYER",
+"q": "\""
+},
+{
+"raw": "Fade Chat Toggles",
+"q": "\""
+},
+{
+"raw": "Fade Out Delay",
+"q": "\""
+},
+{
+"raw": "Fade Out",
+"q": "\""
+},
+{
+"raw": "Fade Tabs No Backdrop",
+"q": "\""
+},
+{
+"raw": "Fade the chat text when there is no activity.",
+"q": "\""
+},
+{
+"raw": "Fade Threshold",
+"q": "\""
+},
+{
+"raw": "Fade Undocked Tabs",
+"q": "\""
+},
+{
+"raw": "Fader",
+"q": "\""
+},
+{
+"raw": "Fades the buttons that toggle chat windows when that window has been toggled off.",
+"q": "\""
+},
+{
+"raw": "Fades the text on chat tabs that are docked in a panel where the backdrop is disabled.",
+"q": "\""
+},
+{
+"raw": "Fades the text on chat tabs that are not docked at the left or right chat panel.",
+"q": "\""
+},
+{
+"raw": "Fill",
+"q": "\""
+},
+{
+"raw": "Filled",
+"q": "\""
+},
+{
+"raw": "Filter Priority",
+"q": "\""
+},
+{
+"raw": "Filter Search",
+"q": "\""
+},
+{
+"raw": "Filter Type",
+"q": "\""
+},
+{
+"raw": "Filter already exists!",
+"q": "\""
+},
+{
+"raw": "Filters Page",
+"q": "\""
+},
+{
+"raw": "Filters are not allowed to have commas in their name. Stripping commas from filter name.",
+"q": "\""
+},
+{
+"raw": "Flash",
+"q": "\""
+},
+{
+"raw": "Fluid Position Buffs on Debuffs",
+"q": "\""
+},
+{
+"raw": "Fluid Position Debuffs on Buffs",
+"q": "\""
+},
+{
+"raw": "Flyout Direction",
+"q": "\""
+},
+{
+"raw": "Flyout Spacing",
+"q": "\""
+},
+{
+"raw": "Focus",
+"q": "\""
+},
+{
+"raw": "FocusTarget",
+"q": "\""
+},
+{
+"raw": "Font Outline",
+"q": "\""
+},
+{
+"raw": "Font",
+"q": "\""
+},
+{
+"raw": "Fonts",
+"q": "\""
+},
+{
+"raw": "Force Off",
+"q": "\""
+},
+{
+"raw": "Force On",
+"q": "\""
+},
+{
+"raw": "Force Reaction Color",
+"q": "\""
+},
+{
+"raw": "Force the frames to show, they will act as if they are the player frame.",
+"q": "\""
+},
+{
+"raw": "Forces Debuff Highlight to be disabled for these frames",
+"q": "\""
+},
+{
+"raw": "Forces Mouseover Glow to be disabled for these frames",
+"q": "\""
+},
+{
+"raw": "Forces Target Glow to be disabled for these frames",
+"q": "\""
+},
+{
+"raw": "Forces reaction color instead of class color on units controlled by players.",
+"q": "\""
+},
+{
+"raw": "Format",
+"q": "\""
+},
+{
+"raw": "Frame Glow",
+"q": "\""
+},
+{
+"raw": "Frame Level",
+"q": "\""
+},
+{
+"raw": "Frame Orientation",
+"q": "\""
+},
+{
+"raw": "Frame Strata",
+"q": "\""
+},
+{
+"raw": "Frequent Updates",
+"q": "\""
+},
+{
+"raw": "Friendly Aura Type",
+"q": "\""
+},
+{
+"raw": "Friendly Combat Toggle",
+"q": "\""
+},
+{
+"raw": "Friendly NPC Frames",
+"q": "\""
+},
+{
+"raw": "Friendly Player Frames",
+"q": "\""
+},
+{
+"raw": "Friendly",
+"q": "\""
+},
+{
+"raw": "Full Overlay",
+"q": "\""
+},
+{
+"raw": "Full",
+"q": "\""
+},
+{
+"raw": "GM Chat",
+"q": "\""
+},
+{
+"raw": "GPS Arrow",
+"q": "\""
+},
+{
+"raw": "Gems",
+"q": "\""
+},
+{
+"raw": "General Options",
+"q": "\""
+},
+{
+"raw": "Global (Account Settings)",
+"q": "\""
+},
+{
+"raw": "Global Fade Transparency",
+"q": "\""
+},
+{
+"raw": "Global",
+"q": "\""
+},
+{
+"raw": "Glow",
+"q": "\""
+},
+{
+"raw": "Gold Format",
+"q": "\""
+},
+{
+"raw": "Good Color",
+"q": "\""
+},
+{
+"raw": "Good Scale",
+"q": "\""
+},
+{
+"raw": "Good Transition Color",
+"q": "\""
+},
+{
+"raw": "Good",
+"q": "\""
+},
+{
+"raw": "Gossip Frame",
+"q": "\""
+},
+{
+"raw": "Group By",
+"q": "\""
+},
+{
+"raw": "Group Spacing",
+"q": "\""
+},
+{
+"raw": "Grouping & Sorting",
+"q": "\""
+},
+{
+"raw": "Groups Per Row/Column",
+"q": "\""
+},
+{
+"raw": "Growth Direction",
+"q": "\""
+},
+{
+"raw": "Growth X-Direction",
+"q": "\""
+},
+{
+"raw": "Growth Y-Direction",
+"q": "\""
+},
+{
+"raw": "Growth direction from the first unitframe.",
+"q": "\""
+},
+{
+"raw": "Guide:",
+"q": "\""
+},
+{
+"raw": "Guild Ranks",
+"q": "\""
+},
+{
+"raw": "Guild Registrar",
+"q": "\""
+},
+{
+"raw": "HH:MM Threshold",
+"q": "\""
+},
+{
+"raw": "HH:MM",
+"q": "\""
+},
+{
+"raw": "Header Font Size",
+"q": "\""
+},
+{
+"raw": "Heal Prediction",
+"q": "\""
+},
+{
+"raw": "Healer Icon",
+"q": "\""
+},
+{
+"raw": "Health Backdrop Multiplier",
+"q": "\""
+},
+{
+"raw": "Health Backdrop",
+"q": "\""
+},
+{
+"raw": "Health Bar",
+"q": "\""
+},
+{
+"raw": "Health Border",
+"q": "\""
+},
+{
+"raw": "Health By Value",
+"q": "\""
+},
+{
+"raw": "Health Color",
+"q": "\""
+},
+{
+"raw": "Health Length",
+"q": "\""
+},
+{
+"raw": "Health Threshold",
+"q": "\""
+},
+{
+"raw": "Health",
+"q": "\""
+},
+{
+"raw": "Height Multiplier",
+"q": "\""
+},
+{
+"raw": "Height of the objective tracker. Increase size to be able to see more objectives.",
+"q": "\""
+},
+{
+"raw": "Height",
+"q": "\""
+},
+{
+"raw": "Help Frame",
+"q": "\""
+},
+{
+"raw": "Herbalism",
+"q": "\""
+},
+{
+"raw": "Here you can add items or search terms that you want to be excluded from sorting. To remove an item just click on its name in the list.",
+"q": "\""
+},
+{
+"raw": "Hide At Max Level",
+"q": "\""
+},
+{
+"raw": "Hide Both",
+"q": "\""
+},
+{
+"raw": "Hide Error Text",
+"q": "\""
+},
+{
+"raw": "Hide Frame",
+"q": "\""
+},
+{
+"raw": "Hide In Combat",
+"q": "\""
+},
+{
+"raw": "Hide In Vehicle",
+"q": "\""
+},
+{
+"raw": "Hide Spell Name",
+"q": "\""
+},
+{
+"raw": "Hide Time",
+"q": "\""
+},
+{
+"raw": "Hide specific sections in the datatext tooltip.",
+"q": "\""
+},
+{
+"raw": "Hide tooltip while in combat.",
+"q": "\""
+},
+{
+"raw": "Hides the red error text at the top of the screen while in combat.",
+"q": "\""
+},
+{
+"raw": "History Size",
+"q": "\""
+},
+{
+"raw": "History",
+"q": "\""
+},
+{
+"raw": "Horizontal Spacing",
+"q": "\""
+},
+{
+"raw": "Horizontal",
+"q": "\""
+},
+{
+"raw": "Hours",
+"q": "\""
+},
+{
+"raw": "Hover Highlight",
+"q": "\""
+},
+{
+"raw": "Hover",
+"q": "\""
+},
+{
+"raw": "How long the cutaway health will take to fade out.",
+"q": "\""
+},
+{
+"raw": "How long the cutaway power will take to fade out.",
+"q": "\""
+},
+{
+"raw": "How many seconds the castbar should stay visible after the cast failed or was interrupted.",
+"q": "\""
+},
+{
+"raw": "How much time before the cutaway health starts to fade.",
+"q": "\""
+},
+{
+"raw": "How much time before the cutaway power starts to fade.",
+"q": "\""
+},
+{
+"raw": "Hyperlink Hover",
+"q": "\""
+},
+{
+"raw": "Icon Frame",
+"q": "\""
+},
+{
+"raw": "Icon Inside Castbar",
+"q": "\""
+},
+{
+"raw": "Icon Only",
+"q": "\""
+},
+{
+"raw": "Icon Position",
+"q": "\""
+},
+{
+"raw": "Icon Size",
+"q": "\""
+},
+{
+"raw": "Icon",
+"q": "\""
+},
+{
+"raw": "Icon: BOTTOM",
+"q": "\""
+},
+{
+"raw": "Icon: BOTTOMLEFT",
+"q": "\""
+},
+{
+"raw": "Icon: BOTTOMRIGHT",
+"q": "\""
+},
+{
+"raw": "Icon: LEFT",
+"q": "\""
+},
+{
+"raw": "Icon: RIGHT",
+"q": "\""
+},
+{
+"raw": "Icon: TOP",
+"q": "\""
+},
+{
+"raw": "Icon: TOPLEFT",
+"q": "\""
+},
+{
+"raw": "Icon: TOPRIGHT",
+"q": "\""
+},
+{
+"raw": "Icons and Text (Short)",
+"q": "\""
+},
+{
+"raw": "Icons and Text",
+"q": "\""
+},
+{
+"raw": "If enabled then it checks if auras are missing instead of being present on the unit.",
+"q": "\""
+},
+{
+"raw": "If enabled then it will require all auras to activate the filter. Otherwise it will only require any one of the auras to activate it.",
+"q": "\""
+},
+{
+"raw": "If enabled then it will require all cooldowns to activate the filter. Otherwise it will only require any one of the cooldowns to activate it.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will activate if the unit is casting anything.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will activate if the unit is channeling anything.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will activate if the unit is not casting anything.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will activate if the unit is not channeling anything.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate if the level of the unit is equal to or higher than this value.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate if the level of the unit is equal to or lower than this value.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate if the level of the unit matches this value.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate if the level of the unit matches your own.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate if the unit is casting interruptible spells.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate if the unit is casting not interruptible spells.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate if the unit is not casting or channeling one of the selected spells.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate when you are in combat.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate when you are not targeting the unit.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate when you are out of combat.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate when you are resting at an Inn.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate when you are targeting the unit.",
+"q": "\""
+},
+{
+"raw": "If enabled then the filter will only activate when you have a target.",
+"q": "\""
+},
+{
+"raw": "If not set to 0 then override the size of the aura icon to this.",
+"q": "\""
+},
+{
+"raw": "If the aura is listed with a number then you need to use that to remove it from the list.",
+"q": "\""
+},
+{
+"raw": "If this list is empty, and if 'Interruptible' is checked, then the filter will activate on any type of cast that can be interrupted.",
+"q": "\""
+},
+{
+"raw": "If this threshold is used then the health of the unit needs to be higher than this value in order for the filter to activate. Set to 0 to disable.",
+"q": "\""
+},
+{
+"raw": "If this threshold is used then the health of the unit needs to be lower than this value in order for the filter to activate. Set to 0 to disable.",
+"q": "\""
+},
+{
+"raw": "If this threshold is used then the power of the unit needs to be higher than this value in order for the filter to activate. Set to 0 to disable.",
+"q": "\""
+},
+{
+"raw": "If this threshold is used then the power of the unit needs to be lower than this value in order for the filter to activate. Set to 0 to disable.",
+"q": "\""
+},
+{
+"raw": "If you have a lot of 3D Portraits active then it will likely have a big impact on your FPS. Disable some portraits if you experience FPS issues.",
+"q": "\""
+},
+{
+"raw": "If you have any plugins supporting this feature installed you can find them in the selection dropdown to the right.",
+"q": "\""
+},
+{
+"raw": "If you unlock actionbars then trying to move a spell might instantly cast it if you cast spells on key press instead of key release.",
+"q": "\""
+},
+{
+"raw": "Ignore UI Scale Popup",
+"q": "\""
+},
+{
+"raw": "Ignore mouse events.",
+"q": "\""
+},
+{
+"raw": "Ignored Items and Search Syntax (Global)",
+"q": "\""
+},
+{
+"raw": "Ignored Items and Search Syntax (Profile)",
+"q": "\""
+},
+{
+"raw": "Import Profile",
+"q": "\""
+},
+{
+"raw": "Importing",
+"q": "\""
+},
+{
+"raw": "Inactivity Timer",
+"q": "\""
+},
+{
+"raw": "Index",
+"q": "\""
+},
+{
+"raw": "Indicate whether buffs you cast yourself should be separated before or after.",
+"q": "\""
+},
+{
+"raw": "InfoPanel Border",
+"q": "\""
+},
+{
+"raw": "Information Panel",
+"q": "\""
+},
+{
+"raw": "Inherit Global Fade",
+"q": "\""
+},
+{
+"raw": "Inherit the global fade, mousing over, targetting, setting focus, losing health, entering combat will set the remove transparency. Otherwise it will use the transparency level in the general actionbar settings for global fade alpha.",
+"q": "\""
+},
+{
+"raw": "Inset",
+"q": "\""
+},
+{
+"raw": "Inside Information Panel",
+"q": "\""
+},
+{
+"raw": "Install",
+"q": "\""
+},
+{
+"raw": "Instance Difficulty",
+"q": "\""
+},
+{
+"raw": "Instance Type",
+"q": "\""
+},
+{
+"raw": "Interruptable",
+"q": "\""
+},
+{
+"raw": "Interruptible",
+"q": "\""
+},
+{
+"raw": "Invert Colors",
+"q": "\""
+},
+{
+"raw": "Invert Grouping Order",
+"q": "\""
+},
+{
+"raw": "Invert foreground and background colors.",
+"q": "\""
+},
+{
+"raw": "Is Casting Anything",
+"q": "\""
+},
+{
+"raw": "Is Channeling Anything",
+"q": "\""
+},
+{
+"raw": "Is Targeted",
+"q": "\""
+},
+{
+"raw": "Item Count Font",
+"q": "\""
+},
+{
+"raw": "Item Count",
+"q": "\""
+},
+{
+"raw": "Item Level Threshold",
+"q": "\""
+},
+{
+"raw": "Item Level",
+"q": "\""
+},
+{
+"raw": "JustifyH",
+"q": "\""
+},
+{
+"raw": "Key Down",
+"q": "\""
+},
+{
+"raw": "Keybind Mode",
+"q": "\""
+},
+{
+"raw": "Keybind Text Position",
+"q": "\""
+},
+{
+"raw": "Keybind Text X-Offset",
+"q": "\""
+},
+{
+"raw": "Keybind Text Y-Offset",
+"q": "\""
+},
+{
+"raw": "Keybind Text",
+"q": "\""
+},
+{
+"raw": "Keyword Alert",
+"q": "\""
+},
+{
+"raw": "Keywords",
+"q": "\""
+},
+{
+"raw": "LBF Support",
+"q": "\""
+},
+{
+"raw": "LEVEL_BOSS",
+"q": "\""
+},
+{
+"raw": "LFD Frame",
+"q": "\""
+},
+{
+"raw": "LFG Queue",
+"q": "\""
+},
+{
+"raw": "LFR Frame",
+"q": "\""
+},
+{
+"raw": "Latency",
+"q": "\""
+},
+{
+"raw": "Leatherworking",
+"q": "\""
+},
+{
+"raw": "Left Only",
+"q": "\""
+},
+{
+"raw": "Left to Right",
+"q": "\""
+},
+{
+"raw": "Left",
+"q": "\""
+},
+{
+"raw": "Limit the number of rows or columns.",
+"q": "\""
+},
+{
+"raw": "List of words to color in chat if found in a message. If you wish to add multiple words you must seperate the word with a comma. To search for your current name you can use %MYNAME%.\\n\\nExample:\\n%MYNAME%, ElvUI, RBGs, Tank",
+"q": "\""
+},
+{
+"raw": "Location Text",
+"q": "\""
+},
+{
+"raw": "Lock Positions",
+"q": "\""
+},
+{
+"raw": "Log Taints",
+"q": "\""
+},
+{
+"raw": "Log the main chat frames history. So when you reloadui or log in and out you see the history from your last session.",
+"q": "\""
+},
+{
+"raw": "Login Message",
+"q": "\""
+},
+{
+"raw": "Loot Frames",
+"q": "\""
+},
+{
+"raw": "Loot Roll",
+"q": "\""
+},
+{
+"raw": "Losing Threat",
+"q": "\""
+},
+{
+"raw": "Low Health Threshold",
+"q": "\""
+},
+{
+"raw": "Low Threat",
+"q": "\""
+},
+{
+"raw": "Low Threshold",
+"q": "\""
+},
+{
+"raw": "Lower numbers mean a higher priority. Filters are processed in order from 1 to 100.",
+"q": "\""
+},
+{
+"raw": "MM:SS Threshold",
+"q": "\""
+},
+{
+"raw": "MM:SS",
+"q": "\""
+},
+{
+"raw": "Macro Text",
+"q": "\""
+},
+{
+"raw": "Magic Effect",
+"q": "\""
+},
+{
+"raw": "Main Tanks / Main Assist",
+"q": "\""
+},
+{
+"raw": "Main backdrop color of the UI.",
+"q": "\""
+},
+{
+"raw": "Main border color of the UI.",
+"q": "\""
+},
+{
+"raw": "Main statusbar texture.",
+"q": "\""
+},
+{
+"raw": "Make textures transparent.",
+"q": "\""
+},
+{
+"raw": "Make the unitframe glow yellow when it is below this percent of health, it will glow red when the health value is half of this value.",
+"q": "\""
+},
+{
+"raw": "Make the world map smaller.",
+"q": "\""
+},
+{
+"raw": "Map Opacity When Moving",
+"q": "\""
+},
+{
+"raw": "Max Lines",
+"q": "\""
+},
+{
+"raw": "Maps",
+"q": "\""
+},
+{
+"raw": "Match Frame Width",
+"q": "\""
+},
+{
+"raw": "Match Player Level",
+"q": "\""
+},
+{
+"raw": "Max Alpha",
+"q": "\""
+},
+{
+"raw": "Max Bars",
+"q": "\""
+},
+{
+"raw": "Max Overflow",
+"q": "\""
+},
+{
+"raw": "Max Wraps",
+"q": "\""
+},
+{
+"raw": "Max amount of overflow allowed to extend past the end of the health bar.",
+"q": "\""
+},
+{
+"raw": "Maximum Duration",
+"q": "\""
+},
+{
+"raw": "Maximum Level",
+"q": "\""
+},
+{
+"raw": "Maximum Time Left",
+"q": "\""
+},
+{
+"raw": "Media",
+"q": "\""
+},
+{
+"raw": "Method to sort by.",
+"q": "\""
+},
+{
+"raw": "Middle Click - Set Focus",
+"q": "\""
+},
+{
+"raw": "Middle clicking the unit frame will cause your focus to match the unit.",
+"q": "\""
+},
+{
+"raw": "Middle",
+"q": "\""
+},
+{
+"raw": "Min Alpha",
+"q": "\""
+},
+{
+"raw": "Minimap Mouseover",
+"q": "\""
+},
+{
+"raw": "Minimap Panels",
+"q": "\""
+},
+{
+"raw": "Minimum Duration",
+"q": "\""
+},
+{
+"raw": "Minimum Level",
+"q": "\""
+},
+{
+"raw": "Minimum Time Left",
+"q": "\""
+},
+{
+"raw": "Mining",
+"q": "\""
+},
+{
+"raw": "Minutes",
+"q": "\""
+},
+{
+"raw": "Mirror Timers",
+"q": "\""
+},
+{
+"raw": "Misc Frames",
+"q": "\""
+},
+{
+"raw": "Missing",
+"q": "\""
+},
+{
+"raw": "Modulating Blend",
+"q": "\""
+},
+{
+"raw": "Module Control",
+"q": "\""
+},
+{
+"raw": "Module Copy",
+"q": "\""
+},
+{
+"raw": "Module Reset",
+"q": "\""
+},
+{
+"raw": "Money Format",
+"q": "\""
+},
+{
+"raw": "Mouse Over",
+"q": "\""
+},
+{
+"raw": "Mouseover Glow",
+"q": "\""
+},
+{
+"raw": "Mouseover Highlight",
+"q": "\""
+},
+{
+"raw": "Mouseover",
+"q": "\""
+},
+{
+"raw": "Multi-Monitor Support",
+"q": "\""
+},
+{
+"raw": "Multiply the backdrops height or width by this value. This is usefull if you wish to have more than one bar behind a backdrop.",
+"q": "\""
+},
+{
+"raw": "NPC IDs",
+"q": "\""
+},
+{
+"raw": "Name Color",
+"q": "\""
+},
+{
+"raw": "Name Colored Glow",
+"q": "\""
+},
+{
+"raw": "Name Font",
+"q": "\""
+},
+{
+"raw": "Name Only",
+"q": "\""
+},
+{
+"raw": "Name",
+"q": "\""
+},
+{
+"raw": "NamePlate Style Filters",
+"q": "\""
+},
+{
+"raw": "NamePlates",
+"q": "\""
+},
+{
+"raw": "Nameplate",
+"q": "\""
+},
+{
+"raw": "Neutral",
+"q": "\""
+},
+{
+"raw": "Never Hide",
+"q": "\""
+},
+{
+"raw": "No Alert In Combat",
+"q": "\""
+},
+{
+"raw": "No Duration",
+"q": "\""
+},
+{
+"raw": "No Sorting",
+"q": "\""
+},
+{
+"raw": "Non-Interruptable",
+"q": "\""
+},
+{
+"raw": "Non-Target Alpha",
+"q": "\""
+},
+{
+"raw": "Not Casting Anything",
+"q": "\""
+},
+{
+"raw": "Not Channeling Anything",
+"q": "\""
+},
+{
+"raw": "Not Spell",
+"q": "\""
+},
+{
+"raw": "Not Targeted",
+"q": "\""
+},
+{
+"raw": "Not Usable",
+"q": "\""
+},
+{
+"raw": "Not valid spell id",
+"q": "\""
+},
+{
+"raw": "Num Rows",
+"q": "\""
+},
+{
+"raw": "Number of Groups",
+"q": "\""
+},
+{
+"raw": "Number of messages you scroll for each step.",
+"q": "\""
+},
+{
+"raw": "Number of repeat characters while in combat before the chat editbox is automatically closed. Set to 0 to disable.",
+"q": "\""
+},
+{
+"raw": "Number of time in seconds to scroll down to the bottom of the chat window if you are not scrolled down completely.",
+"q": "\""
+},
+{
+"raw": "Objective Frame Height",
+"q": "\""
+},
+{
+"raw": "Off Cooldown",
+"q": "\""
+},
+{
+"raw": "Offset of the powerbar to the healthbar, set to 0 to disable.",
+"q": "\""
+},
+{
+"raw": "Offset position for text.",
+"q": "\""
+},
+{
+"raw": "Offset",
+"q": "\""
+},
+{
+"raw": "On Cooldown",
+"q": "\""
+},
+{
+"raw": "Only Match SpellID",
+"q": "\""
+},
+{
+"raw": "Only show when the unit is not in range.",
+"q": "\""
+},
+{
+"raw": "Only show when you are mousing over a frame.",
+"q": "\""
+},
+{
+"raw": "Other Filter",
+"q": "\""
+},
+{
+"raw": "Other's First",
+"q": "\""
+},
+{
+"raw": "Others",
+"q": "\""
+},
+{
+"raw": "Out of Power",
+"q": "\""
+},
+{
+"raw": "Out of Range",
+"q": "\""
+},
+{
+"raw": "Over Health Threshold",
+"q": "\""
+},
+{
+"raw": "Over Power Threshold",
+"q": "\""
+},
+{
+"raw": "Overlay Alpha",
+"q": "\""
+},
+{
+"raw": "Overlay",
+"q": "\""
+},
+{
+"raw": "Overnuking",
+"q": "\""
+},
+{
+"raw": "Override any custom visibility setting in certain situations, EX: Only show groups 1 and 2 inside a 10 man instance.",
+"q": "\""
+},
+{
+"raw": "Override the default class color setting.",
+"q": "\""
+},
+{
+"raw": "Owners Name",
+"q": "\""
+},
+{
+"raw": "PVP Trinket",
+"q": "\""
+},
+{
+"raw": "Panel Backdrop",
+"q": "\""
+},
+{
+"raw": "Panel Height",
+"q": "\""
+},
+{
+"raw": "Panel Texture (Left)",
+"q": "\""
+},
+{
+"raw": "Panel Texture (Right)",
+"q": "\""
+},
+{
+"raw": "Panel Transparency",
+"q": "\""
+},
+{
+"raw": "Panel Width (Bags)",
+"q": "\""
+},
+{
+"raw": "Panel Width (Bank)",
+"q": "\""
+},
+{
+"raw": "Panel Width",
+"q": "\""
+},
+{
+"raw": "Panels",
+"q": "\""
+},
+{
+"raw": "Parent",
+"q": "\""
+},
+{
+"raw": "Party / Raid",
+"q": "\""
+},
+{
+"raw": "Party Only",
+"q": "\""
+},
+{
+"raw": "Party Pets",
+"q": "\""
+},
+{
+"raw": "Party Targets",
+"q": "\""
+},
+{
+"raw": "Per Row",
+"q": "\""
+},
+{
+"raw": "Percent",
+"q": "\""
+},
+{
+"raw": "Personal",
+"q": "\""
+},
+{
+"raw": "Pet Name",
+"q": "\""
+},
+{
+"raw": "Pet",
+"q": "\""
+},
+{
+"raw": "Pet Experience",
+"q": "\""
+},
+{
+"raw": "Pet Experience Bar",
+"q": "\""
+},
+{
+"raw": "PetTarget",
+"q": "\""
+},
+{
+"raw": "Petition Frame",
+"q": "\""
+},
+{
+"raw": "Pick Up Action Key",
+"q": "\""
+},
+{
+"raw": "Player Frame Aura Bars",
+"q": "\""
+},
+{
+"raw": "Player Health",
+"q": "\""
+},
+{
+"raw": "Player Out of Combat",
+"q": "\""
+},
+{
+"raw": "Player Target",
+"q": "\""
+},
+{
+"raw": "Player Titles",
+"q": "\""
+},
+{
+"raw": "Player in Combat",
+"q": "\""
+},
+{
+"raw": "Player is Resting",
+"q": "\""
+},
+{
+"raw": "Player",
+"q": "\""
+},
+{
+"raw": "Plugin",
+"q": "\""
+},
+{
+"raw": "Poison Effect",
+"q": "\""
+},
+{
+"raw": "Portrait",
+"q": "\""
+},
+{
+"raw": "Position Buffs on Debuffs",
+"q": "\""
+},
+{
+"raw": "Position Debuffs on Buffs",
+"q": "\""
+},
+{
+"raw": "Position of the Chat EditBox, if datatexts are disabled this will be forced to be above chat.",
+"q": "\""
+},
+{
+"raw": "Position",
+"q": "\""
+},
+{
+"raw": "Power Threshold",
+"q": "\""
+},
+{
+"raw": "Power text will be hidden on NPC targets, in addition the name text will be repositioned to the power texts anchor point.",
+"q": "\""
+},
+{
+"raw": "Power",
+"q": "\""
+},
+{
+"raw": "Powers",
+"q": "\""
+},
+{
+"raw": "Prevent the same messages from displaying in chat more than once within this set amount of seconds, set to zero to disable.",
+"q": "\""
+},
+{
+"raw": "Primary Texture",
+"q": "\""
+},
+{
+"raw": "Priority",
+"q": "\""
+},
+{
+"raw": "Private (Character Settings)",
+"q": "\""
+},
+{
+"raw": "Profession Bags",
+"q": "\""
+},
+{
+"raw": "Profile Name",
+"q": "\""
+},
+{
+"raw": "Profile Specific",
+"q": "\""
+},
+{
+"raw": "Profile imported successfully!",
+"q": "\""
+},
+{
+"raw": "Profile",
+"q": "\""
+},
+{
+"raw": "Progress Bar",
+"q": "\""
+},
+{
+"raw": "Puts coordinates on the world map.",
+"q": "\""
+},
+{
+"raw": "PvP Frames",
+"q": "\""
+},
+{
+"raw": "PvP Icon",
+"q": "\""
+},
+{
+"raw": "PvP Queue",
+"q": "\""
+},
+{
+"raw": "PvP Text",
+"q": "\""
+},
+{
+"raw": "Quest Frames",
+"q": "\""
+},
+{
+"raw": "Quest Starter",
+"q": "\""
+},
+{
+"raw": "Quiver",
+"q": "\""
+},
+{
+"raw": "RAID_CONTROL",
+"q": "\""
+},
+{
+"raw": "RL / ML Icons",
+"q": "\""
+},
+{
+"raw": "Raid Difficulty",
+"q": "\""
+},
+{
+"raw": "Raid Frame",
+"q": "\""
+},
+{
+"raw": "Raid Icon",
+"q": "\""
+},
+{
+"raw": "Raid Only",
+"q": "\""
+},
+{
+"raw": "Raid Pet",
+"q": "\""
+},
+{
+"raw": "Raid-40",
+"q": "\""
+},
+{
+"raw": "Raid-Wide Sorting",
+"q": "\""
+},
+{
+"raw": "RaidDebuff Indicator",
+"q": "\""
+},
+{
+"raw": "Range",
+"q": "\""
+},
+{
+"raw": "Rapidly update the health, uses more memory and cpu. Only recommended for healing.",
+"q": "\""
+},
+{
+"raw": "Reaction Castbars",
+"q": "\""
+},
+{
+"raw": "Reaction Colors",
+"q": "\""
+},
+{
+"raw": "Reaction Type",
+"q": "\""
+},
+{
+"raw": "Reactions",
+"q": "\""
+},
+{
+"raw": "Ready Check Icon",
+"q": "\""
+},
+{
+"raw": "Realm Time",
+"q": "\""
+},
+{
+"raw": "Remaining / Max",
+"q": "\""
+},
+{
+"raw": "Remaining Time",
+"q": "\""
+},
+{
+"raw": "Remaining",
+"q": "\""
+},
+{
+"raw": "Reminder",
+"q": "\""
+},
+{
+"raw": "Remove Backdrop",
+"q": "\""
+},
+{
+"raw": "Remove Name",
+"q": "\""
+},
+{
+"raw": "Remove Spell ID or Name",
+"q": "\""
+},
+{
+"raw": "Remove Spell",
+"q": "\""
+},
+{
+"raw": "Remove SpellID",
+"q": "\""
+},
+{
+"raw": "Remove a Name from the list.",
+"q": "\""
+},
+{
+"raw": "Remove a spell from the filter. Use the spell ID if you see the ID as part of the spell name in the filter.",
+"q": "\""
+},
+{
+"raw": "Remove a spell from the filter.",
+"q": "\""
+},
+{
+"raw": "Replace Blizzard Fonts",
+"q": "\""
+},
+{
+"raw": "Replaces the default Blizzard fonts on various panels and frames with the fonts chosen in the Media section of the ElvUI Options. NOTE: Any font that inherits from the fonts ElvUI usually replaces will be affected as well if you disable this. Enabled by default.",
+"q": "\""
+},
+{
+"raw": "Reposition Window",
+"q": "\""
+},
+{
+"raw": "Require All",
+"q": "\""
+},
+{
+"raw": "Require Target",
+"q": "\""
+},
+{
+"raw": "Require holding the Alt key down to move cursor or cycle through messages in the editbox.",
+"q": "\""
+},
+{
+"raw": "Reset Anchors",
+"q": "\""
+},
+{
+"raw": "Reset Aura Filters",
+"q": "\""
+},
+{
+"raw": "Reset Editbox History",
+"q": "\""
+},
+{
+"raw": "Reset Filter",
+"q": "\""
+},
+{
+"raw": "Reset History",
+"q": "\""
+},
+{
+"raw": "Reset Priority",
+"q": "\""
+},
+{
+"raw": "Reset Zoom",
+"q": "\""
+},
+{
+"raw": "Reset all frames to their original positions.",
+"q": "\""
+},
+{
+"raw": "Reset filter priority to the default state.",
+"q": "\""
+},
+{
+"raw": "Reset the size and position of this frame.",
+"q": "\""
+},
+{
+"raw": "Rest Icon",
+"q": "\""
+},
+{
+"raw": "Restore Bar",
+"q": "\""
+},
+{
+"raw": "Restore Defaults",
+"q": "\""
+},
+{
+"raw": "Restore the actionbars default settings",
+"q": "\""
+},
+{
+"raw": "Resurrect Icon",
+"q": "\""
+},
+{
+"raw": "Return filter to its default state.",
+"q": "\""
+},
+{
+"raw": "Reverse Bag Slots",
+"q": "\""
+},
+{
+"raw": "Reverse Cooldown",
+"q": "\""
+},
+{
+"raw": "Reverse Style",
+"q": "\""
+},
+{
+"raw": "Reverse Toggle will enable Cooldown Text on this module when the global setting is disabled and disable them when the global setting is enabled.",
+"q": "\""
+},
+{
+"raw": "Reverse Toggle",
+"q": "\""
+},
+{
+"raw": "Right Only",
+"q": "\""
+},
+{
+"raw": "Right Panel Height",
+"q": "\""
+},
+{
+"raw": "Right Panel Width",
+"q": "\""
+},
+{
+"raw": "Right to Left",
+"q": "\""
+},
+{
+"raw": "Right",
+"q": "\""
+},
+{
+"raw": "RightClick Self-Cast",
+"q": "\""
+},
+{
+"raw": "Role Icon",
+"q": "\""
+},
+{
+"raw": "Run the installation process.",
+"q": "\""
+},
+{
+"raw": "Sanctuary",
+"q": "\""
+},
+{
+"raw": "Scale of the nameplate that is targetted.",
+"q": "\""
+},
+{
+"raw": "Scale",
+"q": "\""
+},
+{
+"raw": "Scroll Interval",
+"q": "\""
+},
+{
+"raw": "Scroll Messages",
+"q": "\""
+},
+{
+"raw": "Search Syntax",
+"q": "\""
+},
+{
+"raw": "Search for a spell name inside of a filter.",
+"q": "\""
+},
+{
+"raw": "Secondary Texture",
+"q": "\""
+},
+{
+"raw": "Seconds remaining on the aura duration before the bar starts moving. Set to 0 to disable.",
+"q": "\""
+},
+{
+"raw": "Seconds",
+"q": "\""
+},
+{
+"raw": "Selected Text Color",
+"q": "\""
+},
+{
+"raw": "Selector Color",
+"q": "\""
+},
+{
+"raw": "Selector Style",
+"q": "\""
+},
+{
+"raw": "Securely Tanking",
+"q": "\""
+},
+{
+"raw": "Select Filter",
+"q": "\""
+},
+{
+"raw": "Select Spell",
+"q": "\""
+},
+{
+"raw": "Select a profile to copy from/to.",
+"q": "\""
+},
+{
+"raw": "Select a unit to copy settings from.",
+"q": "\""
+},
+{
+"raw": "Select the display method of the portrait.",
+"q": "\""
+},
+{
+"raw": "Sell Interval",
+"q": "\""
+},
+{
+"raw": "Send ADDON_ACTION_BLOCKED errors to the Lua Error frame. These errors are less important in most cases and will not effect your game performance. Also a lot of these errors cannot be fixed. Please only report these errors if you notice a Defect in gameplay.",
+"q": "\""
+},
+{
+"raw": "Sends your current profile to your target.",
+"q": "\""
+},
+{
+"raw": "Sends your filter settings to your target.",
+"q": "\""
+},
+{
+"raw": "Separate Panel Sizes",
+"q": "\""
+},
+{
+"raw": "Seperate",
+"q": "\""
+},
+{
+"raw": "Set Settings to Default",
+"q": "\""
+},
+{
+"raw": "Set the alpha level of portrait when frame is overlayed.",
+"q": "\""
+},
+{
+"raw": "Set the filter type. Blacklist will hide any auras in the list and show all others. Whitelist will show any auras in the filter and hide all others.",
+"q": "\""
+},
+{
+"raw": "Set the font outline.",
+"q": "\""
+},
+{
+"raw": "Set the font size for everything in UI. Note: This doesn't effect somethings that have their own seperate options (UnitFrame Font, Datatext Font, ect..)",
+"q": "\""
+},
+{
+"raw": "Set the font size for unitframes.",
+"q": "\""
+},
+{
+"raw": "Set the order that the group will sort.",
+"q": "\""
+},
+{
+"raw": "Set the orientation of the UnitFrame.",
+"q": "\""
+},
+{
+"raw": "Set the priority order of the spell, please note that prioritys are only used for the raid debuff module, not the standard buff/debuff module. If you want to disable set to zero.",
+"q": "\""
+},
+{
+"raw": "Set the size of the individual auras.",
+"q": "\""
+},
+{
+"raw": "Set the size of your bag buttons.",
+"q": "\""
+},
+{
+"raw": "Set the type of auras to show when a unit is a foe.",
+"q": "\""
+},
+{
+"raw": "Set the type of auras to show when a unit is friendly.",
+"q": "\""
+},
+{
+"raw": "Set to either stack nameplates vertically or allow them to overlap.",
+"q": "\""
+},
+{
+"raw": "Sets the font instance's horizontal text alignment style.",
+"q": "\""
+},
+{
+"raw": "Share Current Profile",
+"q": "\""
+},
+{
+"raw": "Share Filters",
+"q": "\""
+},
+{
+"raw": "Short (Whole Numbers)",
+"q": "\""
+},
+{
+"raw": "Short Channels",
+"q": "\""
+},
+{
+"raw": "Shortcut to 'Filters' section of the config.",
+"q": "\""
+},
+{
+"raw": "Shortcut to global filters.",
+"q": "\""
+},
+{
+"raw": "Shortcuts",
+"q": "\""
+},
+{
+"raw": "Shorten the channel names in chat.",
+"q": "\""
+},
+{
+"raw": "Should tooltip be anchored to mouse cursor",
+"q": "\""
+},
+{
+"raw": "Show Aura From Other Players",
+"q": "\""
+},
+{
+"raw": "Show Auras",
+"q": "\""
+},
+{
+"raw": "Show Bind on Equip/Use Text",
+"q": "\""
+},
+{
+"raw": "Show Both",
+"q": "\""
+},
+{
+"raw": "Show Coins",
+"q": "\""
+},
+{
+"raw": "Show Dispellable Debuffs",
+"q": "\""
+},
+{
+"raw": "Show Empty Buttons",
+"q": "\""
+},
+{
+"raw": "Show For DPS",
+"q": "\""
+},
+{
+"raw": "Show For Healers",
+"q": "\""
+},
+{
+"raw": "Show For Tanks",
+"q": "\""
+},
+{
+"raw": "Show Icon",
+"q": "\""
+},
+{
+"raw": "Show Junk Icon",
+"q": "\""
+},
+{
+"raw": "Show Quality Color",
+"q": "\""
+},
+{
+"raw": "Show Quest Icon",
+"q": "\""
+},
+{
+"raw": "Show When Not Active",
+"q": "\""
+},
+{
+"raw": "Show an incoming heal prediction bar on the unitframe. Also display a slightly different colored bar for incoming overheals.",
+"q": "\""
+},
+{
+"raw": "Show the castbar icon desaturated if a spell is not interruptible.",
+"q": "\""
+},
+{
+"raw": "Show/Hide Test Frame",
+"q": "\""
+},
+{
+"raw": "Side Arrows",
+"q": "\""
+},
+{
+"raw": "Size Override",
+"q": "\""
+},
+{
+"raw": "Size and Positions",
+"q": "\""
+},
+{
+"raw": "Size of the indicator icon.",
+"q": "\""
+},
+{
+"raw": "Size",
+"q": "\""
+},
+{
+"raw": "Skin Backdrop (No Borders)",
+"q": "\""
+},
+{
+"raw": "Skin Backdrop",
+"q": "\""
+},
+{
+"raw": "Skin the blizzard chat bubbles.",
+"q": "\""
+},
+{
+"raw": "Skins",
+"q": "\""
+},
+{
+"raw": "Small Panels",
+"q": "\""
+},
+{
+"raw": "Smaller World Map",
+"q": "\""
+},
+{
+"raw": "Smart Aura Position",
+"q": "\""
+},
+{
+"raw": "Smart Raid Filter",
+"q": "\""
+},
+{
+"raw": "Smart",
+"q": "\""
+},
+{
+"raw": "Smooth Bars",
+"q": "\""
+},
+{
+"raw": "Smooth",
+"q": "\""
+},
+{
+"raw": "Smoothing Amount",
+"q": "\""
+},
+{
+"raw": "Socket Frame",
+"q": "\""
+},
+{
+"raw": "Sort By",
+"q": "\""
+},
+{
+"raw": "Sort Direction",
+"q": "\""
+},
+{
+"raw": "Sort Inverted",
+"q": "\""
+},
+{
+"raw": "Sort Method",
+"q": "\""
+},
+{
+"raw": "Soul Bag",
+"q": "\""
+},
+{
+"raw": "Spaced",
+"q": "\""
+},
+{
+"raw": "Spacing",
+"q": "\""
+},
+{
+"raw": "Spam Interval",
+"q": "\""
+},
+{
+"raw": "Spark",
+"q": "\""
+},
+{
+"raw": "Spell/Item IDs",
+"q": "\""
+},
+{
+"raw": "Split",
+"q": "\""
+},
+{
+"raw": "Stable",
+"q": "\""
+},
+{
+"raw": "Stack Counter",
+"q": "\""
+},
+{
+"raw": "Stack Text Position",
+"q": "\""
+},
+{
+"raw": "Stack Text X-Offset",
+"q": "\""
+},
+{
+"raw": "Stack Text Y-Offset",
+"q": "\""
+},
+{
+"raw": "Stack Threshold",
+"q": "\""
+},
+{
+"raw": "Start Near Center",
+"q": "\""
+},
+{
+"raw": "StatusBar Texture",
+"q": "\""
+},
+{
+"raw": "Statusbar Fill Orientation",
+"q": "\""
+},
+{
+"raw": "Statusbar",
+"q": "\""
+},
+{
+"raw": "Sticky Chat",
+"q": "\""
+},
+{
+"raw": "Strata and Level",
+"q": "\""
+},
+{
+"raw": "Style Filter",
+"q": "\""
+},
+{
+"raw": "Style",
+"q": "\""
+},
+{
+"raw": "Tab Font Outline",
+"q": "\""
+},
+{
+"raw": "Tab Font Size",
+"q": "\""
+},
+{
+"raw": "Tab Font",
+"q": "\""
+},
+{
+"raw": "Tab Panel Transparency",
+"q": "\""
+},
+{
+"raw": "Tab Panel",
+"q": "\""
+},
+{
+"raw": "Tab Selector",
+"q": "\""
+},
+{
+"raw": "Tabard Frame",
+"q": "\""
+},
+{
+"raw": "Table",
+"q": "\""
+},
+{
+"raw": "Tank Target",
+"q": "\""
+},
+{
+"raw": "Tank",
+"q": "\""
+},
+{
+"raw": "Tapped",
+"q": "\""
+},
+{
+"raw": "Target Indicator Color",
+"q": "\""
+},
+{
+"raw": "Target Info",
+"q": "\""
+},
+{
+"raw": "Target On Mouse-Down",
+"q": "\""
+},
+{
+"raw": "Target Scale",
+"q": "\""
+},
+{
+"raw": "Target units on mouse down rather than mouse up. \\n\\n|cffFF0000Warning: If you are using the addon 'Clique' you may have to adjust your clique settings when changing this.",
+"q": "\""
+},
+{
+"raw": "Target/Low Health Indicator",
+"q": "\""
+},
+{
+"raw": "TargetTarget",
+"q": "\""
+},
+{
+"raw": "TargetTargetTarget",
+"q": "\""
+},
+{
+"raw": "Targeted Glow",
+"q": "\""
+},
+{
+"raw": "Targeting",
+"q": "\""
+},
+{
+"raw": "Testing:",
+"q": "\""
+},
+{
+"raw": "Text Fade",
+"q": "\""
+},
+{
+"raw": "Text Color",
+"q": "\""
+},
+{
+"raw": "Text Font Size",
+"q": "\""
+},
+{
+"raw": "Text Format",
+"q": "\""
+},
+{
+"raw": "Text Position",
+"q": "\""
+},
+{
+"raw": "Text Threshold",
+"q": "\""
+},
+{
+"raw": "Text Toggle On NPC",
+"q": "\""
+},
+{
+"raw": "Text xOffset",
+"q": "\""
+},
+{
+"raw": "Text yOffset",
+"q": "\""
+},
+{
+"raw": "Text",
+"q": "\""
+},
+{
+"raw": "Texture",
+"q": "\""
+},
+{
+"raw": "Textured Icon",
+"q": "\""
+},
+{
+"raw": "Textures",
+"q": "\""
+},
+{
+"raw": "The Portrait will overlay the Healthbar. This will be automatically happen if the Frame Orientation is set to Middle.",
+"q": "\""
+},
+{
+"raw": "The Thin Border Theme option will change the overall apperance of your UI. Using Thin Border Theme is a slight performance increase over the traditional layout.",
+"q": "\""
+},
+{
+"raw": "The amount of buttons to display per row.",
+"q": "\""
+},
+{
+"raw": "The amount of buttons to display.",
+"q": "\""
+},
+{
+"raw": "The button you must hold down in order to drag an ability to another action button.",
+"q": "\""
+},
+{
+"raw": "The debuff needs to reach this amount of stacks before it is shown. Set to 0 to always show the debuff.",
+"q": "\""
+},
+{
+"raw": "The direction that the bag frames be (Horizontal or Vertical).",
+"q": "\""
+},
+{
+"raw": "The direction that the bag frames will grow from the anchor.",
+"q": "\""
+},
+{
+"raw": "The direction the auras will grow and then the direction they will grow after they reach the wrap after limit.",
+"q": "\""
+},
+{
+"raw": "The display format of the currency icons that get displayed below the main bag. (You have to be watching a currency for this to display)",
+"q": "\""
+},
+{
+"raw": "The display format of the money text that is shown at the top of the main bag.",
+"q": "\""
+},
+{
+"raw": "The display format of the money text that is shown in the gold datatext and its tooltip.",
+"q": "\""
+},
+{
+"raw": "The first button anchors itself to this point on the bar.",
+"q": "\""
+},
+{
+"raw": "The following macro must be true in order for the group to be shown, in addition to any filter that may already be set.",
+"q": "\""
+},
+{
+"raw": "The font that appears on the text above players heads. |cffFF0000WARNING: This requires a game restart or re-log for this change to take effect.|r",
+"q": "\""
+},
+{
+"raw": "The font that combat text will use. |cffFF0000WARNING: This requires a game restart or re-log for this change to take effect.|r",
+"q": "\""
+},
+{
+"raw": "The font that the core of the UI will use.",
+"q": "\""
+},
+{
+"raw": "The font that the unitframes will use.",
+"q": "\""
+},
+{
+"raw": "The frame is not shown unless you mouse over the frame.",
+"q": "\""
+},
+{
+"raw": "The initial group will start near the center and grow out.",
+"q": "\""
+},
+{
+"raw": "The minimum item level required for it to be shown.",
+"q": "\""
+},
+{
+"raw": "The name you have selected is already in use by another element.",
+"q": "\""
+},
+{
+"raw": "The object you want to attach to.",
+"q": "\""
+},
+{
+"raw": "The size of the action buttons.",
+"q": "\""
+},
+{
+"raw": "The size of the individual buttons on the bag frame.",
+"q": "\""
+},
+{
+"raw": "The size of the individual buttons on the bank frame.",
+"q": "\""
+},
+{
+"raw": "The spacing between buttons.",
+"q": "\""
+},
+{
+"raw": "The spacing between the backdrop and the buttons.",
+"q": "\""
+},
+{
+"raw": "The texture that will be used mainly for statusbars.",
+"q": "\""
+},
+{
+"raw": "The unit prefixes you want to use when values are shortened in ElvUI. This is mostly used on UnitFrames.",
+"q": "\""
+},
+{
+"raw": "These filters don't use a list of spells like the regular filters. Instead they use the WoW API and some code logic to determine if an aura should be allowed or blocked.",
+"q": "\""
+},
+{
+"raw": "These filters use a list of spells to determine if an aura should be allowed or blocked. The content of these filters can be modified in the 'Filters' section of the config.",
+"q": "\""
+},
+{
+"raw": "Thin Border Theme",
+"q": "\""
+},
+{
+"raw": "Thin Borders",
+"q": "\""
+},
+{
+"raw": "This dictates the size of the icon when it is not attached to the castbar.",
+"q": "\""
+},
+{
+"raw": "This feature will allow you to transfer settings to other characters.",
+"q": "\""
+},
+{
+"raw": "This is for Customized Icons in your Interface/Icons folder.",
+"q": "\""
+},
+{
+"raw": "This opens the UnitFrames Color settings. These settings affect all unitframes.",
+"q": "\""
+},
+{
+"raw": "This option allows the overlay to span the whole health, including the background.",
+"q": "\""
+},
+{
+"raw": "This section will allow you to copy settings to a select module from or to a different profile.",
+"q": "\""
+},
+{
+"raw": "This section will help reset specfic settings back to default.",
+"q": "\""
+},
+{
+"raw": "This selects the Chat Frame to use as the output of ElvUI messages.",
+"q": "\""
+},
+{
+"raw": "This setting controls the size of text in item comparison tooltips.",
+"q": "\""
+},
+{
+"raw": "This setting will be updated upon changing stances.",
+"q": "\""
+},
+{
+"raw": "This texture will get used on objects like chat windows and dropdown menus.",
+"q": "\""
+},
+{
+"raw": "This will override the global cooldown settings.",
+"q": "\""
+},
+{
+"raw": "This will prevent the UI Scale Popup from being shown when changing the game window size.",
+"q": "\""
+},
+{
+"raw": "This will reset the contents of this filter back to default. Any spell you have added to this filter will be removed.",
+"q": "\""
+},
+{
+"raw": "Threat Display Mode",
+"q": "\""
+},
+{
+"raw": "Threat Health",
+"q": "\""
+},
+{
+"raw": "Threat Power",
+"q": "\""
+},
+{
+"raw": "Threat",
+"q": "\""
+},
+{
+"raw": "Threshold (in minutes) before text is shown in the HH:MM format. Set to -1 to never change to this format.",
+"q": "\""
+},
+{
+"raw": "Threshold (in seconds) before text is shown in the MM:SS format. Set to -1 to never change to this format.",
+"q": "\""
+},
+{
+"raw": "Threshold before text goes into decimal form. Set to -1 to disable decimals.",
+"q": "\""
+},
+{
+"raw": "Threshold before text turns red and is in decimal form. Set to -1 for it to never turn red",
+"q": "\""
+},
+{
+"raw": "Threshold before the icon will fade out and back in. Set to -1 to disable.",
+"q": "\""
+},
+{
+"raw": "Ticks",
+"q": "\""
+},
+{
+"raw": "Time Format",
+"q": "\""
+},
+{
+"raw": "Time Indicator Colors",
+"q": "\""
+},
+{
+"raw": "Time Remaining Reverse",
+"q": "\""
+},
+{
+"raw": "Time Remaining",
+"q": "\""
+},
+{
+"raw": "Time To Hold",
+"q": "\""
+},
+{
+"raw": "Time xOffset",
+"q": "\""
+},
+{
+"raw": "Time yOffset",
+"q": "\""
+},
+{
+"raw": "Time",
+"q": "\""
+},
+{
+"raw": "Timestamp Color",
+"q": "\""
+},
+{
+"raw": "Toggle Anchors",
+"q": "\""
+},
+{
+"raw": "Toggle Off While In Combat",
+"q": "\""
+},
+{
+"raw": "Toggle On While In Combat",
+"q": "\""
+},
+{
+"raw": "Toggle Tutorials",
+"q": "\""
+},
+{
+"raw": "Toggle showing of the left and right chat panels.",
+"q": "\""
+},
+{
+"raw": "Toggle the chat tab panel backdrop.",
+"q": "\""
+},
+{
+"raw": "Toggles the display of the actionbars backdrop.",
+"q": "\""
+},
+{
+"raw": "Tooltip Font Settings",
+"q": "\""
+},
+{
+"raw": "Top Arrow",
+"q": "\""
+},
+{
+"raw": "Top Left",
+"q": "\""
+},
+{
+"raw": "Top Panel",
+"q": "\""
+},
+{
+"raw": "Top Right",
+"q": "\""
+},
+{
+"raw": "Top to Bottom",
+"q": "\""
+},
+{
+"raw": "Top",
+"q": "\""
+},
+{
+"raw": "TopLeftMiniPanel",
+"q": "\""
+},
+{
+"raw": "TopMiniPanel",
+"q": "\""
+},
+{
+"raw": "TopRightMiniPanel",
+"q": "\""
+},
+{
+"raw": "Totem",
+"q": "\""
+},
+{
+"raw": "Trainer Frame",
+"q": "\""
+},
+{
+"raw": "Transparency level when not in combat, no target exists, full health, not casting, and no focus target exists.",
+"q": "\""
+},
+{
+"raw": "Transparent Backdrops",
+"q": "\""
+},
+{
+"raw": "Transparent Buttons",
+"q": "\""
+},
+{
+"raw": "Transparent",
+"q": "\""
+},
+{
+"raw": "Triggers",
+"q": "\""
+},
+{
+"raw": "Turtle Color",
+"q": "\""
+},
+{
+"raw": "Tutorial Frame",
+"q": "\""
+},
+{
+"raw": "URL Links",
+"q": "\""
+},
+{
+"raw": "Under Health Threshold",
+"q": "\""
+},
+{
+"raw": "Under Power Threshold",
+"q": "\""
+},
+{
+"raw": "Uniform Threshold",
+"q": "\""
+},
+{
+"raw": "Unique Units",
+"q": "\""
+},
+{
+"raw": "Unit Conditions",
+"q": "\""
+},
+{
+"raw": "Unit Prefix Style",
+"q": "\""
+},
+{
+"raw": "Unit Target",
+"q": "\""
+},
+{
+"raw": "Unit Type",
+"q": "\""
+},
+{
+"raw": "UnitFrames",
+"q": "\""
+},
+{
+"raw": "Unlock various elements of the UI to be repositioned.",
+"q": "\""
+},
+{
+"raw": "Up",
+"q": "\""
+},
+{
+"raw": "Usable",
+"q": "\""
+},
+{
+"raw": "Use Alt Key",
+"q": "\""
+},
+{
+"raw": "Use Class Color",
+"q": "\""
+},
+{
+"raw": "Use Custom Level",
+"q": "\""
+},
+{
+"raw": "Use Custom Strata",
+"q": "\""
+},
+{
+"raw": "Use Dead Backdrop",
+"q": "\""
+},
+{
+"raw": "Use Default",
+"q": "\""
+},
+{
+"raw": "Use Indicator Color",
+"q": "\""
+},
+{
+"raw": "Use Shift+LeftClick to toggle between friendly or enemy or normal state. Normal state will allow the filter to be checked on all units. Friendly state is for friendly units only and enemy state is for enemy units.",
+"q": "\""
+},
+{
+"raw": "Use Target Scale",
+"q": "\""
+},
+{
+"raw": "Use Threat Color",
+"q": "\""
+},
+{
+"raw": "Use class color for the names of players when they are mentioned.",
+"q": "\""
+},
+{
+"raw": "Use coin icons instead of colored text.",
+"q": "\""
+},
+{
+"raw": "Use drag and drop to rearrange filter priority or right click to remove a filter.",
+"q": "\""
+},
+{
+"raw": "Use the Name Color of the unit for the Name Glow.",
+"q": "\""
+},
+{
+"raw": "Use the custom backdrop color instead of a multiple of the main color.",
+"q": "\""
+},
+{
+"raw": "Use the profile specific filter 'Buff Indicator (Profile)' instead of the global filter 'Buff Indicator'.",
+"q": "\""
+},
+{
+"raw": "Use thin borders on certain unitframe elements.",
+"q": "\""
+},
+{
+"raw": "Use this backdrop color for units that are dead or ghosts.",
+"q": "\""
+},
+{
+"raw": "Used as RaidDebuff Indicator",
+"q": "\""
+},
+{
+"raw": "Value Color",
+"q": "\""
+},
+{
+"raw": "Value must be a number",
+"q": "\""
+},
+{
+"raw": "Vehicle Seat Indicator Size",
+"q": "\""
+},
+{
+"raw": "Vehicle",
+"q": "\""
+},
+{
+"raw": "Vendor Gray Detailed Report",
+"q": "\""
+},
+{
+"raw": "Vendor Grays",
+"q": "\""
+},
+{
+"raw": "Version",
+"q": "\""
+},
+{
+"raw": "Vertical Fill Direction",
+"q": "\""
+},
+{
+"raw": "Vertical Spacing",
+"q": "\""
+},
+{
+"raw": "Vertical",
+"q": "\""
+},
+{
+"raw": "Visibility State",
+"q": "\""
+},
+{
+"raw": "Visibility",
+"q": "\""
+},
+{
+"raw": "Watch Frame",
+"q": "\""
+},
+{
+"raw": "What point to anchor to the frame you set to attach to.",
+"q": "\""
+},
+{
+"raw": "What to attach the buff anchor frame to.",
+"q": "\""
+},
+{
+"raw": "What to attach the debuff anchor frame to.",
+"q": "\""
+},
+{
+"raw": "When enabled active buff icons will light up instead of becoming darker, while inactive buff icons will become darker instead of being lit up.",
+"q": "\""
+},
+{
+"raw": "When enabled it will only show spells that were added to the filter using a spell ID and not a name.",
+"q": "\""
+},
+{
+"raw": "When in a raid group display if anyone in your raid is targeting the current tooltip unit.",
+"q": "\""
+},
+{
+"raw": "When inside a battleground display personal scoreboard information on the main datatext bars.",
+"q": "\""
+},
+{
+"raw": "When opening the Chat Editbox to type a message having this option set means it will retain the last channel you spoke in. If this option is turned off opening the Chat Editbox should always default to the SAY channel.",
+"q": "\""
+},
+{
+"raw": "When true, the header includes the player when not in a raid.",
+"q": "\""
+},
+{
+"raw": "When you go AFK display the AFK screen.",
+"q": "\""
+},
+{
+"raw": "Whitelist",
+"q": "\""
+},
+{
+"raw": "Width Multiplier",
+"q": "\""
+},
+{
+"raw": "Width",
+"q": "\""
+},
+{
+"raw": "Will attempt to sell another item in set interval after previous one was sold.",
+"q": "\""
+},
+{
+"raw": "Will show Buffs in the Debuff position when there are no Debuffs active, or vice versa.",
+"q": "\""
+},
+{
+"raw": "Word Wrap",
+"q": "\""
+},
+{
+"raw": "World Map Coordinates",
+"q": "\""
+},
+{
+"raw": "World State Frame",
+"q": "\""
+},
+{
+"raw": "Wrap After",
+"q": "\""
+},
+{
+"raw": "X-Offset",
+"q": "\""
+},
+{
+"raw": "Y-Offset",
+"q": "\""
+},
+{
+"raw": "You do not need to use 'Is Casting Anything' or 'Is Channeling Anything' for these spells to trigger.",
+"q": "\""
+},
+{
+"raw": "You may not remove a spell from a default filter that is not customly added. Setting spell to false instead.",
+"q": "\""
+},
+{
+"raw": "You must be targeting a player.",
+"q": "\""
+},
+{
+"raw": "You need to hold this modifier down in order to blacklist an aura by right-clicking the icon. Set to None to disable the blacklist functionality.",
+"q": "\""
+},
+{
+"raw": "Your Auras First",
+"q": "\""
+},
+{
+"raw": "xOffset",
+"q": "\""
+},
+{
+"raw": "yOffset",
+"q": "\""
+},
+{
+"raw": "ACTIONBARS_DESC",
+"q": "\""
+},
+{
+"raw": "AURAS_DESC",
+"q": "\""
+},
+{
+"raw": "BAGS_DESC",
+"q": "\""
+},
+{
+"raw": "CHAT_DESC",
+"q": "\""
+},
+{
+"raw": "COOLDOWN_DESC",
+"q": "\""
+},
+{
+"raw": "DATABAR_DESC",
+"q": "\""
+},
+{
+"raw": "DATATEXT_DESC",
+"q": "\""
+},
+{
+"raw": "ELVUI_DESC",
+"q": "\""
+},
+{
+"raw": "NAMEPLATE_DESC",
+"q": "\""
+},
+{
+"raw": "PANEL_DESC",
+"q": "\""
+},
+{
+"raw": "SKINS_DESC",
+"q": "\""
+},
+{
+"raw": "TOGGLESKIN_DESC",
+"q": "\""
+},
+{
+"raw": "TOOLTIP_DESC",
+"q": "\""
+},
+{
+"raw": "UNITFRAME_DESC",
+"q": "\""
+},
+{
+"raw": "SEARCH_SYNTAX_DESC",
+"q": "\""
+},
+{
+"raw": "TEXT_FORMAT_DESC",
+"q": "\""
+},
+{
+"raw": "NAMEPLATE_FRAMELEVEL_DESC",
+"q": "\""
+},
+{
+"raw": "ACHIEVEMENTS",
+"q": "\""
+},
+{
+"raw": "ALT_KEY_TEXT",
+"q": "\""
+},
+{
+"raw": "ARENA",
+"q": "\""
+},
+{
+"raw": "AUCTIONS",
+"q": "\""
+},
+{
+"raw": "BAGSLOT",
+"q": "\""
+},
+{
+"raw": "BARBERSHOP",
+"q": "\""
+},
+{
+"raw": "BATTLEGROUND",
+"q": "\""
+},
+{
+"raw": "BATTLEFIELDS",
+"q": "\""
+},
+{
+"raw": "BLOCK",
+"q": "\""
+},
+{
+"raw": "BOSS",
+"q": "\""
+},
+{
+"raw": "BUFFOPTIONS_LABEL",
+"q": "\""
+},
+{
+"raw": "CLASS",
+"q": "\""
+},
+{
+"raw": "CHANNEL",
+"q": "\""
+},
+{
+"raw": "COLOR",
+"q": "\""
+},
+{
+"raw": "COLORS",
+"q": "\""
+},
+{
+"raw": "COMBAT",
+"q": "\""
+},
+{
+"raw": "COMBAT_TEXT_RUNE_BLOOD",
+"q": "\""
+},
+{
+"raw": "COMBAT_TEXT_RUNE_DEATH",
+"q": "\""
+},
+{
+"raw": "COMBAT_TEXT_RUNE_FROST",
+"q": "\""
+},
+{
+"raw": "COMBAT_TEXT_RUNE_UNHOLY",
+"q": "\""
+},
+{
+"raw": "COMBO_POINTS",
+"q": "\""
+},
+{
+"raw": "CTRL_KEY",
+"q": "\""
+},
+{
+"raw": "CUSTOM",
+"q": "\""
+},
+{
+"raw": "DAMAGER",
+"q": "\""
+},
+{
+"raw": "DEFAULT",
+"q": "\""
+},
+{
+"raw": "DELETE",
+"q": "\""
+},
+{
+"raw": "DISABLE",
+"q": "\""
+},
+{
+"raw": "DRESSUP_FRAME",
+"q": "\""
+},
+{
+"raw": "DUNGEON_DIFFICULTY",
+"q": "\""
+},
+{
+"raw": "DUNGEONS",
+"q": "\""
+},
+{
+"raw": "EMOTE",
+"q": "\""
+},
+{
+"raw": "ENEMY",
+"q": "\""
+},
+{
+"raw": "ENERGY",
+"q": "\""
+},
+{
+"raw": "FACTION_STANDING_LABEL1",
+"q": "\""
+},
+{
+"raw": "FACTION_STANDING_LABEL2",
+"q": "\""
+},
+{
+"raw": "FACTION_STANDING_LABEL3",
+"q": "\""
+},
+{
+"raw": "FACTION_STANDING_LABEL4",
+"q": "\""
+},
+{
+"raw": "FACTION_STANDING_LABEL5",
+"q": "\""
+},
+{
+"raw": "FACTION_STANDING_LABEL6",
+"q": "\""
+},
+{
+"raw": "FACTION_STANDING_LABEL7",
+"q": "\""
+},
+{
+"raw": "FACTION_STANDING_LABEL8",
+"q": "\""
+},
+{
+"raw": "FILTERS",
+"q": "\""
+},
+{
+"raw": "FLIGHT_MAP",
+"q": "\""
+},
+{
+"raw": "FOCUS",
+"q": "\""
+},
+{
+"raw": "FONT_SIZE",
+"q": "\""
+},
+{
+"raw": "FRIEND",
+"q": "\""
+},
+{
+"raw": "FRIENDS",
+"q": "\""
+},
+{
+"raw": "GROUP",
+"q": "\""
+},
+{
+"raw": "GUILD",
+"q": "\""
+},
+{
+"raw": "GUILD_BANK",
+"q": "\""
+},
+{
+"raw": "HAPPINESS",
+"q": "\""
+},
+{
+"raw": "HEALER",
+"q": "\""
+},
+{
+"raw": "HEALTH",
+"q": "\""
+},
+{
+"raw": "HIDE",
+"q": "\""
+},
+{
+"raw": "INSCRIPTION",
+"q": "\""
+},
+{
+"raw": "INSPECT",
+"q": "\""
+},
+{
+"raw": "INTERFACE_OPTIONS",
+"q": "\""
+},
+{
+"raw": "INTERRUPTED",
+"q": "\""
+},
+{
+"raw": "ITEM_BIND_QUEST",
+"q": "\""
+},
+{
+"raw": "ITEMS",
+"q": "\""
+},
+{
+"raw": "KEY_BINDINGS",
+"q": "\""
+},
+{
+"raw": "LANGUAGE",
+"q": "\""
+},
+{
+"raw": "LEAVE_VEHICLE",
+"q": "\""
+},
+{
+"raw": "LEVEL",
+"q": "\""
+},
+{
+"raw": "LOCK_ACTIONBAR_TEXT",
+"q": "\""
+},
+{
+"raw": "LOOT",
+"q": "\""
+},
+{
+"raw": "MACROS",
+"q": "\""
+},
+{
+"raw": "MAIL_LABEL",
+"q": "\""
+},
+{
+"raw": "MANA",
+"q": "\""
+},
+{
+"raw": "MAP_FADE_TEXT",
+"q": "\""
+},
+{
+"raw": "MERCHANT",
+"q": "\""
+},
+{
+"raw": "MINIMAP_LABEL",
+"q": "\""
+},
+{
+"raw": "MISCELLANEOUS",
+"q": "\""
+},
+{
+"raw": "NAME",
+"q": "\""
+},
+{
+"raw": "NONE",
+"q": "\""
+},
+{
+"raw": "OFFICER",
+"q": "\""
+},
+{
+"raw": "OPACITY",
+"q": "\""
+},
+{
+"raw": "OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN",
+"q": "\""
+},
+{
+"raw": "OPTION_TOOLTIP_TIMESTAMPS",
+"q": "\""
+},
+{
+"raw": "PARTY",
+"q": "\""
+},
+{
+"raw": "PET",
+"q": "\""
+},
+{
+"raw": "PLAYER",
+"q": "\""
+},
+{
+"raw": "PLAYER_DIFFICULTY1",
+"q": "\""
+},
+{
+"raw": "PLAYER_DIFFICULTY2",
+"q": "\""
+},
+{
+"raw": "RAGE",
+"q": "\""
+},
+{
+"raw": "RAID",
+"q": "\""
+},
+{
+"raw": "RAID_TARGET_1",
+"q": "\""
+},
+{
+"raw": "RAID_TARGET_2",
+"q": "\""
+},
+{
+"raw": "RAID_TARGET_3",
+"q": "\""
+},
+{
+"raw": "RAID_TARGET_4",
+"q": "\""
+},
+{
+"raw": "RAID_TARGET_5",
+"q": "\""
+},
+{
+"raw": "RAID_TARGET_6",
+"q": "\""
+},
+{
+"raw": "RAID_TARGET_7",
+"q": "\""
+},
+{
+"raw": "RAID_TARGET_8",
+"q": "\""
+},
+{
+"raw": "REPUTATION",
+"q": "\""
+},
+{
+"raw": "ROLE",
+"q": "\""
+},
+{
+"raw": "RUNIC_POWER",
+"q": "\""
+},
+{
+"raw": "SAY",
+"q": "\""
+},
+{
+"raw": "SHIFT_KEY",
+"q": "\""
+},
+{
+"raw": "SHORT",
+"q": "\""
+},
+{
+"raw": "SHOW",
+"q": "\""
+},
+{
+"raw": "SPEED",
+"q": "\""
+},
+{
+"raw": "SPELLBOOK",
+"q": "\""
+},
+{
+"raw": "TALENTS",
+"q": "\""
+},
+{
+"raw": "TANK",
+"q": "\""
+},
+{
+"raw": "TARGET",
+"q": "\""
+},
+{
+"raw": "TIMEMANAGER_TITLE",
+"q": "\""
+},
+{
+"raw": "TIMESTAMPS_LABEL",
+"q": "\""
+},
+{
+"raw": "TRADE",
+"q": "\""
+},
+{
+"raw": "TRADESKILLS",
+"q": "\""
+},
+{
+"raw": "TUTORIAL_TITLE47",
+"q": "\""
+},
+{
+"raw": "UI_SCALE",
+"q": "\""
+},
+{
+"raw": "UNIT_NAMEPLATES_TYPES",
+"q": "\""
+},
+{
+"raw": "UNIT_NAMEPLATES_TYPE_1",
+"q": "\""
+},
+{
+"raw": "UNIT_NAMEPLATES_TYPE_2",
+"q": "\""
+},
+{
+"raw": "WHISPER",
+"q": "\""
+},
+{
+"raw": "WORLD_MAP",
+"q": "\""
+},
+{
+"raw": "XPBAR_LABEL",
+"q": "\""
+},
+{
+"raw": "YELL",
+"q": "\""
+}
+]

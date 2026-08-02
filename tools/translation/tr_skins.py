@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+T = {
+    "AddOn Skins": "Скіни аддонів",
+    "AuraBar Backdrop": "Фон панелі аур",
+    "DBM Half-bar Skin": "Скін напівсмуги DBM",
+    "Default": "За замовчуванням",
+    "Double": "Подвійний",
+    "Embed Type": "Тип вбудовування",
+    "Font Size": "Розмір шрифту",
+    "Icon Cooldown": "Перезарядка іконки",
+    "Left Panel": "Ліва панель",
+    "Left Window Width": "Ширина лівого вікна",
+    "Misc Options": "Різні налаштування",
+    "None": "Немає",
+    "Right Panel": "Права панель",
+    "Single": "Одинарний",
+    "Template Gloss": "Глянець шаблону",
+    "Template": "Шаблон",
+    "Title Template Gloss": "Глянець шаблону заголовка",
+    "Title Template": "Шаблон заголовка",
+    "Toggle Embedded Addon": "Перемкнути вбудований аддон",
+}

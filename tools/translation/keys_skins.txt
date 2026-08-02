@@ -1,0 +1,19 @@
+AddOn Skins
+AuraBar Backdrop
+DBM Half-bar Skin
+Default
+Double
+Embed Type
+Font Size
+Icon Cooldown
+Left Panel
+Left Window Width
+Misc Options
+None
+Right Panel
+Single
+Template Gloss
+Template
+Title Template Gloss
+Title Template
+Toggle Embedded Addon

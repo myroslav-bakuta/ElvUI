@@ -1,0 +1,1274 @@
+[
+{
+"raw": " |cff00ff00bound to |r",
+"q": "\""
+},
+{
+"raw": "%s frame(s) has a conflicting anchor point, please change either the buff or debuff anchor point so they are not attached to each other. Forcing the debuffs to be attached to the main unitframe until fixed.",
+"q": "\""
+},
+{
+"raw": "%s is attempting to share his filters with you. Would you like to accept the request?",
+"q": "\""
+},
+{
+"raw": "%s is attempting to share the profile %s with you. Would you like to accept the request?",
+"q": "\""
+},
+{
+"raw": "%s: %s tried to call the protected function '%s'.",
+"q": "\""
+},
+{
+"raw": "(Hold Shift) Memory Usage",
+"q": "\""
+},
+{
+"raw": "(Modifer Click) Collect Garbage",
+"q": "\""
+},
+{
+"raw": "A raid marker feature is available by pressing Escape -> Keybinds scroll to the bottom under ElvUI and setting a keybind for the raid marker.",
+"q": "\""
+},
+{
+"raw": "A setting you have changed will change an option for this character only. This setting that you have changed will be uneffected by changing user profiles. Changing this setting requires that you reload your User Interface.",
+"q": "\""
+},
+{
+"raw": "ABOVE_THREAT_FORMAT",
+"q": "\""
+},
+{
+"raw": "AFK",
+"q": "\""
+},
+{
+"raw": "Accepting this will reset the UnitFrame settings for %s. Are you sure?",
+"q": "\""
+},
+{
+"raw": "Accepting this will reset your Filter Priority lists for all auras on NamePlates. Are you sure?",
+"q": "\""
+},
+{
+"raw": "Accepting this will reset your Filter Priority lists for all auras on UnitFrames. Are you sure?",
+"q": "\""
+},
+{
+"raw": "Adjust the UI Scale to fit your screen, press the autoscale button to set the UI Scale automatically.",
+"q": "\""
+},
+{
+"raw": "All keybindings cleared for |cff00ff00%s|r.",
+"q": "\""
+},
+{
+"raw": "Already Running.. Bailing Out!",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to apply this font to all ElvUI elements?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to disband the group?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset all the settings on this profile?",
+"q": "\""
+},
+{
+"raw": "Are you sure you want to reset every mover back to it's default position?",
+"q": "\""
+},
+{
+"raw": "Arena Frames",
+"q": "\""
+},
+{
+"raw": "Aura Bars & Icons",
+"q": "\""
+},
+{
+"raw": "Auras Set",
+"q": "\""
+},
+{
+"raw": "Auras",
+"q": "\""
+},
+{
+"raw": "Auto Scale",
+"q": "\""
+},
+{
+"raw": "Avoidance Breakdown",
+"q": "\""
+},
+{
+"raw": "BG",
+"q": "\""
+},
+{
+"raw": "BGL",
+"q": "\""
+},
+{
+"raw": "BNet Frame",
+"q": "\""
+},
+{
+"raw": "Bag Mover (Grow Down)",
+"q": "\""
+},
+{
+"raw": "Bag Mover (Grow Up)",
+"q": "\""
+},
+{
+"raw": "Bag Mover",
+"q": "\""
+},
+{
+"raw": "Bags",
+"q": "\""
+},
+{
+"raw": "Bank Mover (Grow Down)",
+"q": "\""
+},
+{
+"raw": "Bank Mover (Grow Up)",
+"q": "\""
+},
+{
+"raw": "Bank",
+"q": "\""
+},
+{
+"raw": "Bar ",
+"q": "\""
+},
+{
+"raw": "Bars",
+"q": "\""
+},
+{
+"raw": "Battleground datatexts temporarily hidden, to show type /bgstats or right click the 'C' icon near the minimap.",
+"q": "\""
+},
+{
+"raw": "Battleground datatexts will now show again if you are inside a battleground.",
+"q": "\""
+},
+{
+"raw": "Binding",
+"q": "\""
+},
+{
+"raw": "Binds Discarded",
+"q": "\""
+},
+{
+"raw": "Binds Saved",
+"q": "\""
+},
+{
+"raw": "BoE",
+"q": "\""
+},
+{
+"raw": "BoU",
+"q": "\""
+},
+{
+"raw": "Boss Frames",
+"q": "\""
+},
+{
+"raw": "Buffs",
+"q": "\""
+},
+{
+"raw": "CVars Set",
+"q": "\""
+},
+{
+"raw": "CVars",
+"q": "\""
+},
+{
+"raw": "Calendar",
+"q": "\""
+},
+{
+"raw": "Can't Roll",
+"q": "\""
+},
+{
+"raw": "Can't buy anymore slots!",
+"q": "\""
+},
+{
+"raw": "Caster DPS",
+"q": "\""
+},
+{
+"raw": "Character: ",
+"q": "\""
+},
+{
+"raw": "Chat Set",
+"q": "\""
+},
+{
+"raw": "Chat",
+"q": "\""
+},
+{
+"raw": "Choose a theme layout you wish to use for your initial setup.",
+"q": "\""
+},
+{
+"raw": "Classbar",
+"q": "\""
+},
+{
+"raw": "Classic",
+"q": "\""
+},
+{
+"raw": "Combat Time",
+"q": "\""
+},
+{
+"raw": "Combobar",
+"q": "\""
+},
+{
+"raw": "Config Mode:",
+"q": "\""
+},
+{
+"raw": "Confused.. Try Again!",
+"q": "\""
+},
+{
+"raw": "Continue",
+"q": "\""
+},
+{
+"raw": "Coords",
+"q": "\""
+},
+{
+"raw": "Count",
+"q": "\""
+},
+{
+"raw": "DND",
+"q": "\""
+},
+{
+"raw": "DPS",
+"q": "\""
+},
+{
+"raw": "Dark",
+"q": "\""
+},
+{
+"raw": "Data From: %s",
+"q": "\""
+},
+{
+"raw": "Data To: %s",
+"q": "\""
+},
+{
+"raw": "Dead",
+"q": "\""
+},
+{
+"raw": "Debuffs",
+"q": "\""
+},
+{
+"raw": "Deficit:",
+"q": "\""
+},
+{
+"raw": "Delete gray items?",
+"q": "\""
+},
+{
+"raw": "Detected that your ElvUI OptionsUI addon is out of date. This may be a result of your Tukui Client being out of date. Please visit our download page and update your Tukui Client, then reinstall ElvUI. Not having your ElvUI OptionsUI addon up to date will result in missing options.",
+"q": "\""
+},
+{
+"raw": "Disable Warning",
+"q": "\""
+},
+{
+"raw": "Disable",
+"q": "\""
+},
+{
+"raw": "Disband Group",
+"q": "\""
+},
+{
+"raw": "Discard",
+"q": "\""
+},
+{
+"raw": "Discord",
+"q": "\""
+},
+{
+"raw": "Do you enjoy the new ElvUI?",
+"q": "\""
+},
+{
+"raw": "Do you swear not to post in technical support about something not working without first disabling the addon/module combination first?",
+"q": "\""
+},
+{
+"raw": "Earned:",
+"q": "\""
+},
+{
+"raw": "ElvUI Installation",
+"q": "\""
+},
+{
+"raw": "ElvUI Plugin Installation",
+"q": "\""
+},
+{
+"raw": "ElvUI has a dual spec feature which allows you to load different profiles based on your current spec on the fly. You can enable this from the profiles tab.",
+"q": "\""
+},
+{
+"raw": "ElvUI is five or more revisions out of date. You can download the newest version from https://github.com/ElvUI-WotLK/ElvUI",
+"q": "\""
+},
+{
+"raw": "ElvUI is out of date. You can download the newest version from https://github.com/ElvUI-WotLK/ElvUI",
+"q": "\""
+},
+{
+"raw": "ElvUI needs to perform database optimizations please be patient.",
+"q": "\""
+},
+{
+"raw": "ElvUI was updated while the game is still running. Please relaunch the game, as this is required for the files to be properly updated.",
+"q": "\""
+},
+{
+"raw": "Empty Slot",
+"q": "\""
+},
+{
+"raw": "Enable",
+"q": "\""
+},
+{
+"raw": "Error resetting UnitFrame.",
+"q": "\""
+},
+{
+"raw": "Experience Bar",
+"q": "\""
+},
+{
+"raw": "Experience",
+"q": "\""
+},
+{
+"raw": "Export Now",
+"q": "\""
+},
+{
+"raw": "Farm Mode",
+"q": "\""
+},
+{
+"raw": "Filter download complete from %s, would you like to apply changes now?",
+"q": "\""
+},
+{
+"raw": "Finished",
+"q": "\""
+},
+{
+"raw": "Fishy Loot",
+"q": "\""
+},
+{
+"raw": "Focus Castbar",
+"q": "\""
+},
+{
+"raw": "Focus Frame",
+"q": "\""
+},
+{
+"raw": "FocusTarget Frame",
+"q": "\""
+},
+{
+"raw": "For technical support visit us at https://github.com/ElvUI-WotLK.",
+"q": "\""
+},
+{
+"raw": "Frame",
+"q": "\""
+},
+{
+"raw": "Friends List",
+"q": "\""
+},
+{
+"raw": "G",
+"q": "\""
+},
+{
+"raw": "GM Ticket Frame",
+"q": "\""
+},
+{
+"raw": "General",
+"q": "\""
+},
+{
+"raw": "Ghost",
+"q": "\""
+},
+{
+"raw": "Gold",
+"q": "\""
+},
+{
+"raw": "Grid Size:",
+"q": "\""
+},
+{
+"raw": "HP",
+"q": "\""
+},
+{
+"raw": "HPS",
+"q": "\""
+},
+{
+"raw": "Healer",
+"q": "\""
+},
+{
+"raw": "Hit",
+"q": "\""
+},
+{
+"raw": "Hold Control + Right Click:",
+"q": "\""
+},
+{
+"raw": "Hold Shift + Drag:",
+"q": "\""
+},
+{
+"raw": "Hold Shift + Right Click:",
+"q": "\""
+},
+{
+"raw": "Home Latency:",
+"q": "\""
+},
+{
+"raw": "Hover your mouse over any actionbutton or spellbook button to bind it. Press the ESC key to clear the current actionbutton's keybinding.",
+"q": "\""
+},
+{
+"raw": "I Swear",
+"q": "\""
+},
+{
+"raw": "INCOMPATIBLE_ADDON",
+"q": "\""
+},
+{
+"raw": "Icons Only",
+"q": "\""
+},
+{
+"raw": "If you accidently remove a chat frame you can always go the in-game configuration menu, press install, go to the chat portion and reset them.",
+"q": "\""
+},
+{
+"raw": "If you are experiencing issues with ElvUI try disabling all your addons except ElvUI, remember ElvUI is a full UI replacement addon, you cannot run two addons that do the same thing.",
+"q": "\""
+},
+{
+"raw": "If you have an icon or aurabar that you don't want to display simply hold down shift and right click the icon for it to disapear.",
+"q": "\""
+},
+{
+"raw": "Import Now",
+"q": "\""
+},
+{
+"raw": "Importance: |cff07D400High|r",
+"q": "\""
+},
+{
+"raw": "Importance: |cffD3CF00Medium|r",
+"q": "\""
+},
+{
+"raw": "Importance: |cffFF0000Low|r",
+"q": "\""
+},
+{
+"raw": "In Progress",
+"q": "\""
+},
+{
+"raw": "Installation Complete",
+"q": "\""
+},
+{
+"raw": "Invalid Target",
+"q": "\""
+},
+{
+"raw": "Item Level:",
+"q": "\""
+},
+{
+"raw": "KEY_ALT",
+"q": "\""
+},
+{
+"raw": "KEY_CTRL",
+"q": "\""
+},
+{
+"raw": "KEY_DELETE",
+"q": "\""
+},
+{
+"raw": "KEY_HOME",
+"q": "\""
+},
+{
+"raw": "KEY_INSERT",
+"q": "\""
+},
+{
+"raw": "KEY_MOUSEBUTTON",
+"q": "\""
+},
+{
+"raw": "KEY_MOUSEWHEELDOWN",
+"q": "\""
+},
+{
+"raw": "KEY_MOUSEWHEELUP",
+"q": "\""
+},
+{
+"raw": "KEY_NUMPAD",
+"q": "\""
+},
+{
+"raw": "KEY_PAGEDOWN",
+"q": "\""
+},
+{
+"raw": "KEY_PAGEUP",
+"q": "\""
+},
+{
+"raw": "KEY_SHIFT",
+"q": "\""
+},
+{
+"raw": "KEY_SPACE",
+"q": "\""
+},
+{
+"raw": "Key",
+"q": "\""
+},
+{
+"raw": "LOGIN_MSG",
+"q": "\""
+},
+{
+"raw": "Layout Set",
+"q": "\""
+},
+{
+"raw": "Layout",
+"q": "\""
+},
+{
+"raw": "Left Chat",
+"q": "\""
+},
+{
+"raw": "Left Click:",
+"q": "\""
+},
+{
+"raw": "List of installations in queue:",
+"q": "\""
+},
+{
+"raw": "Lock",
+"q": "\""
+},
+{
+"raw": "Loot / Alert Frames",
+"q": "\""
+},
+{
+"raw": "Loot Frame",
+"q": "\""
+},
+{
+"raw": "Lord! It's a miracle! The download up and vanished like a fart in the wind! Try Again!",
+"q": "\""
+},
+{
+"raw": "MA Frames",
+"q": "\""
+},
+{
+"raw": "MT Frames",
+"q": "\""
+},
+{
+"raw": "Micro Bar",
+"q": "\""
+},
+{
+"raw": "Minimap",
+"q": "\""
+},
+{
+"raw": "MirrorTimer",
+"q": "\""
+},
+{
+"raw": "Miss Chance",
+"q": "\""
+},
+{
+"raw": "Mitigation By Level: ",
+"q": "\""
+},
+{
+"raw": "Movers",
+"q": "\""
+},
+{
+"raw": "Must be in group with the player if he isn't on the same server as you.",
+"q": "\""
+},
+{
+"raw": "No Guild",
+"q": "\""
+},
+{
+"raw": "No bindings set.",
+"q": "\""
+},
+{
+"raw": "No gray items to delete.",
+"q": "\""
+},
+{
+"raw": "No, Revert Changes!",
+"q": "\""
+},
+{
+"raw": "Nudge",
+"q": "\""
+},
+{
+"raw": "O",
+"q": "\""
+},
+{
+"raw": "Objective Frame",
+"q": "\""
+},
+{
+"raw": "Offline",
+"q": "\""
+},
+{
+"raw": "Oh lord, you have got ElvUI and Tukui both enabled at the same time. Select an addon to disable.",
+"q": "\""
+},
+{
+"raw": "On screen positions for different elements.",
+"q": "\""
+},
+{
+"raw": "One or more of the changes you have made require a ReloadUI.",
+"q": "\""
+},
+{
+"raw": "One or more of the changes you have made will effect all characters using this addon. You will have to reload the user interface to see the changes you have made.",
+"q": "\""
+},
+{
+"raw": "P",
+"q": "\""
+},
+{
+"raw": "PL",
+"q": "\""
+},
+{
+"raw": "Party Frames",
+"q": "\""
+},
+{
+"raw": "Pending",
+"q": "\""
+},
+{
+"raw": "Pet Bar",
+"q": "\""
+},
+{
+"raw": "Pet Castbar",
+"q": "\""
+},
+{
+"raw": "Pet Frame",
+"q": "\""
+},
+{
+"raw": "PetTarget Frame",
+"q": "\""
+},
+{
+"raw": "Player Buffs",
+"q": "\""
+},
+{
+"raw": "Player Castbar",
+"q": "\""
+},
+{
+"raw": "Player Debuffs",
+"q": "\""
+},
+{
+"raw": "Player Frame",
+"q": "\""
+},
+{
+"raw": "Player Powerbar",
+"q": "\""
+},
+{
+"raw": "Please click the button below so you can setup variables and ReloadUI.",
+"q": "\""
+},
+{
+"raw": "Please click the button below to setup your CVars.",
+"q": "\""
+},
+{
+"raw": "Please press the continue button to go onto the next step.",
+"q": "\""
+},
+{
+"raw": "Preview Changes",
+"q": "\""
+},
+{
+"raw": "Preview",
+"q": "\""
+},
+{
+"raw": "Profile download complete from %s, but the profile %s already exists. Change the name or else it will overwrite the existing profile.",
+"q": "\""
+},
+{
+"raw": "Profile download complete from %s, would you like to load the profile %s now?",
+"q": "\""
+},
+{
+"raw": "Profile request sent. Waiting for response from player.",
+"q": "\""
+},
+{
+"raw": "Profit:",
+"q": "\""
+},
+{
+"raw": "Purchase Bags",
+"q": "\""
+},
+{
+"raw": "PvP",
+"q": "\""
+},
+{
+"raw": "R",
+"q": "\""
+},
+{
+"raw": "RL",
+"q": "\""
+},
+{
+"raw": "RW",
+"q": "\""
+},
+{
+"raw": "Raid Frames",
+"q": "\""
+},
+{
+"raw": "Raid Menu",
+"q": "\""
+},
+{
+"raw": "Raid Pet Frames",
+"q": "\""
+},
+{
+"raw": "Raid-40 Frames",
+"q": "\""
+},
+{
+"raw": "Reload UI",
+"q": "\""
+},
+{
+"raw": "Remaining:",
+"q": "\""
+},
+{
+"raw": "Remove Bar %d Action Page",
+"q": "\""
+},
+{
+"raw": "Reputation Bar",
+"q": "\""
+},
+{
+"raw": "Request was denied by user.",
+"q": "\""
+},
+{
+"raw": "Reset Counters: Hold Shift + Left Click",
+"q": "\""
+},
+{
+"raw": "Reset Data: Hold Shift + Right Click",
+"q": "\""
+},
+{
+"raw": "Reset Position",
+"q": "\""
+},
+{
+"raw": "Rested:",
+"q": "\""
+},
+{
+"raw": "Right Chat",
+"q": "\""
+},
+{
+"raw": "Right Click:",
+"q": "\""
+},
+{
+"raw": "SP",
+"q": "\""
+},
+{
+"raw": "Save",
+"q": "\""
+},
+{
+"raw": "Saved Dungeon(s)",
+"q": "\""
+},
+{
+"raw": "Saved Raid(s)",
+"q": "\""
+},
+{
+"raw": "Select the type of aura system you want to use with ElvUI's unitframes. Set to Aura Bar & Icons to use both aura bars and icons, set to icons only to only see icons.",
+"q": "\""
+},
+{
+"raw": "Server: ",
+"q": "\""
+},
+{
+"raw": "Session:",
+"q": "\""
+},
+{
+"raw": "Setup CVars",
+"q": "\""
+},
+{
+"raw": "Setup Chat",
+"q": "\""
+},
+{
+"raw": "Show BG Texts",
+"q": "\""
+},
+{
+"raw": "Skip Process",
+"q": "\""
+},
+{
+"raw": "Sort Bags",
+"q": "\""
+},
+{
+"raw": "Spell/Heal Power",
+"q": "\""
+},
+{
+"raw": "Spent:",
+"q": "\""
+},
+{
+"raw": "Stance Bar",
+"q": "\""
+},
+{
+"raw": "Stats For:",
+"q": "\""
+},
+{
+"raw": "Steps",
+"q": "\""
+},
+{
+"raw": "Sticky Frames",
+"q": "\""
+},
+{
+"raw": "System",
+"q": "\""
+},
+{
+"raw": "Talent Specialization:",
+"q": "\""
+},
+{
+"raw": "Tank / Physical DPS",
+"q": "\""
+},
+{
+"raw": "Target Castbar",
+"q": "\""
+},
+{
+"raw": "Target Frame",
+"q": "\""
+},
+{
+"raw": "Target Powerbar",
+"q": "\""
+},
+{
+"raw": "TargetTarget Frame",
+"q": "\""
+},
+{
+"raw": "TargetTargetTarget Frame",
+"q": "\""
+},
+{
+"raw": "Targeted By:",
+"q": "\""
+},
+{
+"raw": "Temporary Move",
+"q": "\""
+},
+{
+"raw": "The UI Scale has been changed, if you would like to preview the change press the preview button. It is recommended that you reload your User Interface for the best appearance.",
+"q": "\""
+},
+{
+"raw": "The chat windows function the same as Blizzard standard chat windows, you can right click the tabs and drag them around, rename, etc. Please click the button below to setup your chat windows.",
+"q": "\""
+},
+{
+"raw": "The focus unit can be set by typing /focus when you are targeting the unit you want to focus. It is recommended you make a macro to do this.",
+"q": "\""
+},
+{
+"raw": "The in-game configuration menu can be accessed by typing the /ec command or by clicking the 'C' button on the minimap. Press the button below if you wish to skip the installation process.",
+"q": "\""
+},
+{
+"raw": "The profile you tried to import already exists. Choose a new name or accept to overwrite the existing profile.",
+"q": "\""
+},
+{
+"raw": "The spell '%s' has been added to the Blacklist unitframe aura filter.",
+"q": "\""
+},
+{
+"raw": "Theme Set",
+"q": "\""
+},
+{
+"raw": "Theme Setup",
+"q": "\""
+},
+{
+"raw": "This install process will help you learn some of the features in ElvUI has to offer and also prepare your user interface for usage.",
+"q": "\""
+},
+{
+"raw": "This part of the installation process sets up your World of Warcraft default options it is recommended you should do this step for everything to behave properly.",
+"q": "\""
+},
+{
+"raw": "This part of the installation process sets up your chat windows names, positions and colors.",
+"q": "\""
+},
+{
+"raw": "This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'.",
+"q": "\""
+},
+{
+"raw": "This will change the layout of your unitframes and actionbars.",
+"q": "\""
+},
+{
+"raw": "To move abilities on the actionbars by default hold shift + drag. You can change the modifier key from the actionbar options menu.",
+"q": "\""
+},
+{
+"raw": "To setup which channels appear in which chat frame, right click the chat tab and go to settings.",
+"q": "\""
+},
+{
+"raw": "Toggle Bags",
+"q": "\""
+},
+{
+"raw": "Toggle Chat Frame",
+"q": "\""
+},
+{
+"raw": "Toggle Configuration",
+"q": "\""
+},
+{
+"raw": "Tooltip",
+"q": "\""
+},
+{
+"raw": "Total CPU:",
+"q": "\""
+},
+{
+"raw": "Total Memory:",
+"q": "\""
+},
+{
+"raw": "Total: ",
+"q": "\""
+},
+{
+"raw": "Trigger",
+"q": "\""
+},
+{
+"raw": "Type /hellokitty to revert to old settings.",
+"q": "\""
+},
+{
+"raw": "UI Scale",
+"q": "\""
+},
+{
+"raw": "Unhittable:",
+"q": "\""
+},
+{
+"raw": "Vehicle Seat Frame",
+"q": "\""
+},
+{
+"raw": "Vendor / Delete Grays",
+"q": "\""
+},
+{
+"raw": "Vendored gray items for: %s",
+"q": "\""
+},
+{
+"raw": "Vendoring Grays",
+"q": "\""
+},
+{
+"raw": "Welcome to ElvUI version %s!",
+"q": "\""
+},
+{
+"raw": "Wintergrasp",
+"q": "\""
+},
+{
+"raw": "XP:",
+"q": "\""
+},
+{
+"raw": "Yes, Keep Changes!",
+"q": "\""
+},
+{
+"raw": "You are going to copy settings for |cffD3CF00\\\"%s\\\"|r from your current |cff4beb2c\\\"%s\\\"|r profile to |cff4beb2c\\\"%s\\\"|r profile. Are you sure?",
+"q": "\""
+},
+{
+"raw": "You are going to copy settings for |cffD3CF00\\\"%s\\\"|r from |cff4beb2c\\\"%s\\\"|r profile to your current |cff4beb2c\\\"%s\\\"|r profile. Are you sure?",
+"q": "\""
+},
+{
+"raw": "You are now finished with the installation process. If you are in need of technical support please visit us at https://github.com/ElvUI-WotLK.",
+"q": "\""
+},
+{
+"raw": "You are using CPU Profiling. This causes decreased performance. Do you want to disable it or continue?",
+"q": "\""
+},
+{
+"raw": "You can access copy chat and chat menu functions by mouse over the top right corner of chat panel and left/right click on the button that will appear.",
+"q": "\""
+},
+{
+"raw": "You can always change fonts and colors of any element of ElvUI from the in-game configuration.",
+"q": "\""
+},
+{
+"raw": "You can now choose what layout you wish to use based on your combat role.",
+"q": "\""
+},
+{
+"raw": "You can see someones average item level of their gear by holding shift and mousing over them. It should appear inside the tooltip.",
+"q": "\""
+},
+{
+"raw": "You can set your keybinds quickly by typing /kb.",
+"q": "\""
+},
+{
+"raw": "You can toggle the microbar by using your middle mouse button on the minimap you can also accomplish this by enabling the actual microbar located in the actionbar settings.",
+"q": "\""
+},
+{
+"raw": "You can use the /resetui command to reset all of your movers. You can also use the command to reset a specific mover, /resetui <mover name>.\\nExample: /resetui Player Frame",
+"q": "\""
+},
+{
+"raw": "You cannot copy settings from the same unit.",
+"q": "\""
+},
+{
+"raw": "You don't have enough money to repair all items.",
+"q": "\""
+},
+{
+"raw": "You don't have enough money to repair.",
+"q": "\""
+},
+{
+"raw": "You don't have permission to mark targets.",
+"q": "\""
+},
+{
+"raw": "You have imported settings which may require a UI reload to take effect. Reload now?",
+"q": "\""
+},
+{
+"raw": "You must purchase a bank slot first!",
+"q": "\""
+},
+{
+"raw": "You still have ElvUI_Config installed. ElvUI_Config has been renamed to ElvUI_OptionsUI, please remove it.",
+"q": "\""
+},
+{
+"raw": "Your items have been repaired for: ",
+"q": "\""
+},
+{
+"raw": "Your items have been repaired using guild bank funds for: ",
+"q": "\""
+},
+{
+"raw": "Your profile was successfully recieved by the player.",
+"q": "\""
+},
+{
+"raw": "copperabbrev",
+"q": "\""
+},
+{
+"raw": "goldabbrev",
+"q": "\""
+},
+{
+"raw": "lvl",
+"q": "\""
+},
+{
+"raw": "says",
+"q": "\""
+},
+{
+"raw": "silverabbrev",
+"q": "\""
+},
+{
+"raw": "whispers",
+"q": "\""
+},
+{
+"raw": "yells",
+"q": "\""
+},
+{
+"raw": "|cFFE30000Lua error recieved. You can view the error message when you exit combat.",
+"q": "\""
+},
+{
+"raw": "RED_ENABLE",
+"q": "\""
+},
+{
+"raw": "GREEN_ENABLE",
+"q": "\""
+},
+{
+"raw": "DESC_MOVERCONFIG",
+"q": "\""
+}
+]

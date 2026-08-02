@@ -423,7 +423,6 @@ L["Fade Tabs No Backdrop"] = true
 L["Fade the chat text when there is no activity."] = true
 L["Fade Threshold"] = true
 L["Fade Undocked Tabs"] = true
-L["Fade the chat text when there is no activity."] = true
 L["Fader"] = true
 L["Fades the buttons that toggle chat windows when that window has been toggled off."] = true
 L["Fades the text on chat tabs that are docked in a panel where the backdrop is disabled."] = true

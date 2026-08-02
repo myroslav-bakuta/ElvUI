@@ -176,15 +176,9 @@ E.Options.args.general = {
 						E:StaticPopup_Show("CONFIG_RL")
 					end,
 					values = {
-						["deDE"] = "Deutsch",
 						["enUS"] = "English",
-						["esMX"] = "Español",
-						["frFR"] = "Français",
-						["ptBR"] = "Português",
 						["ruRU"] = "Русский",
-						["zhCN"] = "简体中文",
-						["zhTW"] = "正體中文",
-						["koKR"] = "한국어"
+						["ukUA"] = "Українська"
 					}
 				}
 			}

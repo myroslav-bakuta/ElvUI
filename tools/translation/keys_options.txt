@@ -1,0 +1,1317 @@
+%s and then %s
+2D
+3D
+AFK Mode
+ANCHOR_CURSOR
+ANCHOR_CURSOR_LEFT
+ANCHOR_CURSOR_RIGHT
+Abbreviation
+Above Chat
+Above
+Accept Invites
+Action Paging
+ActionBars
+Actions
+Add Item or Search Syntax
+Add Name
+Add Regular Filter
+Add Special Filter
+Add Spell ID or Name
+Add SpellID
+Add a Name to the list.
+Add a spell to the filter. Use spell ID if you don't want to match all auras which share the same name.
+Add a spell to the filter.
+Add an item or search syntax to the ignored list. Items matching the search syntax will be ignored.
+Additional Power Text
+Additional spacing between each individual group.
+Additive Blend
+Adjust the height of your right chat panel.
+Adjust the position of the threat bar to either the left or right datatext panels.
+Adjust the size of the minimap.
+Adjust the width of the bag frame.
+Adjust the width of the bank frame.
+Adjust the width of your right chat panel.
+Alert Frames
+Alerts
+Allow LBF to handle the skinning of this element.
+Allowed Combat Repeat
+Alpha Fading
+Alpha Key
+Alpha channel is taken from the color option.
+Alpha
+Always Display
+Always Hide
+Always Show Realm
+Always Show Target Health
+Ammo Pouch
+An X offset (in pixels) to be used when anchoring new frames.
+An Y offset (in pixels) to be used when anchoring new frames.
+Anchor Point
+Announce Interrupts
+Announce when you interrupt a spell to the specified chat channel.
+Applies the font and font size settings throughout the entire user interface. Note: Some font size settings will be skipped due to them having a smaller font size by default.
+Applies the primary texture to all statusbars.
+Apply Font To All
+Apply Texture To All
+Apply this filter if a buff has remaining time greater than this. Set to zero to disable.
+Apply this filter if a buff has remaining time less than this. Set to zero to disable.
+Apply this filter if a debuff has remaining time greater than this. Set to zero to disable.
+Apply this filter if a debuff has remaining time less than this. Set to zero to disable.
+Are you sure you want to reset ActionBars settings?
+Are you sure you want to reset Auras settings?
+Are you sure you want to reset Bags settings?
+Are you sure you want to reset Chat settings?
+Are you sure you want to reset Cooldown settings?
+Are you sure you want to reset DataBars settings?
+Are you sure you want to reset DataTexts settings?
+Are you sure you want to reset General settings?
+Are you sure you want to reset NamePlates settings?
+Are you sure you want to reset Tooltip settings?
+Are you sure you want to reset UnitFrames settings?
+Arena Frame
+Arena Registrar
+Arena
+Arrow Size
+Arrow X-Offset
+Arrow Y-Offset
+Ascending or Descending order.
+Ascending
+Assist Target
+Assist
+At what point should the text be displayed. Set to -1 to disable.
+Attach Text To
+Attach To
+Attempt to create URL links inside the chat.
+Attempt to lock the left and right chat frame positions. Disabling this option will allow you to move the main chat frame anywhere you wish.
+Attempt to support eyefinity/nvidia surround.
+Aura Bars
+Aura Filters
+Auto Greed/DE
+Auto Hide
+Auto Repair
+Auto-Hide
+Automatic
+Automatically accept invites from guild/friends.
+Automatically hide the objetive frame during boss or arena fights.
+Automatically repair using the following method when visiting a merchant.
+Automatically select greed or disenchant (when available) on green quality items. This will only work if you are the max level.
+Automatically vendor gray items when visiting a vendor.
+Available Tags
+BG Map
+BG Score
+BINDING_HEADER_RAID_TARGET
+Backdrop Color
+Backdrop Faded Color
+Backdrop Spacing
+Backdrop color of transparent frames
+Backdrop
+Background Glow
+Bad Color
+Bad Scale
+Bad Transition Color
+Bad
+Bag 1
+Bag 2
+Bag 3
+Bag 4
+Bag Sorting
+Bag Spacing
+Bag
+Bag-Bar
+Bags Only
+Bags/Bank
+Bank 1
+Bank 2
+Bank 3
+Bank 4
+Bank 5
+Bank 6
+Bank 7
+Bank Only
+Bar Direction
+Bars will transition smoothly.
+Battleground Texts
+Begin a new row or column after this many auras.
+Below Chat
+Below
+Blacklist Modifier
+Blacklist
+Blend Mode
+Blend
+BlizzUI Improvements
+Blizzard Style
+Blizzard
+Block Combat Click
+Block Combat Hover
+Block Mouseover Glow
+Block Target Glow
+Blocks all click events while in combat.
+Blocks datatext tooltip from showing in combat.
+Border Color
+Border Glow
+Border
+Borders
+Both
+Bottom Left
+Bottom Panel
+Bottom Right
+Bottom to Top
+Bottom
+BottomLeftMiniPanel
+BottomMiniPanel
+BottomRightMiniPanel
+Buff Indicator
+Button Size (Bag)
+Button Size (Bank)
+Button Size
+Button Spacing
+Buttons Per Row
+Buttons
+By Type
+Calendar Frame
+Cast Bar
+Cast Color
+Cast No Interrupt Color
+Cast Time Format
+Castbar
+Casting
+Center
+Change settings for the display of the location text that is on the minimap.
+Change the alpha level of the frame.
+Change the width and controls how big of an area on the screen will accept clicks to target unit.
+Channel Alerts
+Channel Time Format
+Character Frame
+Chat Bubble Names
+Chat Bubbles Style
+Chat Bubbles
+Chat EditBox Position
+Chat Output
+Check these to only have the filter active in certain difficulties. If none are checked, it is active in all difficulties.
+CheckBox Skin
+Choose Export Format
+Choose UIPARENT to prevent it from hiding with the unitframe.
+Choose What To Export
+Choose when you want the tooltip to show in combat. If a modifer is chosen, then you need to hold that down to show the tooltip.
+Choose when you want the tooltip to show. If a modifer is chosen, then you need to hold that down to show the tooltip.
+Class Backdrop
+Class Castbars
+Class Color Mentions
+Class Color Override
+Class Health
+Class Power
+Class Resources
+Class Totems
+Clear Filter
+Clear Search On Close
+Click Through
+Clickable Height
+Clickable Size
+Clickable Width / Width
+Coding:
+Color Keybind Text when Out of Range, instead of the button.
+Color Keybind Text
+Color Override
+Color Turtle Buffs
+Color all buffs that reduce the unit's incoming damage.
+Color aurabar debuffs by type.
+Color by Value
+Color castbars by the class of player units.
+Color castbars by the reaction type of non-player units.
+Color health by amount remaining.
+Color health by classcolor or reaction.
+Color health by threat status.
+Color of the actionbutton when not usable.
+Color of the actionbutton when out of power (Mana, Rage).
+Color of the actionbutton when out of range.
+Color of the actionbutton when usable.
+Color power by classcolor or reaction.
+Color power by threat status.
+Color some texts use.
+Color the health backdrop by class or reaction.
+Color the unit healthbar if there is a debuff that can be dispelled by you.
+Color when the text is about to expire
+Color when the text is in the days format.
+Color when the text is in the hours format.
+Color when the text is in the minutes format.
+Color when the text is in the seconds format.
+Colored Icon
+Coloring (Specific)
+Coloring
+Colorize Selected Text
+Colors the border according to the Quality of the Item.
+Combat Icon
+Combat Override Key
+CombatText Font
+Combo Point
+Comparison Font Size
+Condensed
+Configure Auras
+Control enemy nameplates toggling on or off when in combat.
+Control friendly nameplates toggling on or off when in combat.
+Controls how big of an area on the screen will accept clicks to target unit.
+Controls the amount of decimals used in values displayed on elements like NamePlates and UnitFrames.
+Controls the speed at which smoothed bars will be updated.
+Controls how many seconds of inactivity has to pass before chat is faded.
+Cooldown Orientation
+Cooldown Text
+Cooldowns
+Copy From
+Copy Settings From
+Copy settings from another unit.
+Core |cff1784d1E|r|cffe5e3e3lvUI|r options.
+Count Font Size
+Count xOffset
+Count yOffset
+Create Custom Text
+Create Filter
+Create a filter, once created a filter can be set inside the buffs/debuffs section of each unit.
+Credits
+Crop Icons
+Currency Format
+Current - Max | Percent
+Current - Max
+Current - Percent (Remaining)
+Current - Percent
+Current - Remaining
+Current / Max
+Current Level
+Current
+Curse Effect
+Cursor Anchor Offset X
+Cursor Anchor Offset Y
+Cursor Anchor Type
+Cursor Anchor
+Custom Backdrop
+Custom Color
+Custom Dead Backdrop
+Custom Faction Colors
+Custom Texts
+Custom Texture
+Custom Timestamp Color
+Cutaway Bars
+Darken Inactive
+DataBars
+DataTexts
+Datatext Panel (Left)
+Datatext Panel (Right)
+Date Format
+Days
+Debuff Highlighting
+Debug Tools
+Decimal Length
+Decimal Threshold
+Decode Text
+Default Color
+Default Font
+Default Settings
+Deficit
+Defines how the group is sorted.
+Defines the sort order of the selected sort method.
+Delete Filter
+Delete a created filter, you cannot delete pre-existing filters, only custom ones.
+Desaturate Cooldowns
+Desaturate Junk Items
+Desaturated Icon
+Descending
+Detach From Frame
+Detached Width
+Direction the bag sorting will use to allocate the items.
+Direction the bar moves on gains/losses
+Direction the health bar moves when gaining/losing health.
+Disable Bag Sort
+Disable Bank Sort
+Disable Debuff Highlight
+Disabled Blizzard Frames
+Disabled Blizzard
+Disables the focus and target of focus unitframes.
+Disables the player and pet unitframes.
+Disables the target and target of target unitframes.
+Disconnected
+Disease Effect
+Display Frames
+Display Item Level
+Display Player
+Display Target
+Display Text
+Display a healer icon over known healers inside battlegrounds or arenas.
+Display a panel across the bottom of the screen. This is for cosmetic only.
+Display a panel across the top of the screen. This is for cosmetic only.
+Display a spark texture at the end of the castbar statusbar to help show the differance between castbar and backdrop.
+Display an exclamation mark on items that starts a quest.
+Display battleground messages in the middle of the screen.
+Display bind names on action buttons.
+Display cooldown text on anything with the cooldown spiral.
+Display data panels below the chat, used for datatexts.
+Display emotion icons in chat.
+Display guild ranks if a unit is guilded.
+Display how many of a certain item you have in your possession.
+Display macro names on action buttons.
+Display minimap panels below the minimap, used for datatexts.
+Display player titles.
+Display reminder bar on the minimap.
+Display the castbar icon inside the castbar.
+Display the castbar inside the information panel, the icon will be displayed outside the main unitframe.
+Display the hyperlink tooltip while hovering over a hyperlink.
+Display the junk icon on all grey items that can be vendored.
+Display the name of the unit on the chat bubble.
+Display the npc ID when mousing over a npc tooltip.
+Display the spell or item ID when mousing over a spell or item tooltip.
+Display the target of your current cast. Useful for mouseover casts.
+Display tick marks on the castbar for channelled spells. This will adjust automatically for spells like Drain Soul and add additional ticks based on haste.
+Display Types
+Displayed server time.
+Displays a detailed report of every item sold when enabled.
+Displays item level on equippable items.
+Don't display auras that are longer than this duration (in seconds). Set to zero to disable.
+Don't display auras that are shorter than this duration (in seconds). Set to zero to disable.
+Donations:
+Down
+Dropdown CheckBox Skin
+Dungeon & Raid Filter
+Duration Enable
+Duration Font Size
+Duration Reverse
+Duration Text
+Duration
+Editbox History Size
+ELVUI_CREDITS
+ENEMY_NPC
+ENEMY_PLAYER
+Elite Icon
+Emotion Icons
+Enable Custom Color
+Enable the use of separate size options for the right chat panel.
+Enable/Disable the Bag-Bar.
+Enable/Disable the all-in-one bag.
+Enable/Disable the loot frame.
+Enable/Disable the loot roll frame.
+Enable/Disable the minimap. |cffFF0000Warning: This will prevent you from seeing the consolidated buffs bar, and prevent you from seeing the minimap datatexts.|r
+Enable/Disable the scaling of targetted nameplates.
+Enables the ElvUI Raid Control panel.
+Enabling this allows raid-wide sorting however you will not be able to distinguish between groups.
+Enabling this inverts the grouping order when the raid is not full, this will reverse the direction it starts from.
+Enabling this will check your health amount.
+Enabling this will check your power amount.
+Enchanting
+Enemy Aura Type
+Enemy Combat Toggle
+Enemy NPC Frames
+Enemy Player Frames
+Enemy
+Engineering
+Enhanced PVP Messages
+Equipped Item Color
+Equipped Item
+Error decoding data. Import string may be corrupted!
+Error exporting profile!
+Exclude Name
+Excluded Names
+Excluded names will not be class colored.
+Expiring
+Export Profile
+Exported
+FRIENDLY_NPC
+FRIENDLY_PLAYER
+Fade Chat Toggles
+Fade Out Delay
+Fade Out
+Fade Tabs No Backdrop
+Fade the chat text when there is no activity.
+Fade Threshold
+Fade Undocked Tabs
+Fader
+Fades the buttons that toggle chat windows when that window has been toggled off.
+Fades the text on chat tabs that are docked in a panel where the backdrop is disabled.
+Fades the text on chat tabs that are not docked at the left or right chat panel.
+Fill
+Filled
+Filter Priority
+Filter Search
+Filter Type
+Filter already exists!
+Filters Page
+Filters are not allowed to have commas in their name. Stripping commas from filter name.
+Flash
+Fluid Position Buffs on Debuffs
+Fluid Position Debuffs on Buffs
+Flyout Direction
+Flyout Spacing
+Focus
+FocusTarget
+Font Outline
+Font
+Fonts
+Force Off
+Force On
+Force Reaction Color
+Force the frames to show, they will act as if they are the player frame.
+Forces Debuff Highlight to be disabled for these frames
+Forces Mouseover Glow to be disabled for these frames
+Forces Target Glow to be disabled for these frames
+Forces reaction color instead of class color on units controlled by players.
+Format
+Frame Glow
+Frame Level
+Frame Orientation
+Frame Strata
+Frequent Updates
+Friendly Aura Type
+Friendly Combat Toggle
+Friendly NPC Frames
+Friendly Player Frames
+Friendly
+Full Overlay
+Full
+GM Chat
+GPS Arrow
+Gems
+General Options
+Global (Account Settings)
+Global Fade Transparency
+Global
+Glow
+Gold Format
+Good Color
+Good Scale
+Good Transition Color
+Good
+Gossip Frame
+Group By
+Group Spacing
+Grouping & Sorting
+Groups Per Row/Column
+Growth Direction
+Growth X-Direction
+Growth Y-Direction
+Growth direction from the first unitframe.
+Guide:
+Guild Ranks
+Guild Registrar
+HH:MM Threshold
+HH:MM
+Header Font Size
+Heal Prediction
+Healer Icon
+Health Backdrop Multiplier
+Health Backdrop
+Health Bar
+Health Border
+Health By Value
+Health Color
+Health Length
+Health Threshold
+Health
+Height Multiplier
+Height of the objective tracker. Increase size to be able to see more objectives.
+Height
+Help Frame
+Herbalism
+Here you can add items or search terms that you want to be excluded from sorting. To remove an item just click on its name in the list.
+Hide At Max Level
+Hide Both
+Hide Error Text
+Hide Frame
+Hide In Combat
+Hide In Vehicle
+Hide Spell Name
+Hide Time
+Hide specific sections in the datatext tooltip.
+Hide tooltip while in combat.
+Hides the red error text at the top of the screen while in combat.
+History Size
+History
+Horizontal Spacing
+Horizontal
+Hours
+Hover Highlight
+Hover
+How long the cutaway health will take to fade out.
+How long the cutaway power will take to fade out.
+How many seconds the castbar should stay visible after the cast failed or was interrupted.
+How much time before the cutaway health starts to fade.
+How much time before the cutaway power starts to fade.
+Hyperlink Hover
+Icon Frame
+Icon Inside Castbar
+Icon Only
+Icon Position
+Icon Size
+Icon
+Icon: BOTTOM
+Icon: BOTTOMLEFT
+Icon: BOTTOMRIGHT
+Icon: LEFT
+Icon: RIGHT
+Icon: TOP
+Icon: TOPLEFT
+Icon: TOPRIGHT
+Icons and Text (Short)
+Icons and Text
+If enabled then it checks if auras are missing instead of being present on the unit.
+If enabled then it will require all auras to activate the filter. Otherwise it will only require any one of the auras to activate it.
+If enabled then it will require all cooldowns to activate the filter. Otherwise it will only require any one of the cooldowns to activate it.
+If enabled then the filter will activate if the unit is casting anything.
+If enabled then the filter will activate if the unit is channeling anything.
+If enabled then the filter will activate if the unit is not casting anything.
+If enabled then the filter will activate if the unit is not channeling anything.
+If enabled then the filter will only activate if the level of the unit is equal to or higher than this value.
+If enabled then the filter will only activate if the level of the unit is equal to or lower than this value.
+If enabled then the filter will only activate if the level of the unit matches this value.
+If enabled then the filter will only activate if the level of the unit matches your own.
+If enabled then the filter will only activate if the unit is casting interruptible spells.
+If enabled then the filter will only activate if the unit is casting not interruptible spells.
+If enabled then the filter will only activate if the unit is not casting or channeling one of the selected spells.
+If enabled then the filter will only activate when you are in combat.
+If enabled then the filter will only activate when you are not targeting the unit.
+If enabled then the filter will only activate when you are out of combat.
+If enabled then the filter will only activate when you are resting at an Inn.
+If enabled then the filter will only activate when you are targeting the unit.
+If enabled then the filter will only activate when you have a target.
+If not set to 0 then override the size of the aura icon to this.
+If the aura is listed with a number then you need to use that to remove it from the list.
+If this list is empty, and if 'Interruptible' is checked, then the filter will activate on any type of cast that can be interrupted.
+If this threshold is used then the health of the unit needs to be higher than this value in order for the filter to activate. Set to 0 to disable.
+If this threshold is used then the health of the unit needs to be lower than this value in order for the filter to activate. Set to 0 to disable.
+If this threshold is used then the power of the unit needs to be higher than this value in order for the filter to activate. Set to 0 to disable.
+If this threshold is used then the power of the unit needs to be lower than this value in order for the filter to activate. Set to 0 to disable.
+If you have a lot of 3D Portraits active then it will likely have a big impact on your FPS. Disable some portraits if you experience FPS issues.
+If you have any plugins supporting this feature installed you can find them in the selection dropdown to the right.
+If you unlock actionbars then trying to move a spell might instantly cast it if you cast spells on key press instead of key release.
+Ignore UI Scale Popup
+Ignore mouse events.
+Ignored Items and Search Syntax (Global)
+Ignored Items and Search Syntax (Profile)
+Import Profile
+Importing
+Inactivity Timer
+Index
+Indicate whether buffs you cast yourself should be separated before or after.
+InfoPanel Border
+Information Panel
+Inherit Global Fade
+Inherit the global fade, mousing over, targetting, setting focus, losing health, entering combat will set the remove transparency. Otherwise it will use the transparency level in the general actionbar settings for global fade alpha.
+Inset
+Inside Information Panel
+Install
+Instance Difficulty
+Instance Type
+Interruptable
+Interruptible
+Invert Colors
+Invert Grouping Order
+Invert foreground and background colors.
+Is Casting Anything
+Is Channeling Anything
+Is Targeted
+Item Count Font
+Item Count
+Item Level Threshold
+Item Level
+JustifyH
+Key Down
+Keybind Mode
+Keybind Text Position
+Keybind Text X-Offset
+Keybind Text Y-Offset
+Keybind Text
+Keyword Alert
+Keywords
+LBF Support
+LEVEL_BOSS
+LFD Frame
+LFG Queue
+LFR Frame
+Latency
+Leatherworking
+Left Only
+Left to Right
+Left
+Limit the number of rows or columns.
+List of words to color in chat if found in a message. If you wish to add multiple words you must seperate the word with a comma. To search for your current name you can use %MYNAME%.\n\nExample:\n%MYNAME%, ElvUI, RBGs, Tank
+Location Text
+Lock Positions
+Log Taints
+Log the main chat frames history. So when you reloadui or log in and out you see the history from your last session.
+Login Message
+Loot Frames
+Loot Roll
+Losing Threat
+Low Health Threshold
+Low Threat
+Low Threshold
+Lower numbers mean a higher priority. Filters are processed in order from 1 to 100.
+MM:SS Threshold
+MM:SS
+Macro Text
+Magic Effect
+Main Tanks / Main Assist
+Main backdrop color of the UI.
+Main border color of the UI.
+Main statusbar texture.
+Make textures transparent.
+Make the unitframe glow yellow when it is below this percent of health, it will glow red when the health value is half of this value.
+Make the world map smaller.
+Map Opacity When Moving
+Max Lines
+Maps
+Match Frame Width
+Match Player Level
+Max Alpha
+Max Bars
+Max Overflow
+Max Wraps
+Max amount of overflow allowed to extend past the end of the health bar.
+Maximum Duration
+Maximum Level
+Maximum Time Left
+Media
+Method to sort by.
+Middle Click - Set Focus
+Middle clicking the unit frame will cause your focus to match the unit.
+Middle
+Min Alpha
+Minimap Mouseover
+Minimap Panels
+Minimum Duration
+Minimum Level
+Minimum Time Left
+Mining
+Minutes
+Mirror Timers
+Misc Frames
+Missing
+Modulating Blend
+Module Control
+Module Copy
+Module Reset
+Money Format
+Mouse Over
+Mouseover Glow
+Mouseover Highlight
+Mouseover
+Multi-Monitor Support
+Multiply the backdrops height or width by this value. This is usefull if you wish to have more than one bar behind a backdrop.
+NPC IDs
+Name Color
+Name Colored Glow
+Name Font
+Name Only
+Name
+NamePlate Style Filters
+NamePlates
+Nameplate
+Neutral
+Never Hide
+No Alert In Combat
+No Duration
+No Sorting
+Non-Interruptable
+Non-Target Alpha
+Not Casting Anything
+Not Channeling Anything
+Not Spell
+Not Targeted
+Not Usable
+Not valid spell id
+Num Rows
+Number of Groups
+Number of messages you scroll for each step.
+Number of repeat characters while in combat before the chat editbox is automatically closed. Set to 0 to disable.
+Number of time in seconds to scroll down to the bottom of the chat window if you are not scrolled down completely.
+Objective Frame Height
+Off Cooldown
+Offset of the powerbar to the healthbar, set to 0 to disable.
+Offset position for text.
+Offset
+On Cooldown
+Only Match SpellID
+Only show when the unit is not in range.
+Only show when you are mousing over a frame.
+Other Filter
+Other's First
+Others
+Out of Power
+Out of Range
+Over Health Threshold
+Over Power Threshold
+Overlay Alpha
+Overlay
+Overnuking
+Override any custom visibility setting in certain situations, EX: Only show groups 1 and 2 inside a 10 man instance.
+Override the default class color setting.
+Owners Name
+PVP Trinket
+Panel Backdrop
+Panel Height
+Panel Texture (Left)
+Panel Texture (Right)
+Panel Transparency
+Panel Width (Bags)
+Panel Width (Bank)
+Panel Width
+Panels
+Parent
+Party / Raid
+Party Only
+Party Pets
+Party Targets
+Per Row
+Percent
+Personal
+Pet Name
+Pet
+Pet Experience
+Pet Experience Bar
+PetTarget
+Petition Frame
+Pick Up Action Key
+Player Frame Aura Bars
+Player Health
+Player Out of Combat
+Player Target
+Player Titles
+Player in Combat
+Player is Resting
+Player
+Plugin
+Poison Effect
+Portrait
+Position Buffs on Debuffs
+Position Debuffs on Buffs
+Position of the Chat EditBox, if datatexts are disabled this will be forced to be above chat.
+Position
+Power Threshold
+Power text will be hidden on NPC targets, in addition the name text will be repositioned to the power texts anchor point.
+Power
+Powers
+Prevent the same messages from displaying in chat more than once within this set amount of seconds, set to zero to disable.
+Primary Texture
+Priority
+Private (Character Settings)
+Profession Bags
+Profile Name
+Profile Specific
+Profile imported successfully!
+Profile
+Progress Bar
+Puts coordinates on the world map.
+PvP Frames
+PvP Icon
+PvP Queue
+PvP Text
+Quest Frames
+Quest Starter
+Quiver
+RAID_CONTROL
+RL / ML Icons
+Raid Difficulty
+Raid Frame
+Raid Icon
+Raid Only
+Raid Pet
+Raid-40
+Raid-Wide Sorting
+RaidDebuff Indicator
+Range
+Rapidly update the health, uses more memory and cpu. Only recommended for healing.
+Reaction Castbars
+Reaction Colors
+Reaction Type
+Reactions
+Ready Check Icon
+Realm Time
+Remaining / Max
+Remaining Time
+Remaining
+Reminder
+Remove Backdrop
+Remove Name
+Remove Spell ID or Name
+Remove Spell
+Remove SpellID
+Remove a Name from the list.
+Remove a spell from the filter. Use the spell ID if you see the ID as part of the spell name in the filter.
+Remove a spell from the filter.
+Replace Blizzard Fonts
+Replaces the default Blizzard fonts on various panels and frames with the fonts chosen in the Media section of the ElvUI Options. NOTE: Any font that inherits from the fonts ElvUI usually replaces will be affected as well if you disable this. Enabled by default.
+Reposition Window
+Require All
+Require Target
+Require holding the Alt key down to move cursor or cycle through messages in the editbox.
+Reset Anchors
+Reset Aura Filters
+Reset Editbox History
+Reset Filter
+Reset History
+Reset Priority
+Reset Zoom
+Reset all frames to their original positions.
+Reset filter priority to the default state.
+Reset the size and position of this frame.
+Rest Icon
+Restore Bar
+Restore Defaults
+Restore the actionbars default settings
+Resurrect Icon
+Return filter to its default state.
+Reverse Bag Slots
+Reverse Cooldown
+Reverse Style
+Reverse Toggle will enable Cooldown Text on this module when the global setting is disabled and disable them when the global setting is enabled.
+Reverse Toggle
+Right Only
+Right Panel Height
+Right Panel Width
+Right to Left
+Right
+RightClick Self-Cast
+Role Icon
+Run the installation process.
+Sanctuary
+Scale of the nameplate that is targetted.
+Scale
+Scroll Interval
+Scroll Messages
+Search Syntax
+Search for a spell name inside of a filter.
+Secondary Texture
+Seconds remaining on the aura duration before the bar starts moving. Set to 0 to disable.
+Seconds
+Selected Text Color
+Selector Color
+Selector Style
+Securely Tanking
+Select Filter
+Select Spell
+Select a profile to copy from/to.
+Select a unit to copy settings from.
+Select the display method of the portrait.
+Sell Interval
+Send ADDON_ACTION_BLOCKED errors to the Lua Error frame. These errors are less important in most cases and will not effect your game performance. Also a lot of these errors cannot be fixed. Please only report these errors if you notice a Defect in gameplay.
+Sends your current profile to your target.
+Sends your filter settings to your target.
+Separate Panel Sizes
+Seperate
+Set Settings to Default
+Set the alpha level of portrait when frame is overlayed.
+Set the filter type. Blacklist will hide any auras in the list and show all others. Whitelist will show any auras in the filter and hide all others.
+Set the font outline.
+Set the font size for everything in UI. Note: This doesn't effect somethings that have their own seperate options (UnitFrame Font, Datatext Font, ect..)
+Set the font size for unitframes.
+Set the order that the group will sort.
+Set the orientation of the UnitFrame.
+Set the priority order of the spell, please note that prioritys are only used for the raid debuff module, not the standard buff/debuff module. If you want to disable set to zero.
+Set the size of the individual auras.
+Set the size of your bag buttons.
+Set the type of auras to show when a unit is a foe.
+Set the type of auras to show when a unit is friendly.
+Set to either stack nameplates vertically or allow them to overlap.
+Sets the font instance's horizontal text alignment style.
+Share Current Profile
+Share Filters
+Short (Whole Numbers)
+Short Channels
+Shortcut to 'Filters' section of the config.
+Shortcut to global filters.
+Shortcuts
+Shorten the channel names in chat.
+Should tooltip be anchored to mouse cursor
+Show Aura From Other Players
+Show Auras
+Show Bind on Equip/Use Text
+Show Both
+Show Coins
+Show Dispellable Debuffs
+Show Empty Buttons
+Show For DPS
+Show For Healers
+Show For Tanks
+Show Icon
+Show Junk Icon
+Show Quality Color
+Show Quest Icon
+Show When Not Active
+Show an incoming heal prediction bar on the unitframe. Also display a slightly different colored bar for incoming overheals.
+Show the castbar icon desaturated if a spell is not interruptible.
+Show/Hide Test Frame
+Side Arrows
+Size Override
+Size and Positions
+Size of the indicator icon.
+Size
+Skin Backdrop (No Borders)
+Skin Backdrop
+Skin the blizzard chat bubbles.
+Skins
+Small Panels
+Smaller World Map
+Smart Aura Position
+Smart Raid Filter
+Smart
+Smooth Bars
+Smooth
+Smoothing Amount
+Socket Frame
+Sort By
+Sort Direction
+Sort Inverted
+Sort Method
+Soul Bag
+Spaced
+Spacing
+Spam Interval
+Spark
+Spell/Item IDs
+Split
+Stable
+Stack Counter
+Stack Text Position
+Stack Text X-Offset
+Stack Text Y-Offset
+Stack Threshold
+Start Near Center
+StatusBar Texture
+Statusbar Fill Orientation
+Statusbar
+Sticky Chat
+Strata and Level
+Style Filter
+Style
+Tab Font Outline
+Tab Font Size
+Tab Font
+Tab Panel Transparency
+Tab Panel
+Tab Selector
+Tabard Frame
+Table
+Tank Target
+Tank
+Tapped
+Target Indicator Color
+Target Info
+Target On Mouse-Down
+Target Scale
+Target units on mouse down rather than mouse up. \n\n|cffFF0000Warning: If you are using the addon 'Clique' you may have to adjust your clique settings when changing this.
+Target/Low Health Indicator
+TargetTarget
+TargetTargetTarget
+Targeted Glow
+Targeting
+Testing:
+Text Fade
+Text Color
+Text Font Size
+Text Format
+Text Position
+Text Threshold
+Text Toggle On NPC
+Text xOffset
+Text yOffset
+Text
+Texture
+Textured Icon
+Textures
+The Portrait will overlay the Healthbar. This will be automatically happen if the Frame Orientation is set to Middle.
+The Thin Border Theme option will change the overall apperance of your UI. Using Thin Border Theme is a slight performance increase over the traditional layout.
+The amount of buttons to display per row.
+The amount of buttons to display.
+The button you must hold down in order to drag an ability to another action button.
+The debuff needs to reach this amount of stacks before it is shown. Set to 0 to always show the debuff.
+The direction that the bag frames be (Horizontal or Vertical).
+The direction that the bag frames will grow from the anchor.
+The direction the auras will grow and then the direction they will grow after they reach the wrap after limit.
+The display format of the currency icons that get displayed below the main bag. (You have to be watching a currency for this to display)
+The display format of the money text that is shown at the top of the main bag.
+The display format of the money text that is shown in the gold datatext and its tooltip.
+The first button anchors itself to this point on the bar.
+The following macro must be true in order for the group to be shown, in addition to any filter that may already be set.
+The font that appears on the text above players heads. |cffFF0000WARNING: This requires a game restart or re-log for this change to take effect.|r
+The font that combat text will use. |cffFF0000WARNING: This requires a game restart or re-log for this change to take effect.|r
+The font that the core of the UI will use.
+The font that the unitframes will use.
+The frame is not shown unless you mouse over the frame.
+The initial group will start near the center and grow out.
+The minimum item level required for it to be shown.
+The name you have selected is already in use by another element.
+The object you want to attach to.
+The size of the action buttons.
+The size of the individual buttons on the bag frame.
+The size of the individual buttons on the bank frame.
+The spacing between buttons.
+The spacing between the backdrop and the buttons.
+The texture that will be used mainly for statusbars.
+The unit prefixes you want to use when values are shortened in ElvUI. This is mostly used on UnitFrames.
+These filters don't use a list of spells like the regular filters. Instead they use the WoW API and some code logic to determine if an aura should be allowed or blocked.
+These filters use a list of spells to determine if an aura should be allowed or blocked. The content of these filters can be modified in the 'Filters' section of the config.
+Thin Border Theme
+Thin Borders
+This dictates the size of the icon when it is not attached to the castbar.
+This feature will allow you to transfer settings to other characters.
+This is for Customized Icons in your Interface/Icons folder.
+This opens the UnitFrames Color settings. These settings affect all unitframes.
+This option allows the overlay to span the whole health, including the background.
+This section will allow you to copy settings to a select module from or to a different profile.
+This section will help reset specfic settings back to default.
+This selects the Chat Frame to use as the output of ElvUI messages.
+This setting controls the size of text in item comparison tooltips.
+This setting will be updated upon changing stances.
+This texture will get used on objects like chat windows and dropdown menus.
+This will override the global cooldown settings.
+This will prevent the UI Scale Popup from being shown when changing the game window size.
+This will reset the contents of this filter back to default. Any spell you have added to this filter will be removed.
+Threat Display Mode
+Threat Health
+Threat Power
+Threat
+Threshold (in minutes) before text is shown in the HH:MM format. Set to -1 to never change to this format.
+Threshold (in seconds) before text is shown in the MM:SS format. Set to -1 to never change to this format.
+Threshold before text goes into decimal form. Set to -1 to disable decimals.
+Threshold before text turns red and is in decimal form. Set to -1 for it to never turn red
+Threshold before the icon will fade out and back in. Set to -1 to disable.
+Ticks
+Time Format
+Time Indicator Colors
+Time Remaining Reverse
+Time Remaining
+Time To Hold
+Time xOffset
+Time yOffset
+Time
+Timestamp Color
+Toggle Anchors
+Toggle Off While In Combat
+Toggle On While In Combat
+Toggle Tutorials
+Toggle showing of the left and right chat panels.
+Toggle the chat tab panel backdrop.
+Toggles the display of the actionbars backdrop.
+Tooltip Font Settings
+Top Arrow
+Top Left
+Top Panel
+Top Right
+Top to Bottom
+Top
+TopLeftMiniPanel
+TopMiniPanel
+TopRightMiniPanel
+Totem
+Trainer Frame
+Transparency level when not in combat, no target exists, full health, not casting, and no focus target exists.
+Transparent Backdrops
+Transparent Buttons
+Transparent
+Triggers
+Turtle Color
+Tutorial Frame
+URL Links
+Under Health Threshold
+Under Power Threshold
+Uniform Threshold
+Unique Units
+Unit Conditions
+Unit Prefix Style
+Unit Target
+Unit Type
+UnitFrames
+Unlock various elements of the UI to be repositioned.
+Up
+Usable
+Use Alt Key
+Use Class Color
+Use Custom Level
+Use Custom Strata
+Use Dead Backdrop
+Use Default
+Use Indicator Color
+Use Shift+LeftClick to toggle between friendly or enemy or normal state. Normal state will allow the filter to be checked on all units. Friendly state is for friendly units only and enemy state is for enemy units.
+Use Target Scale
+Use Threat Color
+Use class color for the names of players when they are mentioned.
+Use coin icons instead of colored text.
+Use drag and drop to rearrange filter priority or right click to remove a filter.
+Use the Name Color of the unit for the Name Glow.
+Use the custom backdrop color instead of a multiple of the main color.
+Use the profile specific filter 'Buff Indicator (Profile)' instead of the global filter 'Buff Indicator'.
+Use thin borders on certain unitframe elements.
+Use this backdrop color for units that are dead or ghosts.
+Used as RaidDebuff Indicator
+Value Color
+Value must be a number
+Vehicle Seat Indicator Size
+Vehicle
+Vendor Gray Detailed Report
+Vendor Grays
+Version
+Vertical Fill Direction
+Vertical Spacing
+Vertical
+Visibility State
+Visibility
+Watch Frame
+What point to anchor to the frame you set to attach to.
+What to attach the buff anchor frame to.
+What to attach the debuff anchor frame to.
+When enabled active buff icons will light up instead of becoming darker, while inactive buff icons will become darker instead of being lit up.
+When enabled it will only show spells that were added to the filter using a spell ID and not a name.
+When in a raid group display if anyone in your raid is targeting the current tooltip unit.
+When inside a battleground display personal scoreboard information on the main datatext bars.
+When opening the Chat Editbox to type a message having this option set means it will retain the last channel you spoke in. If this option is turned off opening the Chat Editbox should always default to the SAY channel.
+When true, the header includes the player when not in a raid.
+When you go AFK display the AFK screen.
+Whitelist
+Width Multiplier
+Width
+Will attempt to sell another item in set interval after previous one was sold.
+Will show Buffs in the Debuff position when there are no Debuffs active, or vice versa.
+Word Wrap
+World Map Coordinates
+World State Frame
+Wrap After
+X-Offset
+Y-Offset
+You do not need to use 'Is Casting Anything' or 'Is Channeling Anything' for these spells to trigger.
+You may not remove a spell from a default filter that is not customly added. Setting spell to false instead.
+You must be targeting a player.
+You need to hold this modifier down in order to blacklist an aura by right-clicking the icon. Set to None to disable the blacklist functionality.
+Your Auras First
+xOffset
+yOffset
+ACTIONBARS_DESC
+AURAS_DESC
+BAGS_DESC
+CHAT_DESC
+COOLDOWN_DESC
+DATABAR_DESC
+DATATEXT_DESC
+ELVUI_DESC
+NAMEPLATE_DESC
+PANEL_DESC
+SKINS_DESC
+TOGGLESKIN_DESC
+TOOLTIP_DESC
+UNITFRAME_DESC
+SEARCH_SYNTAX_DESC
+TEXT_FORMAT_DESC
+NAMEPLATE_FRAMELEVEL_DESC
+ACHIEVEMENTS
+ALT_KEY_TEXT
+ARENA
+AUCTIONS
+BAGSLOT
+BARBERSHOP
+BATTLEGROUND
+BATTLEFIELDS
+BLOCK
+BOSS
+BUFFOPTIONS_LABEL
+CLASS
+CHANNEL
+COLOR
+COLORS
+COMBAT
+COMBAT_TEXT_RUNE_BLOOD
+COMBAT_TEXT_RUNE_DEATH
+COMBAT_TEXT_RUNE_FROST
+COMBAT_TEXT_RUNE_UNHOLY
+COMBO_POINTS
+CTRL_KEY
+CUSTOM
+DAMAGER
+DEFAULT
+DELETE
+DISABLE
+DRESSUP_FRAME
+DUNGEON_DIFFICULTY
+DUNGEONS
+EMOTE
+ENEMY
+ENERGY
+FACTION_STANDING_LABEL1
+FACTION_STANDING_LABEL2
+FACTION_STANDING_LABEL3
+FACTION_STANDING_LABEL4
+FACTION_STANDING_LABEL5
+FACTION_STANDING_LABEL6
+FACTION_STANDING_LABEL7
+FACTION_STANDING_LABEL8
+FILTERS
+FLIGHT_MAP
+FOCUS
+FONT_SIZE
+FRIEND
+FRIENDS
+GROUP
+GUILD
+GUILD_BANK
+HAPPINESS
+HEALER
+HEALTH
+HIDE
+INSCRIPTION
+INSPECT
+INTERFACE_OPTIONS
+INTERRUPTED
+ITEM_BIND_QUEST
+ITEMS
+KEY_BINDINGS
+LANGUAGE
+LEAVE_VEHICLE
+LEVEL
+LOCK_ACTIONBAR_TEXT
+LOOT
+MACROS
+MAIL_LABEL
+MANA
+MAP_FADE_TEXT
+MERCHANT
+MINIMAP_LABEL
+MISCELLANEOUS
+NAME
+NONE
+OFFICER
+OPACITY
+OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN
+OPTION_TOOLTIP_TIMESTAMPS
+PARTY
+PET
+PLAYER
+PLAYER_DIFFICULTY1
+PLAYER_DIFFICULTY2
+RAGE
+RAID
+RAID_TARGET_1
+RAID_TARGET_2
+RAID_TARGET_3
+RAID_TARGET_4
+RAID_TARGET_5
+RAID_TARGET_6
+RAID_TARGET_7
+RAID_TARGET_8
+REPUTATION
+ROLE
+RUNIC_POWER
+SAY
+SHIFT_KEY
+SHORT
+SHOW
+SPEED
+SPELLBOOK
+TALENTS
+TANK
+TARGET
+TIMEMANAGER_TITLE
+TIMESTAMPS_LABEL
+TRADE
+TRADESKILLS
+TUTORIAL_TITLE47
+UI_SCALE
+UNIT_NAMEPLATES_TYPES
+UNIT_NAMEPLATES_TYPE_1
+UNIT_NAMEPLATES_TYPE_2
+WHISPER
+WORLD_MAP
+XPBAR_LABEL
+YELL

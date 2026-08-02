@@ -1,0 +1,189 @@
+ENH_LOGIN_MSG
+DURABILITY_DESC
+ITEMLEVEL_DESC
+WATCHFRAME_DESC
+GearScore '3.1.20b - Release' is not for WotLK. Download 3.1.7. Disable this version?
+Enable All
+Dependencies: 
+Disable All
+Load AddOn
+Requires Reload
+Filter DPS meters Spam
+Replaces reports from damage meters with a clickable hyperlink to reduce chat spam
+Death Recap Frame
+Ammo/Shard Counter
+Combat Indicator
+Distance
+In Combat
+New Mail
+No Mail
+Out of Combat
+Reincarnation
+Target Range
+%s %s
+%s by %s
+%s sec before death at %s%% health.
+(%d Absorbed)
+(%d Blocked)
+(%d Overkill)
+(%d Resisted)
+Death Recap unavailable.
+Death Recap
+Killing blow at %s%% health.
+You died.
+Auto decline all duels
+Decline Duel
+Declined duel request from 
+Character Background
+Enhanced Character Frame
+Inspect Background
+Enhanced Model Frames
+Paperdoll Backgrounds
+Pet Background
+Damaged Only
+Enable/Disable the display of durability information on the character screen.
+Enable/Disable the display of item levels on the character screen.
+Only show durabitlity information for items that are damaged.
+Quality Color
+Add button to Dressing Room frame with ability to undress model.
+Add button to Trainer frame with ability to train all available skills in one click.
+Alt-Click Merchant
+Already Known
+Animated Achievement Bars
+Automatically change your watched faction on the reputation bar to the faction you got reputation points for.
+Automatically release body when killed inside a battleground.
+Automatically select the quest reward with the highest vendor sell value.
+Change color of item icons which already known.
+Changes the transparency of all the movers.
+Display quest levels at Quest Log.
+Hide Zone Text
+Holding Alt key while buying something from vendor will now buy an entire stack.
+Mover Transparency
+PvP Autorelease
+Select Quest Reward
+Show Quest Level
+Track Reputation
+Train All Button
+Undress Button
+Undress
+Debug
+List of models with broken portrait camera. Separete each model name with ';' simbol
+Models to fix
+Portrait HD Fix
+Print to chat model names of units with enabled 3D portraits.
+Interrupt Tracker
+Cache Unit Class
+Above Minimap
+Combat Hide
+FadeIn Delay
+Hide minimap while in combat.
+Show Location Digits
+Toggle Location Digits.
+Location Digits
+Location Panel
+Number of digits for map location.
+The time to wait before fading the minimap back in after combat hide. (0 = Disabled)
+Toggle Location Panel.
+Timer Tracker
+Hook DBM
+Check Player
+Check achievement completion instead of boss kill stats.\nSome servers log incorrect boss kill statistics, this is an alternative way to get player progress.
+Colorize the tooltip border based on item quality.
+Icecrown Citadel
+Item Border Color
+Progress Info
+Ruby Sanctum
+Show/Hides an Icon for Achievements on the Tooltip.
+Show/Hides an Icon for Items on the Tooltip.
+Show/Hides an Icon for Spells and Items on the Tooltip.
+Show/Hides an Icon for Spells on the Tooltip.
+Tiers
+Tooltip Icon
+Trial of the Crusader
+Ulduar
+Loss Control
+Player Portrait
+Target Portrait
+CC
+Disarm
+Lose Control
+PvE
+Root
+Silence
+Snare
+Class Icons
+Detached Height
+Show class icon for units.
+Hidden
+Collapsed
+City (Resting)
+PvP
+Party
+Raid
+Drag
+Left-click on character and drag to rotate.
+Mouse Wheel Down
+Mouse Wheel Up
+Reset Position
+Right-click on character and drag to move it within the window.
+Rotate Left
+Rotate Right
+Zoom In
+Zoom Out
+Character Stats
+Damage Per Second
+Equipment Manager
+Hide Character Information
+Hide Pet Information
+Item Level
+New Set
+Resistance
+Show Character Information
+Show Pet Information
+Titles
+Total Companions
+Total Mounts
+ALL
+ALT_KEY
+%d mails\nShift-Click to remove empty mails.
+Addon |cffFFD100%s|r was merged into |cffFFD100ElvUI_Enhanced|r.\nPlease remove it to avoid conflicts.
+Cache Unit Guilds / NPC Titles
+Check Achievements
+Collected 
+Collection completed.
+Collection stopped, inventory is full.
+Color based on reaction type.
+Compact mode
+Companion Background
+Desaturate
+Detached Portrait
+Dressing Room
+Enhanced
+Equipment Info
+Error Frame
+Everywhere
+Fog of War
+Grow direction
+Guild
+Inside Minimap
+Key Press Animation
+Map
+Minimap Button Grabber
+NPC
+Overlay Color
+Reaction Color
+Reported by %s
+Rotation
+Separator
+Set the height of Error Frame. Higher frame can show more lines at once.
+Set the width of Error Frame. Too narrow frame may cause messages to be split in several lines
+Show Everywhere
+Show on Arena.
+Show on Battleground.
+Smooth Animations
+Take All
+Take All Mail
+Take Cash
+This addon has been disabled. You should install an updated version.
+Where to show
+seconds

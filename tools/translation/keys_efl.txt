@@ -1,0 +1,26 @@
+LEVEL_TEMPLATE
+SHORT_LEVEL_TEMPLATE
+Class Icon
+Class Icon Status Color
+Class Text
+Colorize Name Only
+Enhanced Friends List
+Enhanced Name
+Enhanced Zone Color
+Enhanced Zone
+Friends that are in the same area as you, have their zone info colorized green.
+Last Seen
+Last seen
+Level Range Color
+Level Text
+Level
+Offline Friends
+Online Friends
+Same Zone Color
+Same Zone
+Short Level
+Show Background
+Show Status Icon
+Status Icons Textures
+Zone Font
+Zone Text

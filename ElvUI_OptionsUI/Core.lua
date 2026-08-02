@@ -405,6 +405,46 @@ E.Options.args.profiles.order = -10
 
 E.Libs.DualSpec:EnhanceOptions(E.Options.args.profiles, E.data)
 
+-- ukUA is not a real client locale, so AceDBOptions-3.0 and LibDualSpec-1.0 (which both pick
+-- their strings via GetLocale()) fall back to the client locale and stay untranslated. The
+-- shared L proxy (E:SetActiveLocale in Core/Core.lua) can't reach them -- these libs freeze
+-- their own L tables at load. Localize the profile screen here: the only spot that runs after
+-- login (OptionsUI is LoadOnDemand) and knows the locale chosen in ElvUI's language dropdown.
+if E.global.general.locale == "ukUA" then
+	local profiles = E.Options.args.profiles
+	local a = profiles.args
+
+	profiles.name = "Профілі"
+	profiles.desc = "Керування профілями"
+
+	a.desc.name = "Ви можете змінити активний профіль бази даних, щоб мати різні налаштування для кожного персонажа.\n"
+	a.descreset.name = "Скинути поточний профіль до стандартних значень, якщо ваша конфігурація зіпсована або ви хочете почати усе заново."
+	a.reset.name = "Скинути профіль"
+	a.reset.desc = "Скинути поточний профіль до стандартного"
+	a.current.name = function(info) return "Поточний профіль: " .. NORMAL_FONT_COLOR_CODE .. info.handler:GetCurrentProfile() .. FONT_COLOR_CODE_CLOSE end
+	a.choosedesc.name = "\nВи можете створити новий профіль, ввівши назву в поле вводу, або вибрати один з уже наявних профілів."
+	a.new.name = "Новий"
+	a.new.desc = "Створити новий порожній профіль."
+	a.choose.name = "Наявні профілі"
+	a.choose.desc = "Виберіть один з доступних наразі профілів."
+	a.copydesc.name = "\nСкопіювати налаштування з наявного профілю в активний."
+	a.copyfrom.name = "Скопіювати з"
+	a.copyfrom.desc = "Скопіювати налаштування з наявного профілю в активний."
+	a.deldesc.name = "\nВидалити наявний і невикористовуваний профіль з бази даних для економії місця та очищення файлу SavedVariables."
+	a.delete.name = "Видалити профіль"
+	a.delete.desc = "Видалення профілю з бази даних."
+	a.delete.confirmText = "Ви впевнені, що хочете видалити вибраний профіль?"
+
+	local dual = profiles.plugins and profiles.plugins["LibDualSpec-1.0"]
+	if dual then
+		dual.dualSpecDesc.name = "Подвійний профіль дозволяє вибрати різні профілі для кожної спеціалізації талантів. Профілі перемикатимуться щоразу, коли ви змінюєте розкладку талантів."
+		dual.enabled.name = "Увімкнути подвійний профіль"
+		dual.enabled.desc = "Позначте цей прапорець для автоматичного перемикання профілів при зміні талантів."
+		dual.dualProfile.name = "Другий профіль"
+		dual.dualProfile.desc = "Виберіть профіль, який буде активовано при перемиканні талантів."
+	end
+end
+
 if not E.Options.args.profiles.plugins then
 	E.Options.args.profiles.plugins = {}
 end

@@ -6,7 +6,23 @@ do -- Locale doesn't exist yet, make it exist.
 	local lang = GetLocale()
 
 	gameLocale = convert[lang] or lang or "enUS"
-	ElvUI[2] = ElvUI[1].Libs.ACL:GetLocale("ElvUI", gameLocale)
+
+	local ACL = ElvUI[1].Libs.ACL
+
+	-- The player's saved language override (General > Language) lives in ElvDB, which is
+	-- NOT populated while addon files execute -- SavedVariables load after the code runs.
+	-- So the whole-UI locale can't be read here. Instead bind the shared locale table used
+	-- by the core UI and every plugin (ElvUI[2]) to a stable proxy that resolves against the
+	-- client locale for now; E:SetActiveLocale (called from E:Initialize, once the DB exists)
+	-- re-points the proxy at the saved locale. Consumers capture this proxy via
+	-- `L = unpack(ElvUI)` and keep the reference, so a single redirect reaches all of them.
+	-- Safe because nothing iterates L -- only L[key] reads happen across the whole suite.
+	ElvUI[2] = setmetatable({}, {__index = ACL:GetLocale("ElvUI", gameLocale)})
+
+	ElvUI[1].SetActiveLocale = function(_, locale)
+		local resolved = (locale and locale ~= "auto") and locale or gameLocale
+		setmetatable(ElvUI[2], {__index = ACL:GetLocale("ElvUI", resolved)})
+	end
 end
 
 local E, L, V, P, G = unpack(ElvUI); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
@@ -1270,6 +1286,10 @@ function E:Initialize()
 	self.private = self.charSettings.profile
 	self.db = self.data.profile
 	self.global = self.data.global
+
+	-- Now that the DB is loaded, point the shared locale table at the saved language
+	-- override so the whole UI and every plugin (not just the options panel) use it.
+	self:SetActiveLocale(self.global.general.locale)
 
 	self:CheckIncompatible()
 	self:DBConversions()

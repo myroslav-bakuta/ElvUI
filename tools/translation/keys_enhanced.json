@@ -1,0 +1,758 @@
+[
+{
+"raw": "ENH_LOGIN_MSG",
+"q": "\""
+},
+{
+"raw": "DURABILITY_DESC",
+"q": "\""
+},
+{
+"raw": "ITEMLEVEL_DESC",
+"q": "\""
+},
+{
+"raw": "WATCHFRAME_DESC",
+"q": "\""
+},
+{
+"raw": "GearScore '3.1.20b - Release' is not for WotLK. Download 3.1.7. Disable this version?",
+"q": "\""
+},
+{
+"raw": "Enable All",
+"q": "\""
+},
+{
+"raw": "Dependencies: ",
+"q": "\""
+},
+{
+"raw": "Disable All",
+"q": "\""
+},
+{
+"raw": "Load AddOn",
+"q": "\""
+},
+{
+"raw": "Requires Reload",
+"q": "\""
+},
+{
+"raw": "Filter DPS meters Spam",
+"q": "\""
+},
+{
+"raw": "Replaces reports from damage meters with a clickable hyperlink to reduce chat spam",
+"q": "\""
+},
+{
+"raw": "Death Recap Frame",
+"q": "\""
+},
+{
+"raw": "Ammo/Shard Counter",
+"q": "\""
+},
+{
+"raw": "Combat Indicator",
+"q": "\""
+},
+{
+"raw": "Distance",
+"q": "\""
+},
+{
+"raw": "In Combat",
+"q": "\""
+},
+{
+"raw": "New Mail",
+"q": "\""
+},
+{
+"raw": "No Mail",
+"q": "\""
+},
+{
+"raw": "Out of Combat",
+"q": "\""
+},
+{
+"raw": "Reincarnation",
+"q": "\""
+},
+{
+"raw": "Target Range",
+"q": "\""
+},
+{
+"raw": "%s %s",
+"q": "\""
+},
+{
+"raw": "%s by %s",
+"q": "\""
+},
+{
+"raw": "%s sec before death at %s%% health.",
+"q": "\""
+},
+{
+"raw": "(%d Absorbed)",
+"q": "\""
+},
+{
+"raw": "(%d Blocked)",
+"q": "\""
+},
+{
+"raw": "(%d Overkill)",
+"q": "\""
+},
+{
+"raw": "(%d Resisted)",
+"q": "\""
+},
+{
+"raw": "Death Recap unavailable.",
+"q": "\""
+},
+{
+"raw": "Death Recap",
+"q": "\""
+},
+{
+"raw": "Killing blow at %s%% health.",
+"q": "\""
+},
+{
+"raw": "You died.",
+"q": "\""
+},
+{
+"raw": "Auto decline all duels",
+"q": "\""
+},
+{
+"raw": "Decline Duel",
+"q": "\""
+},
+{
+"raw": "Declined duel request from ",
+"q": "\""
+},
+{
+"raw": "Character Background",
+"q": "\""
+},
+{
+"raw": "Enhanced Character Frame",
+"q": "\""
+},
+{
+"raw": "Inspect Background",
+"q": "\""
+},
+{
+"raw": "Enhanced Model Frames",
+"q": "\""
+},
+{
+"raw": "Paperdoll Backgrounds",
+"q": "\""
+},
+{
+"raw": "Pet Background",
+"q": "\""
+},
+{
+"raw": "Damaged Only",
+"q": "\""
+},
+{
+"raw": "Enable/Disable the display of durability information on the character screen.",
+"q": "\""
+},
+{
+"raw": "Enable/Disable the display of item levels on the character screen.",
+"q": "\""
+},
+{
+"raw": "Only show durabitlity information for items that are damaged.",
+"q": "\""
+},
+{
+"raw": "Quality Color",
+"q": "\""
+},
+{
+"raw": "Add button to Dressing Room frame with ability to undress model.",
+"q": "\""
+},
+{
+"raw": "Add button to Trainer frame with ability to train all available skills in one click.",
+"q": "\""
+},
+{
+"raw": "Alt-Click Merchant",
+"q": "\""
+},
+{
+"raw": "Already Known",
+"q": "\""
+},
+{
+"raw": "Animated Achievement Bars",
+"q": "\""
+},
+{
+"raw": "Automatically change your watched faction on the reputation bar to the faction you got reputation points for.",
+"q": "\""
+},
+{
+"raw": "Automatically release body when killed inside a battleground.",
+"q": "\""
+},
+{
+"raw": "Automatically select the quest reward with the highest vendor sell value.",
+"q": "\""
+},
+{
+"raw": "Change color of item icons which already known.",
+"q": "\""
+},
+{
+"raw": "Changes the transparency of all the movers.",
+"q": "\""
+},
+{
+"raw": "Display quest levels at Quest Log.",
+"q": "\""
+},
+{
+"raw": "Hide Zone Text",
+"q": "\""
+},
+{
+"raw": "Holding Alt key while buying something from vendor will now buy an entire stack.",
+"q": "\""
+},
+{
+"raw": "Mover Transparency",
+"q": "\""
+},
+{
+"raw": "PvP Autorelease",
+"q": "\""
+},
+{
+"raw": "Select Quest Reward",
+"q": "\""
+},
+{
+"raw": "Show Quest Level",
+"q": "\""
+},
+{
+"raw": "Track Reputation",
+"q": "\""
+},
+{
+"raw": "Train All Button",
+"q": "\""
+},
+{
+"raw": "Undress Button",
+"q": "\""
+},
+{
+"raw": "Undress",
+"q": "\""
+},
+{
+"raw": "Debug",
+"q": "\""
+},
+{
+"raw": "List of models with broken portrait camera. Separete each model name with ';' simbol",
+"q": "\""
+},
+{
+"raw": "Models to fix",
+"q": "\""
+},
+{
+"raw": "Portrait HD Fix",
+"q": "\""
+},
+{
+"raw": "Print to chat model names of units with enabled 3D portraits.",
+"q": "\""
+},
+{
+"raw": "Interrupt Tracker",
+"q": "\""
+},
+{
+"raw": "Cache Unit Class",
+"q": "\""
+},
+{
+"raw": "Above Minimap",
+"q": "\""
+},
+{
+"raw": "Combat Hide",
+"q": "\""
+},
+{
+"raw": "FadeIn Delay",
+"q": "\""
+},
+{
+"raw": "Hide minimap while in combat.",
+"q": "\""
+},
+{
+"raw": "Show Location Digits",
+"q": "\""
+},
+{
+"raw": "Toggle Location Digits.",
+"q": "\""
+},
+{
+"raw": "Location Digits",
+"q": "\""
+},
+{
+"raw": "Location Panel",
+"q": "\""
+},
+{
+"raw": "Number of digits for map location.",
+"q": "\""
+},
+{
+"raw": "The time to wait before fading the minimap back in after combat hide. (0 = Disabled)",
+"q": "\""
+},
+{
+"raw": "Toggle Location Panel.",
+"q": "\""
+},
+{
+"raw": "Timer Tracker",
+"q": "\""
+},
+{
+"raw": "Hook DBM",
+"q": "\""
+},
+{
+"raw": "Check Player",
+"q": "\""
+},
+{
+"raw": "Check achievement completion instead of boss kill stats.\\nSome servers log incorrect boss kill statistics, this is an alternative way to get player progress.",
+"q": "\""
+},
+{
+"raw": "Colorize the tooltip border based on item quality.",
+"q": "\""
+},
+{
+"raw": "Icecrown Citadel",
+"q": "\""
+},
+{
+"raw": "Item Border Color",
+"q": "\""
+},
+{
+"raw": "Progress Info",
+"q": "\""
+},
+{
+"raw": "Ruby Sanctum",
+"q": "\""
+},
+{
+"raw": "Show/Hides an Icon for Achievements on the Tooltip.",
+"q": "\""
+},
+{
+"raw": "Show/Hides an Icon for Items on the Tooltip.",
+"q": "\""
+},
+{
+"raw": "Show/Hides an Icon for Spells and Items on the Tooltip.",
+"q": "\""
+},
+{
+"raw": "Show/Hides an Icon for Spells on the Tooltip.",
+"q": "\""
+},
+{
+"raw": "Tiers",
+"q": "\""
+},
+{
+"raw": "Tooltip Icon",
+"q": "\""
+},
+{
+"raw": "Trial of the Crusader",
+"q": "\""
+},
+{
+"raw": "Ulduar",
+"q": "\""
+},
+{
+"raw": "Loss Control",
+"q": "\""
+},
+{
+"raw": "Player Portrait",
+"q": "\""
+},
+{
+"raw": "Target Portrait",
+"q": "\""
+},
+{
+"raw": "CC",
+"q": "\""
+},
+{
+"raw": "Disarm",
+"q": "\""
+},
+{
+"raw": "Lose Control",
+"q": "\""
+},
+{
+"raw": "PvE",
+"q": "\""
+},
+{
+"raw": "Root",
+"q": "\""
+},
+{
+"raw": "Silence",
+"q": "\""
+},
+{
+"raw": "Snare",
+"q": "\""
+},
+{
+"raw": "Class Icons",
+"q": "\""
+},
+{
+"raw": "Detached Height",
+"q": "\""
+},
+{
+"raw": "Show class icon for units.",
+"q": "\""
+},
+{
+"raw": "Hidden",
+"q": "\""
+},
+{
+"raw": "Collapsed",
+"q": "\""
+},
+{
+"raw": "City (Resting)",
+"q": "\""
+},
+{
+"raw": "PvP",
+"q": "\""
+},
+{
+"raw": "Party",
+"q": "\""
+},
+{
+"raw": "Raid",
+"q": "\""
+},
+{
+"raw": "Drag",
+"q": "\""
+},
+{
+"raw": "Left-click on character and drag to rotate.",
+"q": "\""
+},
+{
+"raw": "Mouse Wheel Down",
+"q": "\""
+},
+{
+"raw": "Mouse Wheel Up",
+"q": "\""
+},
+{
+"raw": "Reset Position",
+"q": "\""
+},
+{
+"raw": "Right-click on character and drag to move it within the window.",
+"q": "\""
+},
+{
+"raw": "Rotate Left",
+"q": "\""
+},
+{
+"raw": "Rotate Right",
+"q": "\""
+},
+{
+"raw": "Zoom In",
+"q": "\""
+},
+{
+"raw": "Zoom Out",
+"q": "\""
+},
+{
+"raw": "Character Stats",
+"q": "\""
+},
+{
+"raw": "Damage Per Second",
+"q": "\""
+},
+{
+"raw": "Equipment Manager",
+"q": "\""
+},
+{
+"raw": "Hide Character Information",
+"q": "\""
+},
+{
+"raw": "Hide Pet Information",
+"q": "\""
+},
+{
+"raw": "Item Level",
+"q": "\""
+},
+{
+"raw": "New Set",
+"q": "\""
+},
+{
+"raw": "Resistance",
+"q": "\""
+},
+{
+"raw": "Show Character Information",
+"q": "\""
+},
+{
+"raw": "Show Pet Information",
+"q": "\""
+},
+{
+"raw": "Titles",
+"q": "\""
+},
+{
+"raw": "Total Companions",
+"q": "\""
+},
+{
+"raw": "Total Mounts",
+"q": "\""
+},
+{
+"raw": "ALL",
+"q": "\""
+},
+{
+"raw": "ALT_KEY",
+"q": "\""
+},
+{
+"raw": "%d mails\\nShift-Click to remove empty mails.",
+"q": "\""
+},
+{
+"raw": "Addon |cffFFD100%s|r was merged into |cffFFD100ElvUI_Enhanced|r.\\nPlease remove it to avoid conflicts.",
+"q": "\""
+},
+{
+"raw": "Cache Unit Guilds / NPC Titles",
+"q": "\""
+},
+{
+"raw": "Check Achievements",
+"q": "\""
+},
+{
+"raw": "Collected ",
+"q": "\""
+},
+{
+"raw": "Collection completed.",
+"q": "\""
+},
+{
+"raw": "Collection stopped, inventory is full.",
+"q": "\""
+},
+{
+"raw": "Color based on reaction type.",
+"q": "\""
+},
+{
+"raw": "Compact mode",
+"q": "\""
+},
+{
+"raw": "Companion Background",
+"q": "\""
+},
+{
+"raw": "Desaturate",
+"q": "\""
+},
+{
+"raw": "Detached Portrait",
+"q": "\""
+},
+{
+"raw": "Dressing Room",
+"q": "\""
+},
+{
+"raw": "Enhanced",
+"q": "\""
+},
+{
+"raw": "Equipment Info",
+"q": "\""
+},
+{
+"raw": "Error Frame",
+"q": "\""
+},
+{
+"raw": "Everywhere",
+"q": "\""
+},
+{
+"raw": "Fog of War",
+"q": "\""
+},
+{
+"raw": "Grow direction",
+"q": "\""
+},
+{
+"raw": "Guild",
+"q": "\""
+},
+{
+"raw": "Inside Minimap",
+"q": "\""
+},
+{
+"raw": "Key Press Animation",
+"q": "\""
+},
+{
+"raw": "Map",
+"q": "\""
+},
+{
+"raw": "Minimap Button Grabber",
+"q": "\""
+},
+{
+"raw": "NPC",
+"q": "\""
+},
+{
+"raw": "Overlay Color",
+"q": "\""
+},
+{
+"raw": "Reaction Color",
+"q": "\""
+},
+{
+"raw": "Reported by %s",
+"q": "\""
+},
+{
+"raw": "Rotation",
+"q": "\""
+},
+{
+"raw": "Separator",
+"q": "\""
+},
+{
+"raw": "Set the height of Error Frame. Higher frame can show more lines at once.",
+"q": "\""
+},
+{
+"raw": "Set the width of Error Frame. Too narrow frame may cause messages to be split in several lines",
+"q": "\""
+},
+{
+"raw": "Show Everywhere",
+"q": "\""
+},
+{
+"raw": "Show on Arena.",
+"q": "\""
+},
+{
+"raw": "Show on Battleground.",
+"q": "\""
+},
+{
+"raw": "Smooth Animations",
+"q": "\""
+},
+{
+"raw": "Take All",
+"q": "\""
+},
+{
+"raw": "Take All Mail",
+"q": "\""
+},
+{
+"raw": "Take Cash",
+"q": "\""
+},
+{
+"raw": "This addon has been disabled. You should install an updated version.",
+"q": "\""
+},
+{
+"raw": "Where to show",
+"q": "\""
+},
+{
+"raw": "seconds",
+"q": "\""
+}
+]

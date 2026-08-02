@@ -15,6 +15,7 @@
 	<Script file="Smoothie.lua"/>
 	<Script file="Movers.lua"/>
 	<Script file="Config.lua"/>
+	<Script file="ConfigSearch.lua"/>
 	<Script file="Tutorials.lua"/>
 	<Script file="Distributor.lua"/>
 	<Script file="Dropdown.lua"/>

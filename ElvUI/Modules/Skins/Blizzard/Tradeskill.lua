@@ -41,7 +41,6 @@ S:AddCallbackForAddon("Blizzard_TradeSkillUI", "Skin_Blizzard_TradeSkillUI", fun
 	TradeSkillRankFrame:SetStatusBarColor(0.22, 0.39, 0.84)
 	TradeSkillRankFrame.SetStatusBarColor = E.noop
 	E:RegisterStatusBar(TradeSkillRankFrame)
-	E:SetSmoothing(TradeSkillRankFrame, 1)
 
 	S:HandleCheckBox(TradeSkillFrameAvailableFilterCheckButton)
 

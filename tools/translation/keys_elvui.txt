@@ -1,0 +1,318 @@
+ |cff00ff00bound to |r
+%s frame(s) has a conflicting anchor point, please change either the buff or debuff anchor point so they are not attached to each other. Forcing the debuffs to be attached to the main unitframe until fixed.
+%s is attempting to share his filters with you. Would you like to accept the request?
+%s is attempting to share the profile %s with you. Would you like to accept the request?
+%s: %s tried to call the protected function '%s'.
+(Hold Shift) Memory Usage
+(Modifer Click) Collect Garbage
+A raid marker feature is available by pressing Escape -> Keybinds scroll to the bottom under ElvUI and setting a keybind for the raid marker.
+A setting you have changed will change an option for this character only. This setting that you have changed will be uneffected by changing user profiles. Changing this setting requires that you reload your User Interface.
+ABOVE_THREAT_FORMAT
+AFK
+Accepting this will reset the UnitFrame settings for %s. Are you sure?
+Accepting this will reset your Filter Priority lists for all auras on NamePlates. Are you sure?
+Accepting this will reset your Filter Priority lists for all auras on UnitFrames. Are you sure?
+Adjust the UI Scale to fit your screen, press the autoscale button to set the UI Scale automatically.
+All keybindings cleared for |cff00ff00%s|r.
+Already Running.. Bailing Out!
+Are you sure you want to apply this font to all ElvUI elements?
+Are you sure you want to disband the group?
+Are you sure you want to reset all the settings on this profile?
+Are you sure you want to reset every mover back to it's default position?
+Arena Frames
+Aura Bars & Icons
+Auras Set
+Auras
+Auto Scale
+Avoidance Breakdown
+BG
+BGL
+BNet Frame
+Bag Mover (Grow Down)
+Bag Mover (Grow Up)
+Bag Mover
+Bags
+Bank Mover (Grow Down)
+Bank Mover (Grow Up)
+Bank
+Bar 
+Bars
+Battleground datatexts temporarily hidden, to show type /bgstats or right click the 'C' icon near the minimap.
+Battleground datatexts will now show again if you are inside a battleground.
+Binding
+Binds Discarded
+Binds Saved
+BoE
+BoU
+Boss Frames
+Buffs
+CVars Set
+CVars
+Calendar
+Can't Roll
+Can't buy anymore slots!
+Caster DPS
+Character: 
+Chat Set
+Chat
+Choose a theme layout you wish to use for your initial setup.
+Classbar
+Classic
+Combat Time
+Combobar
+Config Mode:
+Confused.. Try Again!
+Continue
+Coords
+Count
+DND
+DPS
+Dark
+Data From: %s
+Data To: %s
+Dead
+Debuffs
+Deficit:
+Delete gray items?
+Detected that your ElvUI OptionsUI addon is out of date. This may be a result of your Tukui Client being out of date. Please visit our download page and update your Tukui Client, then reinstall ElvUI. Not having your ElvUI OptionsUI addon up to date will result in missing options.
+Disable Warning
+Disable
+Disband Group
+Discard
+Discord
+Do you enjoy the new ElvUI?
+Do you swear not to post in technical support about something not working without first disabling the addon/module combination first?
+Earned:
+ElvUI Installation
+ElvUI Plugin Installation
+ElvUI has a dual spec feature which allows you to load different profiles based on your current spec on the fly. You can enable this from the profiles tab.
+ElvUI is five or more revisions out of date. You can download the newest version from https://github.com/ElvUI-WotLK/ElvUI
+ElvUI is out of date. You can download the newest version from https://github.com/ElvUI-WotLK/ElvUI
+ElvUI needs to perform database optimizations please be patient.
+ElvUI was updated while the game is still running. Please relaunch the game, as this is required for the files to be properly updated.
+Empty Slot
+Enable
+Error resetting UnitFrame.
+Experience Bar
+Experience
+Export Now
+Farm Mode
+Filter download complete from %s, would you like to apply changes now?
+Finished
+Fishy Loot
+Focus Castbar
+Focus Frame
+FocusTarget Frame
+For technical support visit us at https://github.com/ElvUI-WotLK.
+Frame
+Friends List
+G
+GM Ticket Frame
+General
+Ghost
+Gold
+Grid Size:
+HP
+HPS
+Healer
+Hit
+Hold Control + Right Click:
+Hold Shift + Drag:
+Hold Shift + Right Click:
+Home Latency:
+Hover your mouse over any actionbutton or spellbook button to bind it. Press the ESC key to clear the current actionbutton's keybinding.
+I Swear
+INCOMPATIBLE_ADDON
+Icons Only
+If you accidently remove a chat frame you can always go the in-game configuration menu, press install, go to the chat portion and reset them.
+If you are experiencing issues with ElvUI try disabling all your addons except ElvUI, remember ElvUI is a full UI replacement addon, you cannot run two addons that do the same thing.
+If you have an icon or aurabar that you don't want to display simply hold down shift and right click the icon for it to disapear.
+Import Now
+Importance: |cff07D400High|r
+Importance: |cffD3CF00Medium|r
+Importance: |cffFF0000Low|r
+In Progress
+Installation Complete
+Invalid Target
+Item Level:
+KEY_ALT
+KEY_CTRL
+KEY_DELETE
+KEY_HOME
+KEY_INSERT
+KEY_MOUSEBUTTON
+KEY_MOUSEWHEELDOWN
+KEY_MOUSEWHEELUP
+KEY_NUMPAD
+KEY_PAGEDOWN
+KEY_PAGEUP
+KEY_SHIFT
+KEY_SPACE
+Key
+LOGIN_MSG
+Layout Set
+Layout
+Left Chat
+Left Click:
+List of installations in queue:
+Lock
+Loot / Alert Frames
+Loot Frame
+Lord! It's a miracle! The download up and vanished like a fart in the wind! Try Again!
+MA Frames
+MT Frames
+Micro Bar
+Minimap
+MirrorTimer
+Miss Chance
+Mitigation By Level: 
+Movers
+Must be in group with the player if he isn't on the same server as you.
+No Guild
+No bindings set.
+No gray items to delete.
+No, Revert Changes!
+Nudge
+O
+Objective Frame
+Offline
+Oh lord, you have got ElvUI and Tukui both enabled at the same time. Select an addon to disable.
+On screen positions for different elements.
+One or more of the changes you have made require a ReloadUI.
+One or more of the changes you have made will effect all characters using this addon. You will have to reload the user interface to see the changes you have made.
+P
+PL
+Party Frames
+Pending
+Pet Bar
+Pet Castbar
+Pet Frame
+PetTarget Frame
+Player Buffs
+Player Castbar
+Player Debuffs
+Player Frame
+Player Powerbar
+Please click the button below so you can setup variables and ReloadUI.
+Please click the button below to setup your CVars.
+Please press the continue button to go onto the next step.
+Preview Changes
+Preview
+Profile download complete from %s, but the profile %s already exists. Change the name or else it will overwrite the existing profile.
+Profile download complete from %s, would you like to load the profile %s now?
+Profile request sent. Waiting for response from player.
+Profit:
+Purchase Bags
+PvP
+R
+RL
+RW
+Raid Frames
+Raid Menu
+Raid Pet Frames
+Raid-40 Frames
+Reload UI
+Remaining:
+Remove Bar %d Action Page
+Reputation Bar
+Request was denied by user.
+Reset Counters: Hold Shift + Left Click
+Reset Data: Hold Shift + Right Click
+Reset Position
+Rested:
+Right Chat
+Right Click:
+SP
+Save
+Saved Dungeon(s)
+Saved Raid(s)
+Select the type of aura system you want to use with ElvUI's unitframes. Set to Aura Bar & Icons to use both aura bars and icons, set to icons only to only see icons.
+Server: 
+Session:
+Setup CVars
+Setup Chat
+Show BG Texts
+Skip Process
+Sort Bags
+Spell/Heal Power
+Spent:
+Stance Bar
+Stats For:
+Steps
+Sticky Frames
+System
+Talent Specialization:
+Tank / Physical DPS
+Target Castbar
+Target Frame
+Target Powerbar
+TargetTarget Frame
+TargetTargetTarget Frame
+Targeted By:
+Temporary Move
+The UI Scale has been changed, if you would like to preview the change press the preview button. It is recommended that you reload your User Interface for the best appearance.
+The chat windows function the same as Blizzard standard chat windows, you can right click the tabs and drag them around, rename, etc. Please click the button below to setup your chat windows.
+The focus unit can be set by typing /focus when you are targeting the unit you want to focus. It is recommended you make a macro to do this.
+The in-game configuration menu can be accessed by typing the /ec command or by clicking the 'C' button on the minimap. Press the button below if you wish to skip the installation process.
+The profile you tried to import already exists. Choose a new name or accept to overwrite the existing profile.
+The spell '%s' has been added to the Blacklist unitframe aura filter.
+Theme Set
+Theme Setup
+This install process will help you learn some of the features in ElvUI has to offer and also prepare your user interface for usage.
+This part of the installation process sets up your World of Warcraft default options it is recommended you should do this step for everything to behave properly.
+This part of the installation process sets up your chat windows names, positions and colors.
+This setting caused a conflicting anchor point, where '%s' would be attached to itself. Please check your anchor points. Setting '%s' to be attached to '%s'.
+This will change the layout of your unitframes and actionbars.
+To move abilities on the actionbars by default hold shift + drag. You can change the modifier key from the actionbar options menu.
+To setup which channels appear in which chat frame, right click the chat tab and go to settings.
+Toggle Bags
+Toggle Chat Frame
+Toggle Configuration
+Tooltip
+Total CPU:
+Total Memory:
+Total: 
+Trigger
+Type /hellokitty to revert to old settings.
+UI Scale
+Unhittable:
+Vehicle Seat Frame
+Vendor / Delete Grays
+Vendored gray items for: %s
+Vendoring Grays
+Welcome to ElvUI version %s!
+Wintergrasp
+XP:
+Yes, Keep Changes!
+You are going to copy settings for |cffD3CF00\"%s\"|r from your current |cff4beb2c\"%s\"|r profile to |cff4beb2c\"%s\"|r profile. Are you sure?
+You are going to copy settings for |cffD3CF00\"%s\"|r from |cff4beb2c\"%s\"|r profile to your current |cff4beb2c\"%s\"|r profile. Are you sure?
+You are now finished with the installation process. If you are in need of technical support please visit us at https://github.com/ElvUI-WotLK.
+You are using CPU Profiling. This causes decreased performance. Do you want to disable it or continue?
+You can access copy chat and chat menu functions by mouse over the top right corner of chat panel and left/right click on the button that will appear.
+You can always change fonts and colors of any element of ElvUI from the in-game configuration.
+You can now choose what layout you wish to use based on your combat role.
+You can see someones average item level of their gear by holding shift and mousing over them. It should appear inside the tooltip.
+You can set your keybinds quickly by typing /kb.
+You can toggle the microbar by using your middle mouse button on the minimap you can also accomplish this by enabling the actual microbar located in the actionbar settings.
+You can use the /resetui command to reset all of your movers. You can also use the command to reset a specific mover, /resetui <mover name>.\nExample: /resetui Player Frame
+You cannot copy settings from the same unit.
+You don't have enough money to repair all items.
+You don't have enough money to repair.
+You don't have permission to mark targets.
+You have imported settings which may require a UI reload to take effect. Reload now?
+You must purchase a bank slot first!
+You still have ElvUI_Config installed. ElvUI_Config has been renamed to ElvUI_OptionsUI, please remove it.
+Your items have been repaired for: 
+Your items have been repaired using guild bank funds for: 
+Your profile was successfully recieved by the player.
+copperabbrev
+goldabbrev
+lvl
+says
+silverabbrev
+whispers
+yells
+|cFFE30000Lua error recieved. You can view the error message when you exit combat.
+RED_ENABLE
+GREEN_ENABLE
+DESC_MOVERCONFIG

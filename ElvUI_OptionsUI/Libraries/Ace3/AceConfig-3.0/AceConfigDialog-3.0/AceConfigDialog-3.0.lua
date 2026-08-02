@@ -1029,7 +1029,8 @@ local function BuildSubGroups(group, tree, options, path, appName)
 			path[#path+1] = k
 			local inline = pickfirstset(v.dialogInline,v.guiInline,v.inline, false)
 			local hidden = CheckOptionHidden(v, options, path, appName)
-			if not inline and not hidden then
+			if not inline and not hidden
+				and (not AceConfigDialog.searchActive or AceConfigDialog.searchGroupMatch[v]) then -- ElvUI search
 				local entry = new()
 				entry.value = k
 				entry.text = GetOptionsMemberValue("name", v, options, path, appName)
@@ -1064,7 +1065,8 @@ local function BuildGroups(group, options, path, appName, recurse)
 			path[#path+1] = k
 			local inline = pickfirstset(v.dialogInline,v.guiInline,v.inline, false)
 			local hidden = CheckOptionHidden(v, options, path, appName)
-			if not inline and not hidden then
+			if not inline and not hidden
+				and (not AceConfigDialog.searchActive or AceConfigDialog.searchGroupMatch[v]) then -- ElvUI search
 				local entry = new()
 				entry.value = k
 				entry.text = GetOptionsMemberValue("name", v, options, path, appName)
@@ -1163,6 +1165,9 @@ local function FeedOptions(appName, options,container,rootframe,path,group,inlin
 				local control
 
 				local name = GetOptionsMemberValue("name", v, options, path, appName)
+				if AceConfigDialog.searchActive and AceConfigDialog.searchOptionMatch[v] then -- ElvUI search
+					name = AceConfigDialog.searchHighlight..name.."|r"
+				end
 
 				if v.type == "execute" then
 
@@ -2084,3 +2089,7 @@ function AceConfigDialog:AddToBlizOptions(appName, name, parent, ...)
 		error(("%s has already been added to the Blizzard Options Window with the given path"):format(appName), 2)
 	end
 end
+
+-- ElvUI search: expose internal helpers to ElvUI/Core/ConfigSearch.lua
+AceConfigDialog.GetOptionsMemberValue = GetOptionsMemberValue
+AceConfigDialog.CheckOptionHidden = CheckOptionHidden
