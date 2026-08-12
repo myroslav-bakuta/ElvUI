@@ -7,9 +7,26 @@ if not AS:IsAddonLODorEnabled("RaidRoll") then return end
 -- RaidRoll 4.4.15
 -- https://www.curseforge.com/wow/addons/raid-roll/files/450070
 
-S:AddCallbackForAddon("RaidRoll", "RaidRoll", function()
-	if not E.private.addOnSkins.RaidRoll then return end
+-- RaidRoll builds RR_NAME_FRAME and its sliders inside RR_SetupVariables(),
+-- which it only calls on VARIABLES_LOADED. Skins:Initialize() runs before that,
+-- so the frames are still nil here on login and skinning them errors out.
+-- Wait for the event when they are missing, and skin immediately when they are
+-- already there (a reload, or an addon loaded on demand later).
+local function RunWhenReady(exists, skin)
+	if exists() then
+		skin()
+	else
+		local waiter = CreateFrame("Frame")
+		waiter:RegisterEvent("VARIABLES_LOADED")
+		waiter:SetScript("OnEvent", function(self)
+			self:UnregisterAllEvents()
+			self:SetScript("OnEvent", nil)
+			if exists() then skin() end
+		end)
+	end
+end
 
+local function SkinRaidRoll()
 	RR_RollFrame:SetTemplate("Transparent")
 	RR_NAME_FRAME:SetTemplate("Default")
 
@@ -75,11 +92,15 @@ S:AddCallbackForAddon("RaidRoll", "RaidRoll", function()
 			_G["RR_Roller"..i].SetFont = updateFont
 		end
 	end
-end)
+end
 
-S:AddCallbackForAddon("RaidRoll_LootTracker", "RaidRoll_LootTracker", function()
+S:AddCallbackForAddon("RaidRoll", "RaidRoll", function()
 	if not E.private.addOnSkins.RaidRoll then return end
 
+	RunWhenReady(function() return RR_NAME_FRAME and RaidRoll_Slider_ID end, SkinRaidRoll)
+end)
+
+local function SkinRaidRollLootTracker()
 	RR_LOOT_FRAME:SetTemplate("Transparent")
 
 	S:HandleSliderFrame(RaidRoll_Loot_Slider_ID)
@@ -110,4 +131,10 @@ S:AddCallbackForAddon("RaidRoll_LootTracker", "RaidRoll_LootTracker", function()
 			break
 		end
 	end
+end
+
+S:AddCallbackForAddon("RaidRoll_LootTracker", "RaidRoll_LootTracker", function()
+	if not E.private.addOnSkins.RaidRoll then return end
+
+	RunWhenReady(function() return RR_LOOT_FRAME and RaidRoll_Loot_Slider_ID end, SkinRaidRollLootTracker)
 end)
