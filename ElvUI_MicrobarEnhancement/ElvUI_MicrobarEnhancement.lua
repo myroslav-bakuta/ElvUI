@@ -97,7 +97,10 @@ function AB:SetSymbloColor()
 	local color = AB.db.microbar.classColor and (E.myclass == "PRIEST" and E.PriestColors or (CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[E.myclass] or RAID_CLASS_COLORS[E.myclass])) or AB.db.microbar.colorS
 
 	for button in pairs(MICRO_BUTTONS) do
-		_G[button].text:SetTextColor(color.r, color.g, color.b)
+		local b = _G[button]
+		if b and b.text then
+			b.text:SetTextColor(color.r, color.g, color.b)
+		end
 	end
 end
 
@@ -131,6 +134,8 @@ end
 local oldUpdateMicroPositionDimensions = AB.UpdateMicroPositionDimensions
 function AB:UpdateMicroPositionDimensions()
 	oldUpdateMicroPositionDimensions(self)
+
+	if not ElvUI_MicroBar then return end
 
 	if not ElvUI_MicroBar.backdrop then
 		ElvUI_MicroBar:CreateBackdrop("Transparent")
