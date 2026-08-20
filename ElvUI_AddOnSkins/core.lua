@@ -11,6 +11,7 @@ local IsAddOnLoadOnDemand = IsAddOnLoadOnDemand
 
 local addonList = {
 	"Omen",
+	"AdvancedIconSelector",
 	"Recount",
 	"SexyCooldown",
 	"DBM",
