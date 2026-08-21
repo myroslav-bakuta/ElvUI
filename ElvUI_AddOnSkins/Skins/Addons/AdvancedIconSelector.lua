@@ -15,6 +15,7 @@ if not AS:IsAddonLODorEnabled("AdvancedIconSelector") then return end
 
 local unpack = unpack
 local ipairs = ipairs
+local select = select
 local _G = _G
 
 S:AddCallbackForAddon("AdvancedIconSelector", "AdvancedIconSelector", function()
@@ -44,6 +45,53 @@ S:AddCallbackForAddon("AdvancedIconSelector", "AdvancedIconSelector", function()
 		end
 	end
 
+	-- Styles the popup's own name entry box (macro name / set name / bank tab name).
+	-- These are built by AdvancedIconSelector after CreateIconSelectorWindow returns, so
+	-- they are not reachable from SkinWindow and are handled per popup instead.
+	--
+	-- HandleEditBox hides the InputBoxTemplate border by global name, but the equipment
+	-- set box is created unnamed, so its textures are hidden by region as well.  Only the
+	-- template's border art is hidden -- SetAlpha(0) on every texture would also blank the
+	-- selection highlight, and the cursor would stop being visible while typing.
+	local borderTextures = { "Left", "Middle", "Right", "Mid" }
+
+	local function SkinNameBox(editBox)
+		if not editBox or editBox.isSkinned then return end
+		editBox.isSkinned = true
+
+		local name = editBox.GetName and editBox:GetName()
+		if name then
+			for _, suffix in ipairs(borderTextures) do
+				local texture = _G[name..suffix]
+				if texture then texture:SetAlpha(0) end
+			end
+		else
+			-- Unnamed box: the border art cannot be looked up globally, so it is found
+			-- among the regions instead.  Only BORDER-layer textures are touched.
+			for i = 1, editBox:GetNumRegions() do
+				local region = select(i, editBox:GetRegions())
+				if region and region.GetObjectType and region:GetObjectType() == "Texture"
+					and region.GetDrawLayer and region:GetDrawLayer() == "BACKGROUND" then
+					region:SetAlpha(0)
+				end
+			end
+		end
+
+		S:HandleEditBox(editBox)
+
+		-- CreateBackdrop parents the backdrop TO the edit box and SetTemplate adds an
+		-- outer border one frame level above it, so both end up covering the box and
+		-- swallowing the clicks that place the text cursor.  Push the box above them and
+		-- make the backdrop click-through, or the field cannot be edited by mouse.
+		if editBox.backdrop then
+			editBox.backdrop:EnableMouse(false)
+			editBox:SetFrameLevel(editBox.backdrop:GetFrameLevel() + 5)
+		end
+
+		-- InputBoxTemplate insets its text for the border art that is now hidden.
+		editBox:SetTextInsets(3, 3, 0, 0)
+	end
+
 	-- Styles a whole icon selector window.
 	local function SkinWindow(window)
 		if not window or window.isSkinned then return end
@@ -71,6 +119,7 @@ S:AddCallbackForAddon("AdvancedIconSelector", "AdvancedIconSelector", function()
 		if window.okButton then S:HandleButton(window.okButton) end
 		if window.cancelButton then S:HandleButton(window.cancelButton) end
 		if window.searchBox then S:HandleEditBox(window.searchBox) end
+		SkinNameBox(window.editBox)
 
 		if window.visibilityButtons then
 			for _, button in ipairs(window.visibilityButtons) do
@@ -123,6 +172,24 @@ S:AddCallbackForAddon("AdvancedIconSelector", "AdvancedIconSelector", function()
 		owner.CreateIconSelectorWindow = function(self, ...)
 			local window = original(self, ...)
 			SkinWindow(window)
+
+			-- The caller assigns window.editBox after this returns, so the name box can
+			-- only be skinned once the popup is built.  Every popup then calls
+			-- SetScript("OnShow", ...), which would discard a HookScript made here, so
+			-- SetScript itself is wrapped to re-apply the hook after each assignment.
+			if window then
+				local ShowHook = function(self) SkinNameBox(self.editBox) end
+				window:HookScript("OnShow", ShowHook)
+
+				local SetScript = window.SetScript
+				window.SetScript = function(self, script, handler)
+					SetScript(self, script, handler)
+					if script == "OnShow" then
+						self:HookScript("OnShow", ShowHook)
+					end
+				end
+			end
+
 			return window
 		end
 	end
