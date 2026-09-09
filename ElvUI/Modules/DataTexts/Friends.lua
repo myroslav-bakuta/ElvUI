@@ -117,12 +117,13 @@ local function BuildDataTable(total)
 
 	for i = 1, total do
 		name, level, class, area, connected, status, note = GetFriendInfo(i)
+		if not name then break end
 
 		if connected then
 			className = E:UnlocalizedClassName(class) or ""
 			status = onlineStatus[status] or ""
 
-			dataTable[i] = {name, level, className, area, connected, status, note}
+			dataTable[#dataTable + 1] = {name, level, className, area, connected, status, note}
 		end
 	end
 
