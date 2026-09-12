@@ -138,3 +138,143 @@ S:AddCallbackForAddon("RaidRoll_LootTracker", "RaidRoll_LootTracker", function()
 
 	RunWhenReady(function() return RR_LOOT_FRAME and RaidRoll_Loot_Slider_ID end, SkinRaidRollLootTracker)
 end)
+
+-- Options categories and the profile window added by the Kappa mod.
+local function SkinRaidRollOptions()
+	local checkBoxes = {
+		"RR_RollCheckBox_Unannounced_panel",
+		"RR_RollCheckBox_AllRolls_panel",
+		"RaidRollCheckBox_ExtraRolls_panel",
+		"RR_RollCheckBox_GuildAnnounce",
+		"RR_RollCheckBox_GuildAnnounce_Officer",
+		"RR_RollCheckBox_Auto_Announce",
+		"RR_RollCheckBox_Auto_Close",
+		"RR_RollCheckBox_No_countdown",
+		"RR_RollCheckBox_Multi_Rollers",
+		"RaidRollCheckBox_ShowRanks_panel",
+		"RR_RollCheckBox_ShowGroupNumber_panel",
+		"RR_RollCheckBox_ShowClassColors_panel",
+		"RR_RollCheckBox_EPGPMode_panel",
+		"RR_RollCheckBox_EPGPThreshold_panel",
+		"RR_RollCheckBox_Enable_Alt_Mode",
+		"RR_RollCheckBox_Track_Bids",
+		"RR_RollCheckBox_Num_Not_Req",
+		"RR_RollCheckBox_Track_EPGPSays",
+		"RaidRollCheckBox_RankPrio_panel",
+		"RR_GridSnap_CheckBox",
+		"RR_ProfileIncludePositions",
+		"RR_LootDebugMode",
+		"RR_AutoOpenLootWindow",
+		"RR_AutoCloseLootWindow",
+		"RR_AutoCloseOnSelfLoot",
+		"RR_ReceiveGuildMessages",
+		"RR_Enable3Messages",
+	}
+
+	for i = 1, #checkBoxes do
+		local box = _G[checkBoxes[i]]
+		if box then S:HandleCheckBox(box) end
+	end
+
+	local sliders = {
+		"RaidRoll_Scale_Slider",
+		"RaidRoll_ExtraWidth_Slider",
+		"RaidRoll_Rolling_Time_Slider",
+		"RaidRoll_GridSize_Slider",
+	}
+
+	for i = 1, #sliders do
+		local slider = _G[sliders[i]]
+		if slider then S:HandleSliderFrame(slider) end
+	end
+
+	local buttons = {
+		"RR_MoveMode_Button",
+		"RR_Profile_ExportButton",
+		"RR_Profile_ImportButton",
+	}
+
+	for i = 1, #buttons do
+		local button = _G[buttons[i]]
+		if button then S:HandleButton(button) end
+	end
+
+	for i = 1, 11 do
+		local button = _G["Raid_Roll_GuildPriority" .. i]
+		if button then S:HandleButton(button) end
+	end
+
+	if RR_Panel_GuildRankFrame then
+		RR_Panel_GuildRankFrame:SetTemplate("Transparent")
+	end
+
+	-- The message boxes draw no border themselves: RaidRoll passes the template
+	-- as a bare global instead of a string, so InputBoxTemplate never applies.
+	-- The border comes from the RR_MsgN_FRAME wrapper, so template that.
+	for i = 1, 3 do
+		local wrapper = _G["RR_Msg" .. i .. "_FRAME"]
+		if wrapper then wrapper:SetTemplate("Transparent") end
+
+		local box = _G["Raid_Roll_SetMsg" .. i .. "_EditBox"]
+		if box then S:HandleEditBox(box) end
+	end
+end
+
+S:AddCallbackForAddon("RaidRoll", "RaidRoll_Options", function()
+	if not E.private.addOnSkins.RaidRoll then return end
+
+	RunWhenReady(function() return RR_RollCheckBox_Auto_Close and RaidRoll_Scale_Slider end,
+		SkinRaidRollOptions)
+end)
+
+local function SkinRaidRollProfileFrame()
+	local frame = RR_ProfileFrame
+	if not frame or frame.isSkinned then return end
+
+	frame:SetTemplate("Transparent")
+	frame.isSkinned = true
+
+	if RR_ProfileFrameEditBox then
+		S:HandleEditBox(RR_ProfileFrameEditBox)
+		-- The window already has a border; the per-box backdrop only clutters
+		-- a multiline box inside a scroll frame.
+		if RR_ProfileFrameEditBox.backdrop then
+			RR_ProfileFrameEditBox.backdrop:Hide()
+		end
+	end
+
+	if RR_ProfileFrameScroll then
+		S:HandleScrollBar(_G["RR_ProfileFrameScrollScrollBar"])
+	end
+
+	if RR_ProfileFrameAction then S:HandleButton(RR_ProfileFrameAction) end
+	if RR_ProfileFrameCancel then S:HandleButton(RR_ProfileFrameCancel) end
+
+	-- The close button is created unnamed, so find it among the children.
+	for i = 1, frame:GetNumChildren() do
+		local child = select(i, frame:GetChildren())
+		if child and child:IsObjectType("Button") and not child:GetName() and child.GetNormalTexture then
+			S:HandleCloseButton(child)
+			break
+		end
+	end
+end
+
+S:AddCallbackForAddon("RaidRoll", "RaidRoll_ProfileFrame", function()
+	if not E.private.addOnSkins.RaidRoll then return end
+
+	-- The window is built on demand, so wrap the show functions instead of
+	-- polling for it to appear.
+	local function wrap(name)
+		local original = _G[name]
+		if type(original) ~= "function" then return end
+
+		_G[name] = function(...)
+			original(...)
+			SkinRaidRollProfileFrame()
+		end
+	end
+
+	wrap("RR_Profile_ShowExport")
+	wrap("RR_Profile_ShowImport")
+end)
