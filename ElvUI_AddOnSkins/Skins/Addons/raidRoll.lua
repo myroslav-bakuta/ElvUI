@@ -181,6 +181,7 @@ local function SkinRaidRollOptions()
 		"RaidRoll_ExtraWidth_Slider",
 		"RaidRoll_Rolling_Time_Slider",
 		"RaidRoll_GridSize_Slider",
+		"RaidRoll_LootQuiet_Slider",
 	}
 
 	for i = 1, #sliders do
