@@ -12,18 +12,33 @@ if not AS:IsAddonLODorEnabled("RaidRoll") then return end
 -- so the frames are still nil here on login and skinning them errors out.
 -- Wait for the event when they are missing, and skin immediately when they are
 -- already there (a reload, or an addon loaded on demand later).
+--
+-- The order in which frames receive the same event is not guaranteed, so this
+-- waiter may run before RaidRoll's own VARIABLES_LOADED handler has built anything.
+-- Each event therefore checks again on the next frame, and PLAYER_ENTERING_WORLD
+-- stays registered as a fallback until the skin has been applied.
 local function RunWhenReady(exists, skin)
 	if exists() then
 		skin()
-	else
-		local waiter = CreateFrame("Frame")
-		waiter:RegisterEvent("VARIABLES_LOADED")
-		waiter:SetScript("OnEvent", function(self)
-			self:UnregisterAllEvents()
-			self:SetScript("OnEvent", nil)
-			if exists() then skin() end
-		end)
+		return
 	end
+
+	local waiter = CreateFrame("Frame")
+
+	local function try(self)
+		self:SetScript("OnUpdate", nil)
+		if not exists() then return end
+
+		self:UnregisterAllEvents()
+		self:SetScript("OnEvent", nil)
+		skin()
+	end
+
+	waiter:RegisterEvent("VARIABLES_LOADED")
+	waiter:RegisterEvent("PLAYER_ENTERING_WORLD")
+	waiter:SetScript("OnEvent", function(self)
+		self:SetScript("OnUpdate", try)
+	end)
 end
 
 local function SkinRaidRoll()
