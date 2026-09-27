@@ -117,9 +117,9 @@ local function BuildDataTable(total)
 
 	for i = 1, total do
 		name, level, class, area, connected, status, note = GetFriendInfo(i)
-		if not name then break end
 
-		if connected then
+		-- a friend whose data has not arrived yet has no name; skip just that entry
+		if name and connected then
 			className = E:UnlocalizedClassName(class) or ""
 			status = onlineStatus[status] or ""
 
