@@ -71,3 +71,12 @@ the one place that mattered, `ElvUI_CustomTweaks`, was moved into a deferred `Ge
 - **`global_writes.py`** — flag accidental writes to Lua globals (missing `local`).
 - **`onupdate_scan.py`** — find `OnUpdate` handlers lacking a throttle accumulator.
 - **`pattern_scan.py`** — misc heuristic code-smell scan.
+- **`runtime_check.py`** — runs hand-written logic under a real Lua 5.1 VM (`pip install lupa`):
+  the locale proxy, plus everything in `search_check.py`.
+- **`search_check.py`** — end-to-end check of the `/ec` search: loads the real
+  `ElvUI/Core/ConfigSearch.lua` and the patched vendored `AceConfigDialog-3.0.lua` into a
+  WoW/AceGUI emulation (frames and scripts, the shared AceGUI `Frame` pool, timers, OnUpdate)
+  and asserts on the dialog they build — filtering, highlighting, tree expansion and restore,
+  selection fallback, `SelectGroup` jumps, and detaching the box from pooled frames. Also
+  times a search over ~11k synthetic options, and covers `RunWhenReady` (RaidRoll skin) and
+  the Friends datatext list builder. Run it after touching either search file or updating Ace3.

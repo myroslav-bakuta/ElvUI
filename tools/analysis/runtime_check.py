@@ -6,7 +6,7 @@ source files into Lua 5.1 (the same version WoW 3.3.5a ships) via lupa and exerc
 the two pieces of custom logic that are easy to get subtly wrong:
 
   1. ElvUI/Core/Core.lua      -- the shared-locale proxy behind E:SetActiveLocale
-  2. ElvUI/Core/ConfigSearch  -- CS.Casefold, used by the /ec search box
+  2. ElvUI/Core/ConfigSearch  -- the /ec search box (delegates to search_check.py)
 
 Requires: pip install lupa
 Usage:    python tools/analysis/runtime_check.py
@@ -93,59 +93,23 @@ def test_locale_proxy():
 
 
 # ---------------------------------------------------------------------------
-# 2. Casefold
+# 2. Config search
 # ---------------------------------------------------------------------------
-def test_casefold():
-    print("\n=== CS.Casefold (ElvUI/Core/ConfigSearch.lua) ===")
-    lua = LuaRuntime(encoding=None)  # raw bytes both ways, for exact UTF-8 semantics
-
-    # Load the real UTF-8 library, which installs string.utf8lower.
-    utf8_dir = os.path.join(ROOT, "ElvUI", "Libraries", "UTF8")
-    for name, enc in (("utf8data.lua", "utf-8-sig"), ("utf8.lua", "utf-8")):
-        with open(os.path.join(utf8_dir, name), encoding=enc) as fh:
-            lua.execute(fh.read().encode("utf-8"))
-
-    if not lua.eval(b"string.utf8lower ~= nil"):
-        FAILURES.append("string.utf8lower was not installed by Libraries/UTF8")
-        print("  [FAIL] string.utf8lower was not installed by Libraries/UTF8")
-        return
-
-    # Extract the real Casefold from ConfigSearch.lua rather than reimplementing it.
-    cs_path = os.path.join(ROOT, "ElvUI", "Core", "ConfigSearch.lua")
-    with open(cs_path, encoding="utf-8") as fh:
-        src = fh.read()
-    start = src.index("function CS.Casefold")
-    end = src.index("\nend", start) + len("\nend")
-    lua.execute(("CS = {}\nlocal utf8lower, type = string.utf8lower, type\n"
-                 + src[start:end]).encode("utf-8"))
-    fold = lua.eval(b"CS.Casefold")
-
-    cases = [
-        "ACTION BARS", "MiXeD Текст",                       # ascii + mixed
-        "ДІЇ", "ПАНЕЛЬ ДІЙ", "ЄДНІСТЬ", "ЇЖА", "ҐАНОК",     # uk, incl. Є І Ї Ґ
-        "ЁЖИК", "ЗДОРОВЬЕ",                                 # ru, incl. Ё
-        "Здоров'я", "Bar 1: 50%", "[Test]",                 # punctuation/digits
-    ]
-    for text in cases:
-        check(f"casefold({text!r})", fold(text.encode("utf-8")), text.lower())
-
-    check("empty string", fold("".encode("utf-8")), "")
-    check("idempotent on already-folded text", fold(fold("ДІЇ".encode("utf-8"))), "дії")
-
-    # The guard clause in Casefold exists because utf8lower rejects non-strings.
-    # Run pcall inside Lua and return just its success flag as a string, so the
-    # result survives the Python boundary unambiguously.
-    for arg in ("nil", "42"):
-        outcome = lua.eval(
-            b"(function() return tostring((pcall(string.utf8lower, %s))) end)()" % arg.encode()
-        )
-        check(f"utf8lower rejects {arg}, so Casefold's type guard is required", outcome, "false")
-    check("Casefold itself tolerates nil via its guard", fold(None), "")
+# Casefold, the match engine and the AceConfigDialog fork are driven end to end
+# by search_check.py (it loads the real files into a WoW/AceGUI emulation).
+def test_config_search():
+    global PASSED
+    print("\n=== /ec search (see search_check.py) ===")
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import search_check
+    passed, failed = search_check.run()
+    PASSED += passed
+    FAILURES.extend(failed)
 
 
 if __name__ == "__main__":
     test_locale_proxy()
-    test_casefold()
+    test_config_search()
     print(f"\n=== {PASSED} passed, {len(FAILURES)} failed ===")
     for name in FAILURES:
         print("  FAILED:", name)
