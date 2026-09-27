@@ -987,6 +987,27 @@ local function BuildTabs(group, options, path, appName)
 	return tabs, text
 end
 ]]
+
+-- ElvUI search: ElvUI/Core/ConfigSearch.lua fills searchGroupMatch/searchHitMatch,
+-- keyed by option path (keys joined with \001), while a search is active.
+local function SearchHidesGroup(path)
+	return AceConfigDialog.searchActive and not AceConfigDialog.searchGroupMatch[tconcat(path, "\001")]
+end
+
+local function SearchHighlight(text, path)
+	if AceConfigDialog.searchActive and AceConfigDialog.searchHitMatch[tconcat(path, "\001")] then
+		return AceConfigDialog.SearchHighlight(text)
+	end
+	return text
+end
+
+-- A remembered tab/tree/dropdown selection may point at a group the search filtered out.
+local function SearchShowsGroup(path, uniquevalue)
+	if not AceConfigDialog.searchActive then return true end
+	local key = #path > 0 and (tconcat(path, "\001").."\001"..uniquevalue) or uniquevalue
+	return AceConfigDialog.searchGroupMatch[key]
+end
+
 local function BuildSelect(group, options, path, appName)
 	local groups = new()
 	local order = new()
@@ -1002,8 +1023,8 @@ local function BuildSelect(group, options, path, appName)
 			path[#path+1] = k
 			local inline = pickfirstset(v.dialogInline,v.guiInline,v.inline, false)
 			local hidden = CheckOptionHidden(v, options, path, appName)
-			if not inline and not hidden then
-				groups[k] = GetOptionsMemberValue("name", v, options, path, appName)
+			if not inline and not hidden and not SearchHidesGroup(path) then -- ElvUI search
+				groups[k] = SearchHighlight(GetOptionsMemberValue("name", v, options, path, appName), path) -- ElvUI search
 				tinsert(order, k)
 			end
 			path[#path] = nil
@@ -1029,11 +1050,10 @@ local function BuildSubGroups(group, tree, options, path, appName)
 			path[#path+1] = k
 			local inline = pickfirstset(v.dialogInline,v.guiInline,v.inline, false)
 			local hidden = CheckOptionHidden(v, options, path, appName)
-			if not inline and not hidden
-				and (not AceConfigDialog.searchActive or AceConfigDialog.searchGroupMatch[v]) then -- ElvUI search
+			if not inline and not hidden and not SearchHidesGroup(path) then -- ElvUI search
 				local entry = new()
 				entry.value = k
-				entry.text = GetOptionsMemberValue("name", v, options, path, appName)
+				entry.text = SearchHighlight(GetOptionsMemberValue("name", v, options, path, appName), path) -- ElvUI search
 				entry.icon = GetOptionsMemberValue("icon", v, options, path, appName)
 				entry.iconCoords = GetOptionsMemberValue("iconCoords", v, options, path, appName)
 				entry.disabled = CheckOptionDisabled(v, options, path, appName)
@@ -1065,11 +1085,10 @@ local function BuildGroups(group, options, path, appName, recurse)
 			path[#path+1] = k
 			local inline = pickfirstset(v.dialogInline,v.guiInline,v.inline, false)
 			local hidden = CheckOptionHidden(v, options, path, appName)
-			if not inline and not hidden
-				and (not AceConfigDialog.searchActive or AceConfigDialog.searchGroupMatch[v]) then -- ElvUI search
+			if not inline and not hidden and not SearchHidesGroup(path) then -- ElvUI search
 				local entry = new()
 				entry.value = k
-				entry.text = GetOptionsMemberValue("name", v, options, path, appName)
+				entry.text = SearchHighlight(GetOptionsMemberValue("name", v, options, path, appName), path) -- ElvUI search
 				entry.icon = GetOptionsMemberValue("icon", v, options, path, appName)
 				entry.iconCoords = GetOptionsMemberValue("iconCoords", v, options, path, appName)
 				entry.disabled = CheckOptionDisabled(v, options, path, appName)
@@ -1150,7 +1169,7 @@ local function FeedOptions(appName, options,container,rootframe,path,group,inlin
 					local GroupContainer
 					if name and name ~= "" then
 						GroupContainer = gui:Create("InlineGroup")
-						GroupContainer:SetTitle(name or "")
+						GroupContainer:SetTitle(SearchHighlight(name, path) or "") -- ElvUI search
 					else
 						GroupContainer = gui:Create("SimpleGroup")
 					end
@@ -1165,9 +1184,7 @@ local function FeedOptions(appName, options,container,rootframe,path,group,inlin
 				local control
 
 				local name = GetOptionsMemberValue("name", v, options, path, appName)
-				if AceConfigDialog.searchActive and AceConfigDialog.searchOptionMatch[v] then -- ElvUI search
-					name = AceConfigDialog.searchHighlight..name.."|r"
-				end
+				name = SearchHighlight(name, path) -- ElvUI search
 
 				if v.type == "execute" then
 
@@ -1757,7 +1774,7 @@ function AceConfigDialog:FeedGroup(appName,options,container,rootframe,path, isR
 			for i = 1, #tabs do
 				local entry = tabs[i]
 				if not entry.disabled then
-					tab:SelectTab((GroupExists(appName, options, path,status.groups.selected) and status.groups.selected) or entry.value)
+					tab:SelectTab((GroupExists(appName, options, path,status.groups.selected) and SearchShowsGroup(path, status.groups.selected) and status.groups.selected) or entry.value) -- ElvUI search
 					break
 				end
 			end
@@ -1782,7 +1799,7 @@ function AceConfigDialog:FeedGroup(appName,options,container,rootframe,path, isR
 
 			local firstgroup = orderlist[1]
 			if firstgroup then
-				select:SetGroup((GroupExists(appName, options, path,status.groups.selected) and status.groups.selected) or firstgroup)
+				select:SetGroup((GroupExists(appName, options, path,status.groups.selected) and SearchShowsGroup(path, status.groups.selected) and status.groups.selected) or firstgroup) -- ElvUI search
 			end
 
 			select.width = "fill"
@@ -1817,7 +1834,7 @@ function AceConfigDialog:FeedGroup(appName,options,container,rootframe,path, isR
 			for i = 1, #treedefinition do
 				local entry = treedefinition[i]
 				if not entry.disabled then
-					tree:SelectByValue((GroupExists(appName, options, path,status.groups.selected) and status.groups.selected) or entry.value)
+					tree:SelectByValue((GroupExists(appName, options, path,status.groups.selected) and SearchShowsGroup(path, status.groups.selected) and status.groups.selected) or entry.value) -- ElvUI search
 					break
 				end
 			end
