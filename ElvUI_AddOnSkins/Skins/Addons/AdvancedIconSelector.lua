@@ -67,7 +67,8 @@ S:AddCallbackForAddon("AdvancedIconSelector", "AdvancedIconSelector", function()
 			end
 		else
 			-- Unnamed box: the border art cannot be looked up globally, so it is found
-			-- among the regions instead.  Only BORDER-layer textures are touched.
+			-- among the regions instead.  Only BACKGROUND-layer textures (where
+			-- InputBoxTemplate draws its border) are touched.
 			for i = 1, editBox:GetNumRegions() do
 				local region = select(i, editBox:GetRegions())
 				if region and region.GetObjectType and region:GetObjectType() == "Texture"
