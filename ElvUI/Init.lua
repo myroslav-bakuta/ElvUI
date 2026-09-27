@@ -277,34 +277,66 @@ function AddOn:GetConfigSize()
 	return AddOn.global.general.AceGUI.width, AddOn.global.general.AceGUI.height
 end
 
+-- The config window is an AceGUI "Frame" widget. Those are pooled and shared by every
+-- addon using AceGUI-3.0, so the config can open in a different frame each time, and a
+-- frame it used may later belong to another addon's window. Only the frame the config
+-- has right now may be touched.
+local function GetOpenConfigFrame()
+	local ACD = AddOn.Libs.AceConfigDialog
+	local widget = ACD and ACD.OpenFrames and ACD.OpenFrames[AddOnName]
+	return widget and widget.frame
+end
+
 function AddOn:UpdateConfigSize(reset)
-	local frame = self.GUIFrame
-	if not frame then return end
+	local ACD = self.Libs.AceConfigDialog
+	if not ACD then return end -- ElvUI_OptionsUI is not loaded yet
 
-	local maxWidth, maxHeight = self.UIParent:GetSize()
-	frame:SetMinResize(600, 500)
-	frame:SetMaxResize(maxWidth-50, maxHeight-50)
+	ACD:SetDefaultSize(AddOnName, self:GetConfigDefaultSize())
 
-	self.Libs.AceConfigDialog:SetDefaultSize(AddOnName, self:GetConfigDefaultSize())
+	-- the window's status table belongs to AceConfigDialog and outlives the pooled frame,
+	-- so a closed config picks the new size/position up the next time it opens
+	local status = ACD:GetStatusTable(AddOnName)
+	local apply = reset
+	if reset then
+		self:ResetConfigSettings()
 
-	local status = frame.obj and frame.obj.status
-	if status then
-		if reset then
-			self:ResetConfigSettings()
-
-			status.top, status.left = self:GetConfigPosition()
-			status.width, status.height = self:GetConfigDefaultSize()
-
-			frame.obj:ApplyStatus()
-		else
-			local top, left = self:GetConfigPosition()
-			if top and left then
-				status.top, status.left = top, left
-
-				frame.obj:ApplyStatus()
-			end
+		status.top, status.left = self:GetConfigPosition()
+		status.width, status.height = self:GetConfigDefaultSize()
+	else
+		local top, left = self:GetConfigPosition()
+		if top and left then
+			status.top, status.left = top, left
+			apply = true
 		end
 	end
+
+	local frame = GetOpenConfigFrame()
+	if frame then
+		local maxWidth, maxHeight = self.UIParent:GetSize()
+		frame:SetMinResize(600, 500)
+		frame:SetMaxResize(maxWidth-50, maxHeight-50)
+
+		if apply then
+			frame.obj:ApplyStatus()
+		end
+	end
+end
+
+-- Called on every AceConfigDialog:Open of the config (hooked in ElvUI_OptionsUI), which
+-- also runs on each refresh; only a newly acquired frame needs setting up.
+function AddOn:BindConfigFrame()
+	local frame = GetOpenConfigFrame()
+	if not frame or frame == self.GUIFrame then return end
+
+	self.GUIFrame = frame
+	ElvUIGUIFrame = frame
+
+	if not frame.isElvUIConfigHooked then
+		frame.isElvUIConfigHooked = true
+		hooksecurefunc(frame, "StopMovingOrSizing", AddOn.ConfigStopMovingOrSizing)
+	end
+
+	self:UpdateConfigSize()
 end
 
 function AddOn:GetConfigDefaultSize()
@@ -315,7 +347,9 @@ function AddOn:GetConfigDefaultSize()
 end
 
 function AddOn:ConfigStopMovingOrSizing()
-	if self.obj and self.obj.status then
+	-- the hook stays on the frame after it returns to the pool, where another addon's
+	-- window may pick it up: only save while it is holding the config
+	if self == GetOpenConfigFrame() and self.obj and self.obj.status then
 		AddOn.configSavedPositionTop, AddOn.configSavedPositionLeft = AddOn:Round(self:GetTop(), 2), AddOn:Round(self:GetLeft(), 2)
 		AddOn.global.general.AceGUI.width, AddOn.global.general.AceGUI.height = AddOn:Round(self:GetWidth(), 2), AddOn:Round(self:GetHeight(), 2)
 	end
@@ -407,18 +441,7 @@ function AddOn:ToggleOptionsUI(msg)
 	end
 
 	if mode == "Open" then
-		ConfigOpen = ACD and ACD.OpenFrames and ACD.OpenFrames[AddOnName]
-		if ConfigOpen then
-			local frame = ConfigOpen.frame
-			if frame and not self.GUIFrame then
-				self.GUIFrame = frame
-				ElvUIGUIFrame = self.GUIFrame
-
-				self:UpdateConfigSize()
-				hooksecurefunc(frame, "StopMovingOrSizing", AddOn.ConfigStopMovingOrSizing)
-			end
-		end
-
+		-- the config frame itself is bound by AddOn:BindConfigFrame, hooked on ACD:Open
 		if ACD and pages then
 			ACD:SelectGroup(AddOnName, unpack(pages))
 		end

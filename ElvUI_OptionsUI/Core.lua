@@ -30,6 +30,8 @@ local UnitIsFriend = UnitIsFriend
 local UnitIsPlayer = UnitIsPlayer
 local GameTooltip_Hide = GameTooltip_Hide
 local GameFontHighlightSmall = _G.GameFontHighlightSmall
+local hooksecurefunc = hooksecurefunc
+local type = type
 
 --Function we can call on profile change to update GUI
 function E:RefreshGUI()
@@ -39,6 +41,15 @@ end
 
 E.Libs.AceConfig:RegisterOptionsTable("ElvUI", E.Options)
 E.Libs.AceConfigDialog:SetDefaultSize("ElvUI", E:GetConfigDefaultSize())
+
+-- The config can be opened without E:ToggleOptionsUI (the movers' Lock button, closing
+-- the profile export window) and in any frame of AceGUI's shared pool, so the window's
+-- size/position handling is bound on every open.
+hooksecurefunc(E.Libs.AceConfigDialog, "Open", function(_, appName, container)
+	if appName == "ElvUI" and type(container) ~= "table" then
+		E:BindConfigFrame()
+	end
+end)
 
 E.Options.args = {
 	ElvUI_Header = {
