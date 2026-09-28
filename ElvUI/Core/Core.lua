@@ -17,11 +17,26 @@ do -- Locale doesn't exist yet, make it exist.
 	-- re-points the proxy at the saved locale. Consumers capture this proxy via
 	-- `L = unpack(ElvUI)` and keep the reference, so a single redirect reaches all of them.
 	-- Safe because nothing iterates L -- only L[key] reads happen across the whole suite.
-	ElvUI[2] = setmetatable({}, {__index = ACL:GetLocale("ElvUI", gameLocale)})
+	local active = ACL:GetLocale("ElvUI", gameLocale)
+	ElvUI[2] = setmetatable({}, {__index = active})
 
-	ElvUI[1].SetActiveLocale = function(_, locale)
+	ElvUI[1].SetActiveLocale = function(E, locale)
 		local resolved = (locale and locale ~= "auto") and locale or gameLocale
-		setmetatable(ElvUI[2], {__index = ACL:GetLocale("ElvUI", resolved)})
+		local previous = active
+		active = ACL:GetLocale("ElvUI", resolved)
+		setmetatable(ElvUI[2], {__index = active})
+		if active == previous or not E.PopupDialogs then return end
+
+		-- Popup dialogs store plain strings resolved from L when their files ran, i.e. in the
+		-- previous locale. Map each string back to its key and re-resolve it in the new one.
+		local keys = {}
+		for key, text in pairs(previous) do keys[text] = key end
+		for _, info in pairs(E.PopupDialogs) do
+			for _, field in ipairs({"text", "button1", "button2", "button3"}) do
+				local key = type(info[field]) == "string" and keys[info[field]]
+				if key then info[field] = active[key] end
+			end
+		end
 	end
 end
 
