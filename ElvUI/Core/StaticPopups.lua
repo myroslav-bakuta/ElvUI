@@ -30,59 +30,6 @@ local YES, NO, OKAY, CANCEL, ACCEPT, DECLINE = YES, NO, OKAY, CANCEL, ACCEPT, DE
 E.PopupDialogs = {}
 E.StaticPopup_DisplayedFrames = {}
 
-E.PopupDialogs.ELVUI_UPDATED_WHILE_RUNNING = {
-	text = L["ElvUI was updated while the game is still running. Please relaunch the game, as this is required for the files to be properly updated."],
-	button1 = "|cffff0000"..QUIT,
-	button2 = CANCEL,
-	OnAccept = function()
-		Quit()
-	end,
-	OnShow = function(self, data)
-		self.button2:Disable()
-	end,
-	whileDead = 1,
-}
-
-E.PopupDialogs.ELVUI_UPDATE_AVAILABLE = {
-	text = L["ElvUI is five or more revisions out of date. You can download the newest version from https://github.com/ElvUI-WotLK/ElvUI"],
-	hasEditBox = 1,
-	OnShow = function(self)
-		self.editBox:SetAutoFocus(false)
-		self.editBox.width = self.editBox:GetWidth()
-		self.editBox:Width(220)
-		self.editBox:SetText("https://github.com/ElvUI-WotLK/ElvUI")
-		self.editBox:HighlightText()
-		ChatEdit_FocusActiveWindow()
-	end,
-	OnHide = function(self)
-		self.editBox:Width(self.editBox.width or 50)
-		self.editBox.width = nil
-	end,
-	hideOnEscape = 1,
-	button1 = OKAY,
-	OnAccept = E.noop,
-	EditBoxOnEnterPressed = function(self)
-		ChatEdit_FocusActiveWindow()
-		self:GetParent():Hide()
-	end,
-	EditBoxOnEscapePressed = function(self)
-		ChatEdit_FocusActiveWindow()
-		self:GetParent():Hide()
-	end,
-	EditBoxOnTextChanged = function(self)
-		if self:GetText() ~= "https://github.com/ElvUI-WotLK/ElvUI" then
-			self:SetText("https://github.com/ElvUI-WotLK/ElvUI")
-		end
-		self:HighlightText()
-		self:ClearFocus()
-		ChatEdit_FocusActiveWindow()
-	end,
-	OnEditFocusGained = function(self)
-		self:HighlightText()
-	end,
-	showAlert = 1
-}
-
 E.PopupDialogs.ELVUI_EDITBOX = {
 	text = E.title,
 	button1 = OKAY,

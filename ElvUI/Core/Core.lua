@@ -56,12 +56,7 @@ local format, find, match, strrep, strlen, sub, gsub, strjoin = string.format, s
 local CreateFrame = CreateFrame
 local GetAddOnInfo = GetAddOnInfo
 local GetCVar = GetCVar
-local GetNumPartyMembers = GetNumPartyMembers
-local GetNumRaidMembers = GetNumRaidMembers
 local InCombatLockdown = InCombatLockdown
-local IsInGuild = IsInGuild
-local IsInInstance = IsInInstance
-local SendAddonMessage = SendAddonMessage
 local UnitGUID = UnitGUID
 local ERR_NOT_IN_COMBAT = ERR_NOT_IN_COMBAT
 local RAID_CLASS_COLORS = RAID_CLASS_COLORS
@@ -777,78 +772,6 @@ do	--Split string by multi-character delimiter (the strsplit / string.split func
 
 		return unpack(splitTable)
 	end
-end
-
-do
-	local SendMessageWaiting
-	local SendRecieveGroupSize = 0
-
-	function E:SendMessage()
-		if GetNumRaidMembers() > 1 then
-			local _, instanceType = IsInInstance()
-			if instanceType == "pvp" then
-				SendAddonMessage("ELVUI_VERSIONCHK", E.version, "BATTLEGROUND")
-			else
-				SendAddonMessage("ELVUI_VERSIONCHK", E.version, "RAID")
-			end
-		elseif GetNumPartyMembers() > 0 then
-			SendAddonMessage("ELVUI_VERSIONCHK", E.version, "PARTY")
-		elseif IsInGuild() then
-			SendAddonMessage("ELVUI_VERSIONCHK", E.version, "GUILD")
-		end
-
-		SendMessageWaiting = nil
-	end
-
-	local function SendRecieve(_, event, prefix, message, _, sender)
-		if event == "CHAT_MSG_ADDON" then
-			if prefix ~= "ELVUI_VERSIONCHK" then return end
-			if not sender or sender == E.myname then return end
-
-			local ver = tonumber(E.version)
-			message = tonumber(message)
-
-			if ver ~= G.general.version then
-				if not E.shownUpdatedWhileRunningPopup and not InCombatLockdown() then
-					E:StaticPopup_Show("ELVUI_UPDATED_WHILE_RUNNING")
-
-					E.shownUpdatedWhileRunningPopup = true
-				end
-			elseif message and (message > ver) then
-				if not E.recievedOutOfDateMessage then
-					E:Print(L["ElvUI is out of date. You can download the newest version from https://github.com/ElvUI-WotLK/ElvUI"])
-
-					if message and ((message - ver) >= 0.01) and not InCombatLockdown() then
-						E:StaticPopup_Show("ELVUI_UPDATE_AVAILABLE")
-					end
-
-					E.recievedOutOfDateMessage = true
-				end
-			end
-		elseif event == "PARTY_MEMBERS_CHANGED" or event == "RAID_ROSTER_UPDATE" then
-			local numRaid = GetNumRaidMembers()
-			local num = numRaid > 0 and numRaid or (GetNumPartyMembers() + 1)
-			if num ~= SendRecieveGroupSize then
-				if num > 1 and num > SendRecieveGroupSize then
-					if not SendMessageWaiting then
-						SendMessageWaiting = E:Delay(10, E.SendMessage)
-					end
-				end
-				SendRecieveGroupSize = num
-			end
-		elseif event == "PLAYER_ENTERING_WORLD" then
-			if not SendMessageWaiting then
-				SendMessageWaiting = E:Delay(10, E.SendMessage)
-			end
-		end
-	end
-
-	local f = CreateFrame("Frame")
-	f:RegisterEvent("CHAT_MSG_ADDON")
-	f:RegisterEvent("RAID_ROSTER_UPDATE")
-	f:RegisterEvent("PARTY_MEMBERS_CHANGED")
-	f:RegisterEvent("PLAYER_ENTERING_WORLD")
-	f:SetScript("OnEvent", SendRecieve)
 end
 
 function E:UpdateAll(ignoreInstall)
