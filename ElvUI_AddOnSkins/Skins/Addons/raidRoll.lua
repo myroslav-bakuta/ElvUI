@@ -227,9 +227,9 @@ local function SkinRaidRollOptions()
 		RR_Panel_GuildRankFrame:SetTemplate("Transparent")
 	end
 
-	-- The message boxes draw no border themselves: RaidRoll passes the template
-	-- as a bare global instead of a string, so InputBoxTemplate never applies.
-	-- The border comes from the RR_MsgN_FRAME wrapper, so template that.
+	-- The message boxes draw no border themselves: RaidRoll creates them
+	-- without a template on purpose and draws the border with the
+	-- RR_MsgN_FRAME wrapper, so template that.
 	for i = 1, 3 do
 		local wrapper = _G["RR_Msg" .. i .. "_FRAME"]
 		if wrapper then wrapper:SetTemplate("Transparent") end
