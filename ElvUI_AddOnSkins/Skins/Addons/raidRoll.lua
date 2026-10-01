@@ -139,9 +139,12 @@ local function SkinRaidRollLootTracker()
 		S:HandleButton(_G["RR_Loot_RaidRollButton_"..i])
 	end
 
+	-- Newer RaidRoll names it RR_Loot_CloseButton; older builds used the bare
+	-- global name Close_Button.
 	for i = 1, RR_LOOT_FRAME:GetNumChildren() do
 		local child = select(i, RR_LOOT_FRAME:GetChildren())
-		if child and child:IsObjectType("Button") and child:GetName() == "Close_Button" then
+		local name = child and child:GetName()
+		if child and child:IsObjectType("Button") and (name == "RR_Loot_CloseButton" or name == "Close_Button") then
 			S:HandleCloseButton(child)
 			break
 		end
