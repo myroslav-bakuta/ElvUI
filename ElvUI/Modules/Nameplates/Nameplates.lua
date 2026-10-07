@@ -247,14 +247,20 @@ end
 
 function NP:UnitClass(frame, unitType)
 	if unitType == "FRIENDLY_PLAYER" then
+		local class
 		if frame.unit then
-			local _, class = UnitClass(frame.unit)
-			if class then
-				return class
-			end
+			class = select(2, UnitClass(frame.unit))
 		else
-			return NP:GetUnitClassByGUID(frame, frame.guid)
+			class = NP:GetUnitClassByGUID(frame, frame.guid)
 		end
+
+		-- the client paints every friendly player plate the same blue, so remember classes we learned
+		if class then
+			NP.ClassCache[frame.UnitName] = class
+			return class
+		end
+
+		return NP.ClassCache[frame.UnitName]
 	elseif unitType == "ENEMY_PLAYER" then
 		local _, g = frame.oldHealthBar:GetStatusBarColor()
 		return grenColorToClass[floor(g*100 + 0.5) / 100]
@@ -1205,6 +1211,10 @@ function NP:Initialize()
 
 	if E.private.nameplates.enable ~= true then return end
 	self.Initialized = true
+
+	ElvNPClassCache = ElvNPClassCache or {}
+	ElvNPClassCache[E.myrealm] = ElvNPClassCache[E.myrealm] or {}
+	self.ClassCache = ElvNPClassCache[E.myrealm]
 
 	--Add metatable to all our StyleFilters so they can grab default values if missing
 	self:StyleFilterInitialize()
