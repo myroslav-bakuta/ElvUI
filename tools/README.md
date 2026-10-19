@@ -80,3 +80,19 @@ the one place that mattered, `ElvUI_CustomTweaks`, was moved into a deferred `Ge
   selection fallback, `SelectGroup` jumps, and detaching the box from pooled frames. Also
   times a search over ~11k synthetic options, and covers `RunWhenReady` (RaidRoll skin) and
   the Friends datatext list builder. Run it after touching either search file or updating Ace3.
+
+---
+
+## Merge-NPClassCache.ps1 — share the nameplate class cache between accounts
+
+ElvUI remembers friendly player classes per account in `ElvNPClassCache`
+(`WTF\Account\<name>\SavedVariables\ElvUI.lua`). Set `$WowPath` at the top of the
+script to the game folder, then run it. It finds every account, shows which players each
+one is missing, and after a `y` adds them. Names with different classes on different
+accounts are listed and skipped. Every changed file is first copied to
+`ElvUI.lua.<date-time>.bak`, and the script refuses to run while `Wow.exe` is open.
+Works in Windows PowerShell 5.1 and PowerShell 7.
+
+```
+powershell -ExecutionPolicy Bypass -File tools\Merge-NPClassCache.ps1
+```
