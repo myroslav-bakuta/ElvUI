@@ -28,7 +28,8 @@ S:AddCallback("Skin_Misc", function()
 		GameMenuButtonQuit,
 		GameMenuButtonContinue,
 
-		ElvUI_MenuButton
+		ElvUI_MenuButton,
+		GameMenuButtonFreedomOptions
 	}
 
 	for i = 1, #menuButtons do
