@@ -27,7 +27,10 @@ local ACCENT = {0.80, 0.63, 0.98}
 local ACCENT_DIM = {0.48, 0.38, 0.59}
 local ICON_IDLE = {0.6, 0.6, 0.6}
 local NOTHING_COLOR = {1, 0.45, 0.45}
-local BOX_LEFT, BOX_WIDTH = 12, 278 -- right edge where it was when the label sat outside
+-- AceGUI's Frame puts its content (the button row, the tree) at x = 17 in raw, unscaled
+-- coordinates. The skinned border sits E.Border outside the box, so the box starts that
+-- much further right for the two left borders to line up.
+local CONTENT_LEFT, BOX_WIDTH = 17, 278
 
 --------------------------------------------------------------------------------
 -- Case-folding (Latin + Cyrillic)
@@ -299,9 +302,13 @@ function CS:UpdateStatus(normalized, any)
 	end
 
 	if any then
-		local count = 0
+		-- hits, and the top-level sections left in the tree (the keys without a separator)
+		local count, sections = 0, 0
 		for _ in pairs(hitMatch) do count = count + 1 end
-		status:SetFormattedText(L["Matches: %d"], count)
+		for key in pairs(groupMatch) do
+			if not strfind(key, "\001", 1, true) then sections = sections + 1 end
+		end
+		status:SetFormattedText(L["Matches: %d, sections: %d"], count, sections)
 		status:SetTextColor(ACCENT[1], ACCENT[2], ACCENT[3])
 	else
 		status:SetText(L["Nothing found"])
@@ -392,8 +399,8 @@ function CS:CreateSearchBox()
 
 	box.searchIcon = box:CreateTexture(nil, "OVERLAY")
 	box.searchIcon:SetTexture([[Interface\Common\UI-Searchbox-Icon]])
-	box.searchIcon:Size(14)
-	box.searchIcon:Point("LEFT", box, "LEFT", 6, -1)
+	box.searchIcon:Size(16)
+	box.searchIcon:Point("LEFT", box, "LEFT", 5, 0)
 
 	box.placeholder = box:CreateFontString(nil, "OVERLAY", "GameFontDisable")
 	box.placeholder:Point("LEFT", box, "LEFT", 24, 0)
@@ -460,7 +467,9 @@ function CS:Attach()
 	box:SetParent(frame)
 	box:SetFrameLevel(frame:GetFrameLevel() + 20)
 	box:ClearAllPoints()
-	box:Point("LEFT", frame, "TOPLEFT", BOX_LEFT, -19) -- vertically centered between the window top edge and the "Version" delimiter
+	-- raw SetPoint like AceGUI's own content; y stays vertically centered between the
+	-- window top edge and the "Version" delimiter
+	box:SetPoint("LEFT", frame, "TOPLEFT", CONTENT_LEFT + E:Scale(E.Border), E:Scale(-19))
 	box:Show()
 	self:UpdateStatus(nil)
 

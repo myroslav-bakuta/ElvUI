@@ -233,6 +233,8 @@ end
 UIParent = CreateFrame("Frame", "UIParent")
 TIMERS = {}
 E = {Options = {}, UIParent = UIParent, Libs = {AceConfigRegistry = reg}}
+E.Border = 2
+function E:Scale(x) return x end
 S = {HandleEditBox = function(_, f) f.backdrop = CreateFrame("Frame", nil, f) end}
 function E:GetModule() return S end
 function E:ScheduleTimer(fn) local h = {fn = fn} TIMERS[h] = true return h end
@@ -460,7 +462,7 @@ check("hit through colour codes", hm["general\001loot"], true)
 tree = rootTree()
 local generalPage = tree
 check("option label highlighted without inner colours", labelOf(generalPage, "Loot Roll"), RED .. "Loot Roll|r")
-check("match count shown when there are hits", CS.status:IsShown() and CS.status.text, "Matches: 1")
+check("match count shown when there are hits", CS.status:IsShown() and CS.status.text, "Matches: 1, sections: 1")
 check("faulty name callback did not abort the walk", hm["general\001loot"], true)
 
 type_("sort inv")
@@ -511,7 +513,11 @@ check("focused: placeholder hidden under the cursor", box.placeholder:IsShown(),
 type_("player")
 check("text: placeholder hidden", box.placeholder:IsShown(), false)
 check("text: clear button shown", box.clearButton:IsShown(), true)
-check("status counts the hits", CS.status.text, "Matches: " .. (function() local n = 0 for _ in pairs(ACD.searchHitMatch) do n = n + 1 end return n end)())
+local hits, roots = 0, 0
+for _ in pairs(ACD.searchHitMatch) do hits = hits + 1 end
+for k in pairs(ACD.searchGroupMatch) do if not k:find("\001", 1, true) then roots = roots + 1 end end
+check("status counts hits and top-level sections", CS.status.text, "Matches: " .. hits .. ", sections: " .. roots)
+check("sections equal the tree's top-level entries", roots, #rootTree().tree)
 check("status in the accent colour", CS.status.color, LAV)
 type_("zzzz")
 check("no hits: status says so", CS.status.text, "Nothing found")
