@@ -1317,6 +1317,14 @@ T = {
     "XPBAR_LABEL": "Смуга досвіду",
     "YELL": "Крик",
     "List of words to color in chat if found in a message. If you wish to add multiple words you must seperate the word with a comma. To search for your current name you can use %MYNAME%.\n\nExample:\n%MYNAME%, ElvUI, RBGs, Tank": "Список слів для розфарбування в чаті, якщо їх знайдено в повідомленні. Щоб додати кілька слів, розділяйте їх комою. Для пошуку вашого поточного імені можна використати %MYNAME%.\n\nПриклад:\n%MYNAME%, ElvUI, RBGs, Tank",
+    "Add Quest XP to Tooltip": "Додати досвід за завдання до підказки",
+    "Arrow Texture": "Текстура стрілки",
+    "Completed Quests Only": "Лише виконані завдання",
+    "Interrupted": "Перервано",
+    "Quest XP": "Досвід за завдання",
+    "Quest XP Color": "Колір досвіду за завдання",
+    "Quests in Current Zone Only": "Лише завдання в поточній зоні",
+    "Show Bubbles": "Показувати поділки",
 }
 
 EXTRAS = r'''

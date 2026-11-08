@@ -26,4 +26,6 @@ T = {
     "Status Icons Textures": "Текстури іконок статусу",
     "Zone Font": "Шрифт зони",
     "Zone Text": "Текст зони",
+    "Hides the 'Level' or 'L' text.": "Приховує текст «Рівень» або «L».",
+    "Show": "Показувати",
 }
