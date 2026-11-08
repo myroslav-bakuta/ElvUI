@@ -65,6 +65,7 @@ ERRORS = {}
 function geterrorhandler() return function(e) ERRORS[#ERRORS + 1] = tostring(e) end end
 function CloseSpecialWindows() end
 CLEARED_FOCUS = 0
+CLOSE = "Закрыть" -- the client's own string (a ruRU client)
 function EditBox_ClearFocus(b) CLEARED_FOCUS = CLEARED_FOCUS + 1 if b then b:ClearFocus() end end
 NORMAL_FONT_COLOR = {r = 1, g = 1, b = 1}
 GameTooltip = setmetatable({}, {__index = function() return function() end end})
@@ -130,9 +131,16 @@ function FrameMethods:GetWidth() return self.width or 800 end
 function FrameMethods:GetHeight() return self.height or 600 end
 function FrameMethods:GetSize() return 1920, 1080 end
 
+function FrameMethods:GetNumChildren() return #self.kids end
+function FrameMethods:GetChildren() return unpack(self.kids) end
+function FrameMethods:IsObjectType(kind) return self.kind == kind end
+
 function CreateFrame(kind, name, parent)
     local f = setmetatable({kind = kind, scripts = {}, shown = true, parent = parent,
-                            level = 1, text = "", events = {}}, FrameMT)
+                            level = 1, text = "", events = {}, kids = {}}, FrameMT)
+    if type(parent) == "table" and parent.kids and kind ~= "FontString" and kind ~= "Texture" then
+        parent.kids[#parent.kids + 1] = f
+    end
     if name then _G[name] = f end
     FRAMES[#FRAMES + 1] = f
     return f
@@ -180,6 +188,8 @@ function gui:Create(kind)
             w.frame.obj = w
             w.frame:SetScript("OnHide", function(f) f.obj:Fire("OnClose") end)
             w.frame.shown = false
+            w.closebutton = CreateFrame("Button", nil, w.frame)
+            w.closebutton.text = CLOSE
         end
     end
     w.user, w.children, w.callbacks = {}, {}, {}
@@ -531,6 +541,9 @@ check("clear button: focus left the box", box.focus, false)
 check("clear button: border dimmed again", box.backdrop.border, DIM)
 check("clear button: status hidden", CS.status:IsShown(), false)
 
+---------------------------------------------------------------- Close button label
+check("close button labelled in the ElvUI language while open", frameWidget().closebutton.text, "Close")
+
 ---------------------------------------------------------------- enter
 type_("")
 CS.searchBox:SetText("player")  -- typed, debounce still pending
@@ -593,6 +606,7 @@ check("closed: search dropped", CS.applied, nil)
 check("closed: dialog flag off", ACD.searchActive, false)
 check("closed: box detached from the pooled frame", CS.searchBox:GetParent(), UIParent)
 check("closed: box hidden", CS.searchBox:IsShown(), false)
+check("closed: pooled frame's close button back to the client text", F1.obj.closebutton.text, CLOSE)
 check("closed: user tree state restored", keys(rootStatus.groups.groups), "general,skins")
 local cached = 0
 for _ in pairs(TIMERS) do cached = cached + 1 end

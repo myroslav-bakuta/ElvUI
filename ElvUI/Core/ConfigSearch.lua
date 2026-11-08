@@ -12,6 +12,7 @@ local EditBox_ClearFocus = EditBox_ClearFocus
 local hooksecurefunc = hooksecurefunc
 local IsAddOnLoaded = IsAddOnLoaded
 local LibStub = LibStub
+local CLOSE = CLOSE
 
 local CS = {}
 E.ConfigSearch = CS
@@ -438,10 +439,25 @@ end
 -- The config frame comes from AceGUI's widget pool, which every addon using
 -- AceGUI-3.0 shares: once hidden it can be handed to any other window. So the box
 -- is detached (and the search dropped) as soon as the frame hides.
+-- AceGUI labels the Frame's Close button with the client's CLOSE, in the client's
+-- language rather than the one picked in ElvUI. The frame is pooled and shared with
+-- other addons, so the label is swapped only while ElvUI holds it, and put back after.
+local function FindCloseButton(frame)
+	for i = 1, frame:GetNumChildren() do
+		local child = select(i, frame:GetChildren())
+		if child:IsObjectType("Button") and child:GetText() == CLOSE then return child end
+	end
+end
+
 function CS:Detach()
 	self:Clear()
 	wipe(foldCache)
 	self.frame = nil
+
+	if self.closeButton then
+		self.closeButton:SetText(CLOSE)
+		self.closeButton = nil
+	end
 
 	local box = self.searchBox
 	if box then
@@ -476,6 +492,9 @@ function CS:Attach()
 	box:SetPoint("LEFT", frame, "BOTTOMLEFT", CONTENT_LEFT + border, CLOSE_BOTTOM + CLOSE_HEIGHT / 2)
 	box:Show()
 	self:UpdateStatus(nil)
+
+	self.closeButton = FindCloseButton(frame)
+	if self.closeButton then self.closeButton:SetText(L["Close"]) end
 
 	if not hookedFrames[frame] then
 		hookedFrames[frame] = true

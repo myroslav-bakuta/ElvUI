@@ -62,6 +62,7 @@ L["Chat"] = true
 L["Choose a theme layout you wish to use for your initial setup."] = true
 L["Classbar"] = true
 L["Classic"] = true
+L["Close"] = true
 L["Combat Time"] = true
 L["Combobar"] = true
 L["Config Mode:"] = true
