@@ -2,7 +2,7 @@ local E, L, V, P, G = unpack(select(2, ...)); -- Import: Engine, Locales, Privat
 local S = E:GetModule("Skins")
 
 --Lua functions
-local gsub, strfind, strmatch = string.gsub, string.find, string.match
+local gsub, strfind, strmatch, strsub = string.gsub, string.find, string.match, string.sub
 local tconcat = table.concat
 local type, pairs, pcall, select = type, pairs, pcall, select
 local wipe = wipe
@@ -73,13 +73,40 @@ local function NormalizeQuery(text)
 	return CS.Casefold(text)
 end
 
+local query -- normalized query of the search in progress
+
+-- A description is a whole paragraph, so only the matched words get the colour.
+-- Positions found in the folded text are reused on the original, which is only safe
+-- when folding kept every byte in place (no markup removed, same-size letters);
+-- otherwise the paragraph stays plain rather than risk cutting a letter in two.
+local function HighlightFragments(text)
+	local folded = CS.Casefold(text)
+	if not query or #folded ~= #text then return text end
+
+	local out, pos = {}, 1
+	local first, last = strfind(folded, query, 1, true)
+	while first do
+		out[#out + 1] = strsub(text, pos, first - 1)
+		out[#out + 1] = HIGHLIGHT..strsub(text, first, last).."|r"
+		pos = last + 1
+		first, last = strfind(folded, query, pos, true)
+	end
+	out[#out + 1] = strsub(text, pos)
+
+	return tconcat(out)
+end
+
 -- The text's own colour codes are dropped first: an inner |r would end the
 -- highlight early and an inner |c would override it.
-local function Highlight(text)
+local function Highlight(text, optionType)
 	if type(text) ~= "string" then return text end
 
 	text = gsub(text, "|c%x%x%x%x%x%x%x%x", "")
 	text = gsub(text, "|r", "")
+
+	if optionType == "description" then
+		return HighlightFragments(text)
+	end
 
 	return HIGHLIGHT..text.."|r"
 end
@@ -96,7 +123,6 @@ local hitMatch = {}   -- options and groups whose own text matched (highlighted)
 local expanded = {}   -- tree open-flag tables changed by the search -> the user's state
 
 local ACD, GetMember, CheckHidden
-local query
 
 local function Match(text)
 	return type(text) == "string" and text ~= "" and strfind(CS.Casefold(text), query, 1, true) ~= nil

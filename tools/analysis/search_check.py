@@ -64,7 +64,8 @@ string.split = strsplit
 ERRORS = {}
 function geterrorhandler() return function(e) ERRORS[#ERRORS + 1] = tostring(e) end end
 function CloseSpecialWindows() end
-function EditBox_ClearFocus() end
+CLEARED_FOCUS = 0
+function EditBox_ClearFocus() CLEARED_FOCUS = CLEARED_FOCUS + 1 end
 NORMAL_FONT_COLOR = {r = 1, g = 1, b = 1}
 GameTooltip = setmetatable({}, {__index = function() return function() end end})
 
@@ -258,6 +259,9 @@ function MakeOptions()
                 bags = {order = 6, type = "group", name = "Bags", inline = true, args = {
                     sort = {order = 1, type = "toggle", name = "Sort Inverted"},
                 }},
+                help = {order = 7, type = "description", name = "Bags are sorted in Reverse order."},
+                helpUk = {order = 8, type = "description", name = "Сумки впорядковано НАВПАКИ."},
+                helpIcon = {order = 9, type = "description", name = "|TInterface\\Icons\\X:14|t Fragile |cff00ff00text|r"},
             }},
             unitframe = {order = 3, type = "group", name = "UnitFrames", args = {
                 generalOptionsGroup = {order = 1, type = "group", name = "General Options", childGroups = "tab", args = {
@@ -339,6 +343,12 @@ local function collect(w, out)
     end
     return out
 end
+local function textOf(w, text)
+    for _, c in ipairs(collect(w)) do
+        if c.type == "Label" and type(c.text) == "string" and c.text:find(text, 1, true) then return c.text end
+    end
+end
+
 local function labelOf(w, text)
     for _, c in ipairs(collect(w)) do
         local l = c.label or c.title
@@ -458,6 +468,20 @@ type_("icons")
 check("texture paths are not searchable", hm["general\001icon"], nil)
 type_("heals")
 check("text around a texture is", hm["general\001icon"], true)
+
+---------------------------------------------------------------- descriptions: matched words only
+type_("reverse")
+check("description hit", hm["general\001help"], true)
+check("description: only the matched word coloured", textOf(rootTree(), "sorted in"), "Bags are sorted in " .. RED .. "Reverse|r order.")
+type_("or")
+check("description: every occurrence coloured", textOf(rootTree(), "Bags are"), "Bags are s" .. RED .. "or|rted in Reverse " .. RED .. "or|rder.")
+type_("навпаки")
+check("description: Cyrillic word coloured in its own case", textOf(rootTree(), "Сумки"), "Сумки впорядковано " .. RED .. "НАВПАКИ|r.")
+type_("fragile")
+check("description with markup: hit", hm["general\001helpIcon"], true)
+check("description with markup stays plain, no red paragraph", textOf(rootTree(), "Fragile"), "|TInterface\\Icons\\X:14|t Fragile text")
+type_("sort inv")
+check("plain option names still fully coloured", labelOf(rootTree(), "Sort Inverted"), RED .. "Sort Inverted|r")
 
 type_("плавні")
 check("Cyrillic case-insensitive", hm["ukr\001lang"], true)

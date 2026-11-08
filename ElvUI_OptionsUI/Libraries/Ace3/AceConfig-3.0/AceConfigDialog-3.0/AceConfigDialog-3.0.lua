@@ -994,9 +994,9 @@ local function SearchHidesGroup(path)
 	return AceConfigDialog.searchActive and not AceConfigDialog.searchGroupMatch[tconcat(path, "\001")]
 end
 
-local function SearchHighlight(text, path)
+local function SearchHighlight(text, path, optionType)
 	if AceConfigDialog.searchActive and AceConfigDialog.searchHitMatch[tconcat(path, "\001")] then
-		return AceConfigDialog.SearchHighlight(text)
+		return AceConfigDialog.SearchHighlight(text, optionType)
 	end
 	return text
 end
@@ -1184,7 +1184,7 @@ local function FeedOptions(appName, options,container,rootframe,path,group,inlin
 				local control
 
 				local name = GetOptionsMemberValue("name", v, options, path, appName)
-				name = SearchHighlight(name, path) -- ElvUI search
+				name = SearchHighlight(name, path, v.type) -- ElvUI search
 
 				if v.type == "execute" then
 
