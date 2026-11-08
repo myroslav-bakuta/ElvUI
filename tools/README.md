@@ -80,15 +80,19 @@ the one place that mattered, `ElvUI_CustomTweaks`, was moved into a deferred `Ge
   selection fallback, `SelectGroup` jumps, and detaching the box from pooled frames. Also
   times a search over ~11k synthetic options, and covers `RunWhenReady` (RaidRoll skin) and
   the Friends datatext list builder. Run it after touching either search file or updating Ace3.
+- **`npcache_check.py`** — scenario check of the nameplate class cache: pruning, day stamps,
+  upgrade of undated entries, and no cache use in battlegrounds/arenas (real source, Lua 5.1).
 
 ---
 
 ## Merge-NPClassCache.ps1 — share the nameplate class cache between accounts
 
 ElvUI remembers friendly player classes per account in `ElvNPClassCache`
-(`WTF\Account\<name>\SavedVariables\ElvUI.lua`). Set `$WowPath` at the top of the
-script to the game folder, then run it. It finds every account, shows which players each
-one is missing, and after a `y` adds them. Names with different classes on different
+(`WTF\Account\<name>\SavedVariables\ElvUI.lua`), as `"CLASS:day"` with the day the
+player was last seen; players unseen for 90 days are dropped at login, and nothing is read
+or written in battlegrounds and arenas. The script finds the game folder by walking up from
+its own location (pass `-WowPath <folder>` to override). It finds every account, shows which
+players each one is missing, and after a `y` adds them, keeping the newest day. Names with different classes on different
 accounts are listed and skipped. Every changed file is first copied to
 `ElvUI.lua.<date-time>.bak`, and the script refuses to run while `Wow.exe` is open.
 Works in Windows PowerShell 5.1 and PowerShell 7.

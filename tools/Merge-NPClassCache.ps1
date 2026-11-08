@@ -1,7 +1,16 @@
-﻿# Вкажіть тут папку з грою (ту, де лежать Wow.exe і WTF)
-$WowPath = 'C:\Users\m.bakuta\Documents\WoTLK'
+﻿# Game folder (the one holding Wow.exe and WTF). By default it is found by walking up
+# from this script, which lives somewhere under Interface; or pass -WowPath.
+param([string]$WowPath)
 
 $ErrorActionPreference = 'Stop'
+
+if (-not $WowPath) {
+    $dir = Split-Path -Parent $MyInvocation.MyCommand.Path
+    while ($dir -and -not (Test-Path -LiteralPath (Join-Path $dir 'WTF\Account'))) {
+        $dir = Split-Path -Parent $dir
+    }
+    $WowPath = $dir
+}
 try { [Console]::OutputEncoding = [Text.Encoding]::UTF8 } catch { }
 
 $latin1 = [Text.Encoding]::GetEncoding(28591)
@@ -11,8 +20,8 @@ function Show([string]$s) { $utf8.GetString($latin1.GetBytes($s)) }
 
 function New-Map { New-Object 'System.Collections.Generic.SortedDictionary[string,object]' ([StringComparer]::Ordinal) }
 
-if (-not (Test-Path -LiteralPath (Join-Path $WowPath 'WTF\Account'))) {
-    Write-Host "No WTF\Account folder in $WowPath. Set `$WowPath at the top of the script." -ForegroundColor Red
+if (-not $WowPath -or -not (Test-Path -LiteralPath (Join-Path $WowPath 'WTF\Account'))) {
+    Write-Host "No game folder with WTF\Account found. Run it as: Merge-NPClassCache.ps1 -WowPath 'D:\Games\WoW'" -ForegroundColor Red
     exit 1
 }
 
@@ -43,7 +52,7 @@ foreach ($file in $files) {
             if ($line -match '^\t\["(.*)"\] = \{$') {
                 $realm = $Matches[1]
                 if (-not $cache.ContainsKey($realm)) { $cache[$realm] = New-Map }
-            } elseif ($realm -and $line -match '^\t\t\["(.*)"\] = "([A-Z]+)",$') {
+            } elseif ($realm -and $line -match '^\t\t\["(.*)"\] = "([A-Z]+(:\d+)?)",$') {
                 $cache[$realm][$Matches[1]] = $Matches[2]
             } else {
                 Write-Host "$name : unexpected line in ElvNPClassCache, stopping without changes:" -ForegroundColor Red
@@ -78,15 +87,17 @@ $conflicts = @()
 foreach ($realm in $all.Keys) {
     foreach ($player in $all[$realm].Keys) {
         $seen = $all[$realm][$player]
-        $classes = @($seen.Values | Sort-Object -Unique)
+        # entries are "CLASS:day" (day last seen) or, from older ElvUI builds, just "CLASS"
+        $classes = @($seen.Values | ForEach-Object { ($_ -split ':')[0] } | Sort-Object -Unique)
         if ($classes.Count -gt 1) {
             $conflicts += "  [$(Show $realm)] $(Show $player): " + (($seen.Keys | ForEach-Object { "$_=$($seen[$_])" }) -join ', ')
             continue
         }
+        $newest = @($seen.Values | Sort-Object { [int](@(($_ -split ':') + '0')[1]) } -Descending)[0]
         foreach ($acc in $accounts) {
             if ($seen.ContainsKey($acc.Name)) { continue }
             [void]$acc.Adds.Add([pscustomobject]@{
-                Realm = $realm; Player = $player; Class = $classes[0]; From = ($seen.Keys -join ', ')
+                Realm = $realm; Player = $player; Class = $newest; From = ($seen.Keys -join ', ')
             })
         }
     }
