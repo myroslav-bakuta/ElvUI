@@ -66,7 +66,15 @@ the one place that mattered, `ElvUI_CustomTweaks`, was moved into a deferred `Ge
 - **`check_load_case.py`** — verify every `.toc`/`.xml` `<Script>`/`<Include>` reference
   matches the on-disk file/dir case exactly. Passes on Windows regardless; run it before
   shipping to a case-sensitive (Linux) server.
-- **`locale_check.py`** — cross-check locale key coverage between languages.
+- **`locale_check.py`** — duplicate `L["key"]` assignments inside one locale file.
+- **`locale_coverage_check.py`** — every literal `L["..."]` used in the code must exist in
+  enUS, ruRU and ukUA (a gap shows English or a raw ID, and the config search can't find the
+  option by its translated name). `--all` also lists ru/uk entries left as `= true`. Exit 1 on gaps.
+- **`db_defaults_check.py`** — every literal `E.db` / `E.private` / `E.global` chain read in
+  the code must exist in the P / V / G defaults, collected from every default statement in
+  the suite and run in Lua 5.1. Catches typos (`tooltip.enabled`), settings with no default
+  (a profile reset can't restore them) and dead settings. Expected misses (DB conversions,
+  runtime keys) are listed in `ACCEPTED` at the top; `--all` shows them too. Exit 1 on findings.
 - **`analyze_toc.py`** — walk the `.toc` / `Load_*.xml` include chains and flag missing files.
 - **`global_writes.py`** — flag accidental writes to Lua globals (missing `local`).
 - **`onupdate_scan.py`** — find `OnUpdate` handlers lacking a throttle accumulator.
