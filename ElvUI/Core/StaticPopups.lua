@@ -22,7 +22,6 @@ local ReloadUI, PlaySound, StopMusic = ReloadUI, PlaySound, StopMusic
 local StaticPopup_Resize = StaticPopup_Resize
 local AutoCompleteEditBox_OnEnterPressed = AutoCompleteEditBox_OnEnterPressed
 local AutoCompleteEditBox_OnTextChanged = AutoCompleteEditBox_OnTextChanged
-local ChatEdit_FocusActiveWindow = ChatEdit_FocusActiveWindow
 local STATICPOPUP_TEXTURE_ALERT = STATICPOPUP_TEXTURE_ALERT
 local STATICPOPUP_TEXTURE_ALERTGEAR = STATICPOPUP_TEXTURE_ALERTGEAR
 local YES, NO, OKAY, CANCEL, ACCEPT, DECLINE = YES, NO, OKAY, CANCEL, ACCEPT, DECLINE
