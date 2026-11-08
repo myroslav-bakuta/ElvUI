@@ -27,10 +27,13 @@ local ACCENT = {0.80, 0.63, 0.98}
 local ACCENT_DIM = {0.48, 0.38, 0.59}
 local ICON_IDLE = {0.6, 0.6, 0.6}
 local NOTHING_COLOR = {1, 0.45, 0.45}
--- AceGUI's Frame puts its content (the button row, the tree) at x = 17 in raw, unscaled
--- coordinates. The skinned border sits E.Border outside the box, so the box starts that
--- much further right for the two left borders to line up.
-local CONTENT_LEFT, BOX_WIDTH = 17, 278
+-- The box sits in the bottom row of the window, next to the Close button. Numbers are
+-- AceGUI's own (AceGUIContainer-Frame.lua), in the raw, unscaled coordinates it uses:
+-- content (the tree) starts at x = 17, the Close button is 20 high with its bottom 17 above
+-- the window's. The skinned border sits E.Border outside the box, so the box is moved in
+-- and shrunk by that much for its border to line up with the tree and the button.
+local CONTENT_LEFT, CLOSE_BOTTOM, CLOSE_HEIGHT = 17, 17, 20
+local BOX_WIDTH = 278
 
 --------------------------------------------------------------------------------
 -- Case-folding (Latin + Cyrillic)
@@ -378,7 +381,7 @@ end
 
 function CS:CreateSearchBox()
 	local box = CreateFrame("EditBox", "ElvUIConfigSearchBox", E.UIParent, "InputBoxTemplate")
-	box:Size(BOX_WIDTH, 22)
+	box:Size(BOX_WIDTH, CLOSE_HEIGHT)
 	box:SetAutoFocus(false)
 	box:SetScript("OnTextChanged", OnTextChanged)
 	box:SetScript("OnEnterPressed", function(b)
@@ -467,9 +470,10 @@ function CS:Attach()
 	box:SetParent(frame)
 	box:SetFrameLevel(frame:GetFrameLevel() + 20)
 	box:ClearAllPoints()
-	-- raw SetPoint like AceGUI's own content; y stays vertically centered between the
-	-- window top edge and the "Version" delimiter
-	box:SetPoint("LEFT", frame, "TOPLEFT", CONTENT_LEFT + E:Scale(E.Border), E:Scale(-19))
+	local border = E:Scale(E.Border)
+	box:SetHeight(CLOSE_HEIGHT - 2 * border)
+	-- LEFT is the box's vertical middle: the same height as the Close button's middle
+	box:SetPoint("LEFT", frame, "BOTTOMLEFT", CONTENT_LEFT + border, CLOSE_BOTTOM + CLOSE_HEIGHT / 2)
 	box:Show()
 	self:UpdateStatus(nil)
 
