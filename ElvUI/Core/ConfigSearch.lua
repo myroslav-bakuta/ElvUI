@@ -315,6 +315,11 @@ function CS:CreateSearchBox()
 	box:Size(220, 22)
 	box:SetAutoFocus(false)
 	box:SetScript("OnTextChanged", OnTextChanged)
+	box:SetScript("OnEnterPressed", function(b)
+		if CS.timer then E:CancelTimer(CS.timer) CS.timer = nil end
+		CS:DoSearch(b:GetText()) -- no need to wait for the debounce
+		EditBox_ClearFocus(b)
+	end)
 	box:SetScript("OnEscapePressed", function(b)
 		EditBox_ClearFocus(b)
 		b:SetText("")

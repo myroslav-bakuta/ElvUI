@@ -483,6 +483,15 @@ check("description with markup stays plain, no red paragraph", textOf(rootTree()
 type_("sort inv")
 check("plain option names still fully coloured", labelOf(rootTree(), "Sort Inverted"), RED .. "Sort Inverted|r")
 
+---------------------------------------------------------------- enter
+type_("")
+CS.searchBox:SetText("player")  -- typed, debounce still pending
+local focusBefore = CLEARED_FOCUS
+CS.searchBox.scripts.OnEnterPressed(CS.searchBox)
+check("enter searches at once", CS.applied, "player")
+check("enter drops the pending debounce", next(TIMERS), nil)
+check("enter clears focus", CLEARED_FOCUS, focusBefore + 1)
+
 type_("плавні")
 check("Cyrillic case-insensitive", hm["ukr\001lang"], true)
 type_("watch fr")
