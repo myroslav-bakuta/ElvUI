@@ -465,14 +465,14 @@ E.Options.args.chat = {
 							order = 1,
 							type = "toggle",
 							name = L["Custom Timestamp Color"],
-							disabled = function() return not E.db.chat.timeStampFormat == "NONE" end
+							disabled = function() return E.db.chat.timeStampFormat == "NONE" end
 						},
 						customTimeColor = {
 							order = 2,
 							type = "color",
 							hasAlpha = false,
 							name = L["Timestamp Color"],
-							disabled = function() return (not E.db.chat.timeStampFormat == "NONE" or not E.db.chat.useCustomTimeColor) end,
+							disabled = function() return E.db.chat.timeStampFormat == "NONE" or not E.db.chat.useCustomTimeColor end,
 							get = function(info)
 								local t = E.db.chat.customTimeColor
 								local d = P.chat.customTimeColor
