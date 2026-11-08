@@ -10,6 +10,7 @@ local type = type
 local select, unpack, pairs, next, tonumber = select, unpack, pairs, next, tonumber
 local floor, random = math.floor, math.random
 local format, gsub, match, split = string.format, string.gsub, string.match, string.split
+local time = time
 local twipe = table.wipe
 --WoW API / Variables
 local CreateFrame = CreateFrame
@@ -245,6 +246,49 @@ for class, color in pairs(RAID_CLASS_COLORS) do
 	grenColorToClass[color.g] = class
 end
 
+-- ElvNPClassCache[realm][name] = "CLASS:day" (days since the epoch, last time the player was
+-- seen). Players unseen for CLASS_CACHE_DAYS are dropped at login; older "CLASS" entries get today.
+local CLASS_CACHE_DAYS = 90
+local classStamp = {} -- class -> "CLASS:today", so a sighting does not build a new string
+
+function NP:LoadClassCache()
+	ElvNPClassCache = ElvNPClassCache or {}
+	ElvNPClassCache[E.myrealm] = ElvNPClassCache[E.myrealm] or {}
+
+	local saved = ElvNPClassCache[E.myrealm]
+	local today = floor(time() / 86400)
+	self.ClassCacheSaved = saved
+	self.ClassCacheToday = today
+	self.ClassCache = {}
+
+	for name, value in pairs(saved) do
+		local class, day = match(type(value) == "string" and value or "", "^(%u+):?(%d*)$")
+		day = tonumber(day) or today
+
+		if not class or not RAID_CLASS_COLORS[class] or today - day > CLASS_CACHE_DAYS then
+			saved[name] = nil -- assigning nil to an existing key is safe during pairs
+		else
+			self.ClassCache[name] = class
+			saved[name] = class..":"..day
+		end
+	end
+end
+
+function NP:RememberClass(name, class)
+	if self.inPvP or name == "" then return end
+
+	self.ClassCache[name] = class
+
+	local stamp = classStamp[class]
+	if not stamp then
+		stamp = class..":"..self.ClassCacheToday
+		classStamp[class] = stamp
+	end
+	if self.ClassCacheSaved[name] ~= stamp then
+		self.ClassCacheSaved[name] = stamp
+	end
+end
+
 function NP:UnitClass(frame, unitType)
 	if unitType == "FRIENDLY_PLAYER" then
 		local class
@@ -256,11 +300,14 @@ function NP:UnitClass(frame, unitType)
 
 		-- the client paints every friendly player plate the same blue, so remember classes we learned
 		if class then
-			NP.ClassCache[frame.UnitName] = class
+			NP:RememberClass(frame.UnitName, class)
 			return class
 		end
 
-		return NP.ClassCache[frame.UnitName]
+		-- battlegrounds bring players from other realms who may share a name with someone cached
+		if not NP.inPvP then
+			return NP.ClassCache[frame.UnitName]
+		end
 	elseif unitType == "ENEMY_PLAYER" then
 		local _, g = frame.oldHealthBar:GetStatusBarColor()
 		return grenColorToClass[floor(g*100 + 0.5) / 100]
@@ -958,6 +1005,7 @@ end
 function NP:PLAYER_ENTERING_WORLD()
 	twipe(self.Healers)
 	local inInstance, instanceType = IsInInstance()
+	self.inPvP = inInstance and (instanceType == "pvp" or instanceType == "arena") or nil
 	if inInstance and (instanceType == "pvp") and self.db.units.ENEMY_PLAYER.markHealers then
 		self:RegisterEvent("UPDATE_BATTLEFIELD_SCORE", "CheckBGHealers")
 		self.CheckHealerTimer = self:ScheduleRepeatingTimer("CheckBGHealers", 3)
@@ -1212,9 +1260,7 @@ function NP:Initialize()
 	if E.private.nameplates.enable ~= true then return end
 	self.Initialized = true
 
-	ElvNPClassCache = ElvNPClassCache or {}
-	ElvNPClassCache[E.myrealm] = ElvNPClassCache[E.myrealm] or {}
-	self.ClassCache = ElvNPClassCache[E.myrealm]
+	self:LoadClassCache()
 
 	--Add metatable to all our StyleFilters so they can grab default values if missing
 	self:StyleFilterInitialize()
