@@ -208,6 +208,7 @@ L["PvP"] = true
 L["R"] = true
 L["RL"] = true
 L["RW"] = true
+L["Quest Log XP:"] = true
 L["Raid Frames"] = true
 L["Raid Menu"] = true
 L["Raid Pet Frames"] = true

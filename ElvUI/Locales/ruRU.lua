@@ -208,6 +208,7 @@ L["PvP"] = true
 L["R"] = "Р"
 L["RL"] = "РЛ"
 L["RW"] = "Объявление"
+L["Quest Log XP:"] = "Опыт из журнала заданий:"
 L["Raid Frames"] = "Рейд"
 L["Raid Menu"] = "Рейдовое меню"
 L["Raid Pet Frames"] = "Питомцы рейда"

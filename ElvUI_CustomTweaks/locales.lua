@@ -27,6 +27,7 @@ L["Boss"] = true;
 L["Button Color"] = true;
 L["Button Style"] = true;
 L["Chat Tweaks"] = true;
+L["Color"] = true;
 L["Credit"] = true;
 L["Datatexts Tweaks"] = true;
 L["Focus"] = true;
@@ -104,6 +105,7 @@ if L then
 	L["Button Color"] = "Цвет кнопок";
 	L["Button Style"] = "Стиль кнопок";
 	L["Chat Tweaks"] = "Твики чата";
+	L["Color"] = "Цвет";
 	L["Credit"] = "Благодарность";
 	L["Datatexts Tweaks"] = "Твики инфо-текстов";
 	L["Focus"] = "Фокус";
@@ -182,6 +184,7 @@ if L then
 	L["Button Color"] = "Колір кнопок";
 	L["Button Style"] = "Стиль кнопок";
 	L["Chat Tweaks"] = "Твіки чату";
+	L["Color"] = "Колір";
 	L["Credit"] = "Подяка";
 	L["Datatexts Tweaks"] = "Твіки інфо-текстів";
 	L["Focus"] = "Фокус";
