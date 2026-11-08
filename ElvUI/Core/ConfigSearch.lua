@@ -338,7 +338,8 @@ local function UpdateLook(box)
 	local hasText = box:GetText() ~= ""
 	local focused = box.hasFocus
 
-	if hasText then box.placeholder:Hide() else box.placeholder:Show() end
+	-- hidden while focused too, or the text cursor sits on top of it
+	if hasText or focused then box.placeholder:Hide() else box.placeholder:Show() end
 	if hasText then box.clearButton:Show() else box.clearButton:Hide() end
 
 	local icon = (focused or hasText) and ACCENT or ICON_IDLE
