@@ -122,7 +122,7 @@ end
 function B:UpdateSearch()
 	local search = self:GetText()
 	if self.Instructions then
-		self.Instructions:SetShown(search == "")
+		if search == "" then self.Instructions:Show() else self.Instructions:Hide() end -- no SetShown in 3.3.5
 	end
 
 	local MIN_REPEAT_CHARACTERS = 3
