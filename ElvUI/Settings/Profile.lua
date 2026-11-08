@@ -15,6 +15,7 @@ P.general = {
 	autoRoll = false,
 	autoAcceptInvite = false,
 	bottomPanel = true,
+	topPanel = false,
 	hideErrorFrame = true,
 	enhancedPvpMessages = true,
 	watchFrameHeight = 480,
