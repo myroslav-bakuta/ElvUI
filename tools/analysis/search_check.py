@@ -481,7 +481,11 @@ type_("fragile")
 check("description with markup: hit", hm["general\001helpIcon"], true)
 check("description with markup stays plain, no red paragraph", textOf(rootTree(), "Fragile"), "|TInterface\\Icons\\X:14|t Fragile text")
 type_("sort inv")
-check("plain option names still fully coloured", labelOf(rootTree(), "Sort Inverted"), RED .. "Sort Inverted|r")
+check("name: only the matched part coloured", labelOf(rootTree(), "erted"), RED .. "Sort Inv|rerted")
+type_("classcolor")
+check("name of an option found by its description fully coloured", ACD.SearchHighlight("Class Health"), RED .. "Class Health|r")
+type_("heals")
+check("name with a texture falls back to fully coloured", labelOf(rootTree(), "heals"), RED .. "Show |TInterface\\Icons\\Spell_Nature_Heal:14|t heals|r")
 
 ---------------------------------------------------------------- enter
 type_("")

@@ -75,16 +75,19 @@ end
 
 local query -- normalized query of the search in progress
 
--- A description is a whole paragraph, so only the matched words get the colour.
--- Positions found in the folded text are reused on the original, which is only safe
--- when folding kept every byte in place (no markup removed, same-size letters);
--- otherwise the paragraph stays plain rather than risk cutting a letter in two.
+-- Colours only the matched words, or returns nil when it can't. Positions found in the
+-- folded text are reused on the original, which is only safe when folding kept every
+-- byte in place (no markup removed, same-size letters); otherwise a letter could be cut
+-- in two. Also nil when the text itself does not contain the query (the option was found
+-- by its description or a dropdown value).
 local function HighlightFragments(text)
 	local folded = CS.Casefold(text)
-	if not query or #folded ~= #text then return text end
+	if not query or #folded ~= #text then return end
+
+	local first, last = strfind(folded, query, 1, true)
+	if not first then return end
 
 	local out, pos = {}, 1
-	local first, last = strfind(folded, query, 1, true)
 	while first do
 		out[#out + 1] = strsub(text, pos, first - 1)
 		out[#out + 1] = HIGHLIGHT..strsub(text, first, last).."|r"
@@ -97,16 +100,18 @@ local function HighlightFragments(text)
 end
 
 -- The text's own colour codes are dropped first: an inner |r would end the
--- highlight early and an inner |c would override it.
+-- highlight early and an inner |c would override it. Names fall back to a fully
+-- coloured name, so a hit found through its description still stands out; a
+-- description (a whole paragraph) falls back to plain text.
 local function Highlight(text, optionType)
 	if type(text) ~= "string" then return text end
 
 	text = gsub(text, "|c%x%x%x%x%x%x%x%x", "")
 	text = gsub(text, "|r", "")
 
-	if optionType == "description" then
-		return HighlightFragments(text)
-	end
+	local fragments = HighlightFragments(text)
+	if fragments then return fragments end
+	if optionType == "description" then return text end
 
 	return HIGHLIGHT..text.."|r"
 end
