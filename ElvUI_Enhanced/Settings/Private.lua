@@ -35,9 +35,6 @@ V.enhanced = {
 			}
 		}
 	},
-	timerTracker = {
-		enable = false
-	},
 	loseControl = {
 		enable = false
 	},
