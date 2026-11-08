@@ -1,6 +1,5 @@
 local E, L, V, P, G = unpack(ElvUI)
 local PI = E:NewModule("Enhanced_ProgressionInfo", "AceHook-3.0", "AceEvent-3.0")
-local TT = E:GetModule("Tooltip")
 
 local pairs, ipairs, select, tonumber = pairs, ipairs, select, tonumber
 local format = string.format
@@ -341,14 +340,10 @@ end
 
 function PI:ToggleState()
 	if E.db.enhanced.tooltip.progressInfo.enable then
-		if E.private.tooltip.enabled and TT then
-			if not self:IsHooked(TT, "GameTooltip_OnTooltipSetUnit", ShowInspectInfo) then
-				self:SecureHook(TT, "GameTooltip_OnTooltipSetUnit", ShowInspectInfo)
-			end
-		else
-			if not self:IsHooked(GameTooltip, "OnTooltipSetUnit", ShowInspectInfo) then
-				self:HookScript(GameTooltip, "OnTooltipSetUnit", ShowInspectInfo)
-			end
+		-- Always the tooltip script: a hook on the Tooltip module method would pass
+		-- the Tooltip module, not the tooltip, as ShowInspectInfo's first argument.
+		if not self:IsHooked(GameTooltip, "OnTooltipSetUnit", ShowInspectInfo) then
+			self:HookScript(GameTooltip, "OnTooltipSetUnit", ShowInspectInfo)
 		end
 
 		self:UpdateModifier()
