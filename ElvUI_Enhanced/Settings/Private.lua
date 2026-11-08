@@ -46,3 +46,5 @@ V.enhanced = {
 	},
 	minimapButtonGrabber = false
 }
+
+V.general.selectQuestReward = false

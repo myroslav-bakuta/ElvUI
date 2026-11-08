@@ -12,6 +12,7 @@ P.enhanced = {
 		trainAllSkills = false,
 		undressButton = false,
 		alreadyKnown = false,
+		altBuyMaxStack = false,
 	},
 	actionbar = {
 		keyPressAnimation = {
