@@ -65,7 +65,7 @@ ERRORS = {}
 function geterrorhandler() return function(e) ERRORS[#ERRORS + 1] = tostring(e) end end
 function CloseSpecialWindows() end
 CLEARED_FOCUS = 0
-function EditBox_ClearFocus() CLEARED_FOCUS = CLEARED_FOCUS + 1 end
+function EditBox_ClearFocus(b) CLEARED_FOCUS = CLEARED_FOCUS + 1 if b then b:ClearFocus() end end
 NORMAL_FONT_COLOR = {r = 1, g = 1, b = 1}
 GameTooltip = setmetatable({}, {__index = function() return function() end end})
 
@@ -115,6 +115,14 @@ function FrameMethods:UnregisterAllEvents() wipe(self.events) end
 function FrameMethods:SetText(t) self.text = t Fire(self, "OnTextChanged") end
 function FrameMethods:GetText() return self.text end
 function FrameMethods:CreateFontString() return CreateFrame("FontString", nil, self) end
+function FrameMethods:CreateTexture() return CreateFrame("Texture", nil, self) end
+function FrameMethods:SetFormattedText(fmt, ...) self.text = string.format(fmt, ...) end
+function FrameMethods:SetTextColor(r, g, b) self.color = string.format("%.2f,%.2f,%.2f", r, g, b) end
+function FrameMethods:SetVertexColor(r, g, b) self.vertex = string.format("%.2f,%.2f,%.2f", r, g, b) end
+function FrameMethods:SetBackdropBorderColor(r, g, b) self.border = string.format("%.2f,%.2f,%.2f", r, g, b) end
+function FrameMethods:SetFocus() if not self.focus then self.focus = true Fire(self, "OnEditFocusGained") end end
+function FrameMethods:ClearFocus() if self.focus then self.focus = false Fire(self, "OnEditFocusLost") end end
+function FrameMethods:Click() Fire(self, "OnClick") end
 function FrameMethods:SetMinResize(w, h) self.minResize = w .. "x" .. h end
 function FrameMethods:GetTop() return self.top or 700 end
 function FrameMethods:GetLeft() return self.left or 100 end
@@ -225,7 +233,7 @@ end
 UIParent = CreateFrame("Frame", "UIParent")
 TIMERS = {}
 E = {Options = {}, UIParent = UIParent, Libs = {AceConfigRegistry = reg}}
-S = {HandleEditBox = function() end}
+S = {HandleEditBox = function(_, f) f.backdrop = CreateFrame("Frame", nil, f) end}
 function E:GetModule() return S end
 function E:ScheduleTimer(fn) local h = {fn = fn} TIMERS[h] = true return h end
 function E:CancelTimer(h) TIMERS[h] = nil end
@@ -445,14 +453,14 @@ type_("reaction")
 check("select values hit", hm["unitframe\001player\001health\001colorBy"], true)
 type_("expressway")
 check("LibSharedMedia picker values ignored", hm["unitframe\001player\001health\001font"], nil)
-check("nothing found shown", CS.noResults:IsShown(), true)
+check("nothing found shown", CS.status:IsShown() and CS.status.text, "Nothing found")
 
 type_("loot roll")
 check("hit through colour codes", hm["general\001loot"], true)
 tree = rootTree()
 local generalPage = tree
 check("option label highlighted without inner colours", labelOf(generalPage, "Loot Roll"), RED .. "Loot Roll|r")
-check("nothing-found hidden when there are hits", CS.noResults:IsShown(), false)
+check("match count shown when there are hits", CS.status:IsShown() and CS.status.text, "Matches: 1")
 check("faulty name callback did not abort the walk", hm["general\001loot"], true)
 
 type_("sort inv")
@@ -486,6 +494,35 @@ type_("classcolor")
 check("name of an option found by its description fully coloured", ACD.SearchHighlight("Class Health"), RED .. "Class Health|r")
 type_("heals")
 check("name with a texture falls back to fully coloured", labelOf(rootTree(), "heals"), RED .. "Show |TInterface\\Icons\\Spell_Nature_Heal:14|t heals|r")
+
+---------------------------------------------------------------- box look
+local box = CS.searchBox
+local LAV, DIM, GREY = "0.80,0.63,0.98", "0.48,0.38,0.59", "0.60,0.60,0.60"
+type_("")
+check("empty: placeholder shown", box.placeholder:IsShown(), true)
+check("empty: clear button hidden", box.clearButton:IsShown(), false)
+check("empty, unfocused: icon grey", box.searchIcon.vertex, GREY)
+check("unfocused: border dimmed", box.backdrop.border, DIM)
+check("no search: status hidden", CS.status:IsShown(), false)
+box:SetFocus()
+check("focused: border bright", box.backdrop.border, LAV)
+check("focused: icon lavender", box.searchIcon.vertex, LAV)
+type_("player")
+check("text: placeholder hidden", box.placeholder:IsShown(), false)
+check("text: clear button shown", box.clearButton:IsShown(), true)
+check("status counts the hits", CS.status.text, "Matches: " .. (function() local n = 0 for _ in pairs(ACD.searchHitMatch) do n = n + 1 end return n end)())
+check("status in the accent colour", CS.status.color, LAV)
+type_("zzzz")
+check("no hits: status says so", CS.status.text, "Nothing found")
+check("no hits: status in red", CS.status.color, "1.00,0.45,0.45")
+type_("player")
+box.clearButton:Click()
+check("clear button: search dropped at once", CS.applied, nil)
+check("clear button: box emptied", box:GetText(), "")
+check("clear button: no pending debounce", next(TIMERS), nil)
+check("clear button: focus left the box", box.focus, false)
+check("clear button: border dimmed again", box.backdrop.border, DIM)
+check("clear button: status hidden", CS.status:IsShown(), false)
 
 ---------------------------------------------------------------- enter
 type_("")

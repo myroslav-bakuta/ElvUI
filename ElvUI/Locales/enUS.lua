@@ -162,6 +162,7 @@ L["Loot Frame"] = true
 L["Lord! It's a miracle! The download up and vanished like a fart in the wind! Try Again!"] = true
 L["MA Frames"] = true
 L["MT Frames"] = true
+L["Matches: %d"] = true
 L["Micro Bar"] = true
 L["Minimap"] = true
 L["MirrorTimer"] = true

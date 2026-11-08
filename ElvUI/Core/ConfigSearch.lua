@@ -22,6 +22,13 @@ local DEBOUNCE = 0.2
 local SEARCH_VALUES = true -- also match the entries of plain select/multiselect dropdowns
 local HIGHLIGHT = "|cffff3333" -- red; wraps matched names (tree sections, tabs, params)
 
+-- Search box look: lavender accent (DBM-like), dimmed while the box is not focused.
+local ACCENT = {0.80, 0.63, 0.98}
+local ACCENT_DIM = {0.48, 0.38, 0.59}
+local ICON_IDLE = {0.6, 0.6, 0.6}
+local NOTHING_COLOR = {1, 0.45, 0.45}
+local BOX_LEFT, BOX_WIDTH = 12, 278 -- right edge where it was when the label sat outside
+
 --------------------------------------------------------------------------------
 -- Case-folding (Latin + Cyrillic)
 --------------------------------------------------------------------------------
@@ -275,12 +282,32 @@ function CS:Apply(normalized)
 	end
 
 	ACD.searchActive = normalized ~= nil
-
-	if self.noResults then
-		if normalized and not any then self.noResults:Show() else self.noResults:Hide() end
-	end
+	self:UpdateStatus(normalized, any)
 
 	return true
+end
+
+-- "Matches: N" next to the box, or "Nothing found"; empty without a search.
+function CS:UpdateStatus(normalized, any)
+	local status = self.status
+	if not status then return end
+
+	if not normalized then
+		status:SetText("")
+		status:Hide()
+		return
+	end
+
+	if any then
+		local count = 0
+		for _ in pairs(hitMatch) do count = count + 1 end
+		status:SetFormattedText(L["Matches: %d"], count)
+		status:SetTextColor(ACCENT[1], ACCENT[2], ACCENT[3])
+	else
+		status:SetText(L["Nothing found"])
+		status:SetTextColor(NOTHING_COLOR[1], NOTHING_COLOR[2], NOTHING_COLOR[3])
+	end
+	status:Show()
 end
 
 function CS:DoSearch(text)
@@ -306,7 +333,26 @@ end
 -- Search box UI + lifecycle
 --------------------------------------------------------------------------------
 
+-- Placeholder, clear button, icon and border follow the text and the focus.
+local function UpdateLook(box)
+	local hasText = box:GetText() ~= ""
+	local focused = box.hasFocus
+
+	if hasText then box.placeholder:Hide() else box.placeholder:Show() end
+	if hasText then box.clearButton:Show() else box.clearButton:Hide() end
+
+	local icon = (focused or hasText) and ACCENT or ICON_IDLE
+	box.searchIcon:SetVertexColor(icon[1], icon[2], icon[3])
+
+	if box.backdrop then
+		local border = focused and ACCENT or ACCENT_DIM
+		box.backdrop:SetBackdropBorderColor(border[1], border[2], border[3])
+	end
+end
+
 local function OnTextChanged(box)
+	UpdateLook(box)
+
 	local text = box:GetText()
 	if CS.timer then E:CancelTimer(CS.timer) end
 	CS.timer = E:ScheduleTimer(function()
@@ -315,9 +361,16 @@ local function OnTextChanged(box)
 	end, DEBOUNCE)
 end
 
+-- Empties the box and drops the search at once, without waiting for the debounce.
+local function ClearNow(box)
+	box:SetText("")
+	if CS.timer then E:CancelTimer(CS.timer) CS.timer = nil end
+	CS:DoSearch("")
+end
+
 function CS:CreateSearchBox()
 	local box = CreateFrame("EditBox", "ElvUIConfigSearchBox", E.UIParent, "InputBoxTemplate")
-	box:Size(220, 22)
+	box:Size(BOX_WIDTH, 22)
 	box:SetAutoFocus(false)
 	box:SetScript("OnTextChanged", OnTextChanged)
 	box:SetScript("OnEnterPressed", function(b)
@@ -327,26 +380,46 @@ function CS:CreateSearchBox()
 	end)
 	box:SetScript("OnEscapePressed", function(b)
 		EditBox_ClearFocus(b)
-		b:SetText("")
-		if CS.timer then E:CancelTimer(CS.timer) CS.timer = nil end
-		CS:DoSearch("")
+		ClearNow(b)
 	end)
-	box.searchIcon = box:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	box.searchIcon:Point("RIGHT", box, "LEFT", -6, 0)
-	box.searchIcon:SetText(L["Search..."])
-	box.searchIcon:SetTextColor(0.80, 0.63, 0.98)
+	-- hooked, so InputBoxTemplate keeps its own highlight handling
+	box:HookScript("OnEditFocusGained", function(b) b.hasFocus = true UpdateLook(b) end)
+	box:HookScript("OnEditFocusLost", function(b) b.hasFocus = nil UpdateLook(b) end)
+
 	S:HandleEditBox(box)
-	box:SetTextInsets(7, 6, 0, 0) -- padding between the field border and the typed text
-	if box.backdrop then
-		box.backdrop:SetBackdropBorderColor(0.80, 0.63, 0.98) -- lavender (DBM-like) border
-	end
+	box:SetTextInsets(24, 22, 0, 0) -- room for the magnifier on the left and the clear button on the right
+
+	box.searchIcon = box:CreateTexture(nil, "OVERLAY")
+	box.searchIcon:SetTexture([[Interface\Common\UI-Searchbox-Icon]])
+	box.searchIcon:Size(14)
+	box.searchIcon:Point("LEFT", box, "LEFT", 6, -1)
+
+	box.placeholder = box:CreateFontString(nil, "OVERLAY", "GameFontDisable")
+	box.placeholder:Point("LEFT", box, "LEFT", 24, 0)
+	box.placeholder:SetText(L["Search..."])
+
+	box.clearButton = CreateFrame("Button", nil, box)
+	box.clearButton:Size(14)
+	box.clearButton:Point("RIGHT", box, "RIGHT", -5, 0)
+	box.clearButton.texture = box.clearButton:CreateTexture(nil, "ARTWORK")
+	box.clearButton.texture:SetTexture([[Interface\FriendsFrame\ClearBroadcastIcon]])
+	box.clearButton.texture:SetAllPoints()
+	box.clearButton.texture:SetAlpha(0.5)
+	box.clearButton:SetScript("OnEnter", function(b) b.texture:SetAlpha(1) end)
+	box.clearButton:SetScript("OnLeave", function(b) b.texture:SetAlpha(0.5) end)
+	box.clearButton:SetScript("OnClick", function(b)
+		local parent = b:GetParent()
+		EditBox_ClearFocus(parent)
+		ClearNow(parent)
+	end)
 
 	-- Child of the box, so it leaves together with it when the config closes.
-	box.noResults = box:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
-	box.noResults:SetText(L["Nothing found"])
-	box.noResults:Hide()
-	self.noResults = box.noResults
+	box.status = box:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+	box.status:Point("LEFT", box, "RIGHT", 8, 0)
+	box.status:Hide()
+	self.status = box.status
 
+	UpdateLook(box)
 	box:Hide()
 	return box
 end
@@ -386,12 +459,9 @@ function CS:Attach()
 	box:SetParent(frame)
 	box:SetFrameLevel(frame:GetFrameLevel() + 20)
 	box:ClearAllPoints()
-	box:Point("LEFT", frame, "TOPLEFT", 70, -19) -- vertically centered between the window top edge and the "Version" delimiter
+	box:Point("LEFT", frame, "TOPLEFT", BOX_LEFT, -19) -- vertically centered between the window top edge and the "Version" delimiter
 	box:Show()
-
-	self.noResults:ClearAllPoints()
-	self.noResults:Point("CENTER", frame, "CENTER", 0, 0)
-	self.noResults:Hide()
+	self:UpdateStatus(nil)
 
 	if not hookedFrames[frame] then
 		hookedFrames[frame] = true
